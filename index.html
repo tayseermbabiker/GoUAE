@@ -2625,33 +2625,34 @@
 
     <!-- Optimized Modal System - Content-on-Demand (Following GoUAE Commandments) -->
     <script>
-        // Dynamic Modal Content System - No DOM Bloat, Performance First
+        // Working Modal System (Based on Proven Example)
         const modalContent = {
             'safety': {
                 title: 'Complete Safety Guide for UAE',
                 content: `
-                    <div class="modal-section">
-                        <h4>Crime & Safety Statistics</h4>
-                        <div class="safety-stats">
-                            <div class="stat-item">
-                                <span class="stat-number">#2</span>
-                                <span class="stat-label">Safest Country Globally</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">99.2%</span>
-                                <span class="stat-label">Tourist Safety Rate</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">24/7</span>
-                                <span class="stat-label">Tourist Police Support</span>
-                            </div>
-                        </div>
-                    </div>
+                    <h4>🏆 World's Safest Destination</h4>
+                    <p>UAE ranks #2 globally in the Global Peace Index and is considered one of the safest countries for tourists.</p>
+
+                    <h4>👮 Tourist Support</h4>
+                    <ul>
+                        <li><strong>Tourist Police:</strong> 901 (multilingual support)</li>
+                        <li><strong>Emergency:</strong> 999 (Police), 998 (Ambulance)</li>
+                        <li><strong>Tourist Hotline:</strong> 800-353-353</li>
+                    </ul>
+
+                    <h4>🌟 Why UAE is So Safe</h4>
+                    <ul>
+                        <li>Zero tolerance for crime</li>
+                        <li>Advanced CCTV surveillance</li>
+                        <li>Strong rule of law</li>
+                        <li>Cultural respect for guests</li>
+                        <li>Professional police force</li>
+                    </ul>
                 `
             }
         };
 
-        // Simple modal system for testing
+        // Proven Working Modal Functions (From User's Example)
         function openModal(modalType) {
             const modal = document.getElementById('modal-overlay');
             const title = document.getElementById('modal-title');
@@ -2660,9 +2661,13 @@
             if (modalContent[modalType]) {
                 title.textContent = modalContent[modalType].title;
                 content.innerHTML = modalContent[modalType].content;
-                modal.style.display = 'flex';
-                document.body.style.overflow = 'hidden';
+            } else {
+                title.textContent = 'Information';
+                content.innerHTML = '<div class="loading">Loading information...</div>';
             }
+
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
         }
 
         function closeModal() {
@@ -2671,18 +2676,24 @@
             document.body.style.overflow = '';
         }
 
-        // Event handlers
+        // Event Listeners (Proven Working Pattern)
         document.addEventListener('click', function(e) {
-            const card = e.target.closest('.clickable-card, .clickable-experience');
-            if (card) {
+            // Handle clickable cards
+            const clickable = e.target.closest('.clickable');
+            if (clickable && clickable.dataset.modal) {
                 e.preventDefault();
-                const modalType = card.dataset.modal || card.dataset.experience;
-                if (modalType) {
-                    openModal(modalType);
-                }
+                openModal(clickable.dataset.modal);
             }
 
-            if (e.target.closest('.modal-close') || e.target === document.getElementById('modal-overlay')) {
+            // Close modal on overlay click
+            if (e.target === document.getElementById('modal-overlay')) {
+                closeModal();
+            }
+        });
+
+        // Close modal on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
                 closeModal();
             }
         });
