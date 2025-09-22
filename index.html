@@ -2678,8 +2678,8 @@
 
         // Event Listeners (Proven Working Pattern)
         document.addEventListener('click', function(e) {
-            // Handle clickable cards
-            const clickable = e.target.closest('.clickable');
+            // Handle clickable cards (supporting both class names)
+            const clickable = e.target.closest('.clickable, .clickable-card, .clickable-experience');
             if (clickable && clickable.dataset.modal) {
                 e.preventDefault();
                 openModal(clickable.dataset.modal);
