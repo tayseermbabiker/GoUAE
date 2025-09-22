@@ -672,16 +672,51 @@ class UAETourismSite {
     });
   }
 
-  // Redirect old system to new system
+  // Working Modal System (Direct Implementation)
   openModal(modalType, modal, modalTitle, modalContent) {
-    console.log('🔄 Redirecting to new modal system:', modalType);
+    console.log('🚀 Opening modal directly:', modalType);
 
-    // Use the new modal system in index.html
-    if (window.openModal && typeof window.openModal === 'function') {
-      window.openModal(modalType);
-    } else {
-      console.error('New modal system not found');
+    // Get modal elements
+    const modalOverlay = document.getElementById('modal-overlay');
+    const title = document.getElementById('modal-title');
+    const content = document.getElementById('modal-content');
+
+    if (!modalOverlay || !title || !content) {
+      console.error('Modal elements not found');
+      return;
     }
+
+    // Modal content data
+    const modalData = {
+      'safety': {
+        title: 'Complete Safety Guide for UAE',
+        content: `
+          <h4>🏆 World's Safest Destination</h4>
+          <p>UAE ranks #2 globally in the Global Peace Index and is considered one of the safest countries for tourists.</p>
+          <h4>👮 Tourist Support</h4>
+          <ul>
+            <li><strong>Tourist Police:</strong> 901 (multilingual support)</li>
+            <li><strong>Emergency:</strong> 999 (Police), 998 (Ambulance)</li>
+            <li><strong>Tourist Hotline:</strong> 800-353-353</li>
+          </ul>
+        `
+      }
+    };
+
+    // Set content
+    if (modalData[modalType]) {
+      title.textContent = modalData[modalType].title;
+      content.innerHTML = modalData[modalType].content;
+    } else {
+      title.textContent = 'Information';
+      content.innerHTML = '<p>Loading information...</p>';
+    }
+
+    // Show modal
+    modalOverlay.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+
+    console.log('✅ Modal opened successfully');
     return;
     
     // Check if it's a full modal (like dubai-modal, abudhabi-modal)
