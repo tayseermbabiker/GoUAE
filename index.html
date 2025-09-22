@@ -7752,5 +7752,81 @@
         }
     </script>
 
+    <!-- Working Modal System (Clean Implementation) -->
+    <script>
+        // Modal Content Data
+        const modalContent = {
+            'safety': {
+                title: 'Complete Safety Guide for UAE',
+                content: `
+                    <h4>🏆 World's Safest Destination</h4>
+                    <p>UAE ranks #2 globally in the Global Peace Index and is considered one of the safest countries for tourists.</p>
+
+                    <h4>👮 Tourist Support</h4>
+                    <ul>
+                        <li><strong>Tourist Police:</strong> 901 (multilingual support)</li>
+                        <li><strong>Emergency:</strong> 999 (Police), 998 (Ambulance)</li>
+                        <li><strong>Tourist Hotline:</strong> 800-353-353</li>
+                    </ul>
+
+                    <h4>🌟 Why UAE is So Safe</h4>
+                    <ul>
+                        <li>Zero tolerance for crime</li>
+                        <li>Advanced CCTV surveillance</li>
+                        <li>Strong rule of law</li>
+                        <li>Cultural respect for guests</li>
+                        <li>Professional police force</li>
+                    </ul>
+                `
+            }
+        };
+
+        // Modal Functions
+        function openModal(modalType) {
+            const modal = document.getElementById('modal-overlay');
+            const title = document.getElementById('modal-title');
+            const content = document.getElementById('modal-content');
+
+            if (modalContent[modalType]) {
+                title.textContent = modalContent[modalType].title;
+                content.innerHTML = modalContent[modalType].content;
+            } else {
+                title.textContent = 'Information';
+                content.innerHTML = '<div class="loading">Loading information...</div>';
+            }
+
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('modal-overlay');
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+        }
+
+        // Event Listeners
+        document.addEventListener('click', function(e) {
+            // Handle clickable cards
+            const clickable = e.target.closest('.clickable-card, .clickable-experience');
+            if (clickable && clickable.dataset.modal) {
+                e.preventDefault();
+                openModal(clickable.dataset.modal);
+            }
+
+            // Close modal on overlay click
+            if (e.target === document.getElementById('modal-overlay')) {
+                closeModal();
+            }
+        });
+
+        // Close modal on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+
 </body>
 </html>
