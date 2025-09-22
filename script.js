@@ -716,18 +716,19 @@ class UAETourismSite {
       content.innerHTML = '<p>Loading information...</p>';
     }
 
-    // Add CSS if missing
-    if (!modalOverlay.style.position) {
-      modalOverlay.style.position = 'fixed';
-      modalOverlay.style.top = '0';
-      modalOverlay.style.left = '0';
-      modalOverlay.style.width = '100%';
-      modalOverlay.style.height = '100%';
-      modalOverlay.style.backgroundColor = 'rgba(0,0,0,0.8)';
-      modalOverlay.style.zIndex = '9999';
-      modalOverlay.style.alignItems = 'center';
-      modalOverlay.style.justifyContent = 'center';
-    }
+    // Force bright red modal that can't be missed
+    modalOverlay.style.position = 'fixed';
+    modalOverlay.style.top = '0';
+    modalOverlay.style.left = '0';
+    modalOverlay.style.width = '100%';
+    modalOverlay.style.height = '100%';
+    modalOverlay.style.backgroundColor = 'red';
+    modalOverlay.style.zIndex = '99999';
+    modalOverlay.style.alignItems = 'center';
+    modalOverlay.style.justifyContent = 'center';
+    modalOverlay.innerHTML = '<div style="background: white; padding: 50px; font-size: 24px; border: 5px solid black;">SAFETY MODAL TEST - Can you see this?</div>';
+
+    console.log('Applied bright red modal styling');
 
     // Style modal container
     const modalContainer = modalOverlay.querySelector('.modal-container');
