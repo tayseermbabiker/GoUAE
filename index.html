@@ -2623,26 +2623,70 @@
         </div>
     </div>
 
-    <!-- Safety Modal Content (Hidden Template) -->
-    <div id="safety-modal-content" class="modal-template">
-        <div class="modal-icon"></div>
-        <div class="modal-section">
-            <h4>Crime & Safety Statistics</h4>
-            <div class="safety-stats">
-                <div class="stat-item">
-                    <span class="stat-number">#2</span>
-                    <span class="stat-label">Safest Country Globally</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">99.2%</span>
-                    <span class="stat-label">Tourist Safety Rate</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">24/7</span>
-                    <span class="stat-label">Tourist Police Support</span>
-                </div>
-            </div>
-        </div>
+    <!-- Optimized Modal System - Content-on-Demand (Following GoUAE Commandments) -->
+    <script>
+        // Dynamic Modal Content System - No DOM Bloat, Performance First
+        const modalContent = {
+            'safety': {
+                title: 'Complete Safety Guide for UAE',
+                content: `
+                    <div class="modal-section">
+                        <h4>Crime & Safety Statistics</h4>
+                        <div class="safety-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">#2</span>
+                                <span class="stat-label">Safest Country Globally</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">99.2%</span>
+                                <span class="stat-label">Tourist Safety Rate</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-label">Tourist Police Support</span>
+                            </div>
+                        </div>
+                    </div>
+                `
+            }
+        };
+
+        // Simple modal system for testing
+        function openModal(modalType) {
+            const modal = document.getElementById('modal-overlay');
+            const title = document.getElementById('modal-title');
+            const content = document.getElementById('modal-content');
+
+            if (modalContent[modalType]) {
+                title.textContent = modalContent[modalType].title;
+                content.innerHTML = modalContent[modalType].content;
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('modal-overlay');
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+        }
+
+        // Event handlers
+        document.addEventListener('click', function(e) {
+            const card = e.target.closest('.clickable-card, .clickable-experience');
+            if (card) {
+                e.preventDefault();
+                const modalType = card.dataset.modal || card.dataset.experience;
+                if (modalType) {
+                    openModal(modalType);
+                }
+            }
+
+            if (e.target.closest('.modal-close') || e.target === document.getElementById('modal-overlay')) {
+                closeModal();
+            }
+        });
+    </script>
 
         <div class="modal-section">
             <h4>What Makes UAE So Safe?</h4>
