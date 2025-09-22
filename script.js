@@ -672,8 +672,10 @@ class UAETourismSite {
     });
   }
 
-  openModal(modalType, modal, modalTitle, modalContent) {
-    console.log('🔍 Opening modal:', modalType);
+  // OLD MODAL SYSTEM DISABLED - Using new system in index.html
+  openModal_OLD_DISABLED(modalType, modal, modalTitle, modalContent) {
+    console.log('🔍 OLD SYSTEM (DISABLED):', modalType);
+    return; // Exit early - old system disabled
     
     // Check if it's a full modal (like dubai-modal, abudhabi-modal)
     const fullModal = document.getElementById(`${modalType}-modal`);
