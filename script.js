@@ -672,10 +672,17 @@ class UAETourismSite {
     });
   }
 
-  // OLD MODAL SYSTEM DISABLED - Using new system in index.html
-  openModal_OLD_DISABLED(modalType, modal, modalTitle, modalContent) {
-    console.log('🔍 OLD SYSTEM (DISABLED):', modalType);
-    return; // Exit early - old system disabled
+  // Redirect old system to new system
+  openModal(modalType, modal, modalTitle, modalContent) {
+    console.log('🔄 Redirecting to new modal system:', modalType);
+
+    // Use the new modal system in index.html
+    if (window.openModal && typeof window.openModal === 'function') {
+      window.openModal(modalType);
+    } else {
+      console.error('New modal system not found');
+    }
+    return;
     
     // Check if it's a full modal (like dubai-modal, abudhabi-modal)
     const fullModal = document.getElementById(`${modalType}-modal`);

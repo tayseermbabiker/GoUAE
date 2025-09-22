@@ -7836,8 +7836,8 @@
             }
         };
 
-        // Modal Functions
-        function openModal(modalType) {
+        // Modal Functions (Global)
+        window.openModal = function(modalType) {
             const modal = document.getElementById('modal-overlay');
             const title = document.getElementById('modal-title');
             const content = document.getElementById('modal-content');
