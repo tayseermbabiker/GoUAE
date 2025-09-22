@@ -712,11 +712,36 @@ class UAETourismSite {
       content.innerHTML = '<p>Loading information...</p>';
     }
 
+    // Add CSS if missing
+    if (!modalOverlay.style.position) {
+      modalOverlay.style.position = 'fixed';
+      modalOverlay.style.top = '0';
+      modalOverlay.style.left = '0';
+      modalOverlay.style.width = '100%';
+      modalOverlay.style.height = '100%';
+      modalOverlay.style.backgroundColor = 'rgba(0,0,0,0.8)';
+      modalOverlay.style.zIndex = '9999';
+      modalOverlay.style.alignItems = 'center';
+      modalOverlay.style.justifyContent = 'center';
+    }
+
+    // Style modal container
+    const modalContainer = modalOverlay.querySelector('.modal-container');
+    if (modalContainer) {
+      modalContainer.style.background = 'white';
+      modalContainer.style.borderRadius = '12px';
+      modalContainer.style.maxWidth = '600px';
+      modalContainer.style.maxHeight = '80vh';
+      modalContainer.style.overflow = 'auto';
+      modalContainer.style.margin = '20px';
+      modalContainer.style.boxShadow = '0 25px 50px rgba(0,0,0,0.25)';
+    }
+
     // Show modal
     modalOverlay.style.display = 'flex';
     document.body.style.overflow = 'hidden';
 
-    console.log('✅ Modal opened successfully');
+    console.log('✅ Modal opened successfully with full styling');
     return;
     
     // Check if it's a full modal (like dubai-modal, abudhabi-modal)
