@@ -686,6 +686,10 @@ class UAETourismSite {
       return;
     }
 
+    // Debug modal structure
+    console.log('Modal overlay HTML:', modalOverlay.outerHTML.substring(0, 200));
+    console.log('Modal has children:', modalOverlay.children.length);
+
     // Modal content data
     const modalData = {
       'safety': {
@@ -740,6 +744,15 @@ class UAETourismSite {
     // Show modal
     modalOverlay.style.display = 'flex';
     document.body.style.overflow = 'hidden';
+
+    // Fallback: Create simple alert if modal still not working
+    setTimeout(() => {
+      if (modalOverlay.style.display === 'flex') {
+        console.warn('Modal should be visible but user reports not seeing it');
+        // Show simple alert as last resort
+        alert('Safety Info: UAE ranks #2 globally for safety. Emergency: 999 (Police), 998 (Ambulance), 800-353-353 (Tourist Hotline)');
+      }
+    }, 1000);
 
     console.log('✅ Modal opened successfully with full styling');
     return;
