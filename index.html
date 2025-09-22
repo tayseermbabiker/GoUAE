@@ -7860,13 +7860,21 @@
             document.body.style.overflow = '';
         }
 
-        // Event Listeners
+        // Event Listeners (With Debug)
         document.addEventListener('click', function(e) {
+            console.log('🖱️ Click detected on:', e.target);
+
             // Handle clickable cards
             const clickable = e.target.closest('.clickable-card, .clickable-experience');
-            if (clickable && clickable.dataset.modal) {
-                e.preventDefault();
-                openModal(clickable.dataset.modal);
+            console.log('🎯 Found clickable:', clickable);
+
+            if (clickable) {
+                console.log('📋 Modal type:', clickable.dataset.modal);
+                if (clickable.dataset.modal) {
+                    e.preventDefault();
+                    console.log('🚀 Opening modal:', clickable.dataset.modal);
+                    openModal(clickable.dataset.modal);
+                }
             }
 
             // Close modal on overlay click
