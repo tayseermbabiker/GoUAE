@@ -158,65 +158,127 @@
     <!-- UAE Experiences by Emirate -->
     <section id="experiences" class="section">
         <div class="container">
-            <h2>UAE Experiences by Emirate</h2>
+            <h2>Attractions & Experiences</h2>
 
-            <!-- Dubai -->
-            <div class="emirate-section">
-                <h3>Dubai</h3>
-                <div class="experience-scroll">
-                    <div class="experience-card" data-experience="burj-khalifa">
-                        <h4>Burj Khalifa</h4>
-                        <p>World's tallest building experience</p>
-                        <button class="book-btn" onclick="bookExperience('platinumlist', 'burj-khalifa')">Book Now</button>
+            <div class="experience-scroll">
+                <div class="experience-card" data-experience="burj-khalifa">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=85" alt="Burj Khalifa and Dubai skyline at sunset" class="experience-image">
+                        <div class="image-overlay-title">
+                            <h4>Burj Khalifa</h4>
+                        </div>
                     </div>
-                    <div class="experience-card" data-experience="img-worlds">
-                        <h4>IMG Worlds of Adventure</h4>
-                        <p>Indoor theme park experience</p>
-                        <button class="book-btn" onclick="bookExperience('platinumlist', 'img-worlds')">Book Now</button>
-                    </div>
-                    <div class="experience-card" data-experience="desert-safari">
-                        <h4>Desert Safari</h4>
-                        <p>Traditional Bedouin experience</p>
-                        <button class="book-btn" onclick="bookExperience('platinumlist', 'desert-safari')">Book Now</button>
+                    <div class="card-details">
+                        <span class="duration">4-6 hours</span>
+                        <button class="book-btn purple" onclick="bookExperience('platinumlist', 'burj-khalifa')">Book</button>
                     </div>
                 </div>
-            </div>
-
-            <!-- Abu Dhabi -->
-            <div class="emirate-section">
-                <h3>Abu Dhabi</h3>
-                <div class="experience-scroll">
-                    <div class="experience-card" data-experience="sheikh-zayed-mosque">
-                        <h4>Sheikh Zayed Grand Mosque</h4>
-                        <p>Architectural marvel & cultural site</p>
-                        <button class="book-btn" onclick="bookExperience('platinumlist', 'sheikh-zayed-mosque')">Book Now</button>
+                <div class="experience-card" data-experience="theme-parks">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1542577731-55541be363d4?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRoZW1lJTIwcGFya3xlbnwwfHwwfHx8Mg%3D%3D" alt="Theme park with exciting rides and family attractions" class="experience-image">
+                        <div class="image-overlay-title">
+                            <h4>Theme Parks</h4>
+                        </div>
                     </div>
-                    <div class="experience-card" data-experience="louvre-abu-dhabi">
-                        <h4>Louvre Abu Dhabi</h4>
-                        <p>World-class art & culture</p>
-                        <button class="book-btn" onclick="bookExperience('platinumlist', 'louvre-abu-dhabi')">Book Now</button>
-                    </div>
-                    <div class="experience-card" data-experience="ferrari-world">
-                        <h4>Ferrari World</h4>
-                        <p>High-speed thrills & racing</p>
-                        <button class="book-btn" onclick="bookExperience('platinumlist', 'ferrari-world')">Book Now</button>
+                    <div class="card-details">
+                        <span class="duration">Full day</span>
+                        <button class="book-btn purple" onclick="bookExperience('platinumlist', 'theme-parks')">Book</button>
                     </div>
                 </div>
-            </div>
-
-            <!-- Other Emirates -->
-            <div class="emirate-section">
-                <h3>Fujairah</h3>
-                <div class="experience-scroll">
-                    <div class="experience-card">
-                        <h4>Al Bidyah Mosque</h4>
-                        <p>UAE's oldest mosque</p>
-                        <button class="book-btn">Explore</button>
+                <div class="experience-card" data-experience="desert-safari">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1624062999726-083e5268525d?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGVzZXJ0JTIwc2FmYXJpfGVufDB8fDB8fHwy" alt="Desert safari with camels in UAE golden dunes" class="experience-image">
+                        <div class="image-overlay-title">
+                            <h4>Desert Safari</h4>
+                        </div>
                     </div>
-                    <div class="experience-card">
-                        <h4>Fujairah Fort</h4>
-                        <p>Historic fortress & museum</p>
-                        <button class="book-btn">Explore</button>
+                    <div class="card-details">
+                        <span class="duration">6 hours</span>
+                        <button class="book-btn purple" onclick="bookExperience('platinumlist', 'desert-safari')">Book</button>
+                    </div>
+                </div>
+                <div class="experience-card" data-experience="sheikh-zayed-mosque">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1512632578888-169bbbc64f33?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=95" alt="Sheikh Zayed Grand Mosque in Abu Dhabi" class="experience-image">
+                        <div class="image-overlay-title">
+                            <h4>Grand Mosque</h4>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <span class="duration">2-3 hours</span>
+                        <button class="book-btn purple" onclick="bookExperience('platinumlist', 'sheikh-zayed-mosque')">Book</button>
+                    </div>
+                </div>
+                <div class="experience-card" data-experience="louvre-abu-dhabi">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1683490486254-502c4c7d8282?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bG91dnJlJTIwYWJ1JTIwZGhhYml8ZW58MHx8MHx8fDI%3D" alt="Louvre Abu Dhabi museum with stunning architecture and cultural exhibitions" class="experience-image">
+                        <div class="image-overlay-title">
+                            <h4>Louvre Abu Dhabi</h4>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <span class="duration">4-5 hours</span>
+                        <button class="book-btn purple" onclick="bookExperience('platinumlist', 'louvre-abu-dhabi')">Book</button>
+                    </div>
+                </div>
+                <div class="experience-card" data-experience="yas-island">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1505731110654-99d7f7f8e39c?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8Mnx8dGhlbWUlMjBwYXJrfGVufDB8fDB8fHwy" alt="Yas Island theme park with exciting attractions and family adventures" class="experience-image">
+                        <div class="image-overlay-title">
+                            <h4>Yas Island</h4>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <span class="duration">Full day</span>
+                        <button class="book-btn purple" onclick="bookExperience('platinumlist', 'yas-island')">Book</button>
+                    </div>
+                </div>
+                <div class="experience-card" data-experience="aquarium">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=95" alt="Dubai Aquarium with sharks and underwater tunnel" class="experience-image">
+                        <div class="image-overlay-title">
+                            <h4>Dubai Aquarium</h4>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <span class="duration">Full day</span>
+                        <button class="book-btn purple" onclick="bookExperience('platinumlist', 'aquarium')">Book</button>
+                    </div>
+                </div>
+                <div class="experience-card" data-experience="yacht">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1540946485063-a40da27545f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=95" alt="Luxury yacht experience in Dubai marina" class="experience-image">
+                        <div class="image-overlay-title">
+                            <h4>Luxury Yacht</h4>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <span class="duration">4 hours</span>
+                        <button class="book-btn purple" onclick="bookExperience('platinumlist', 'yacht')">Book</button>
+                    </div>
+                </div>
+                <div class="experience-card" data-experience="skydiving">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1659221876406-31a3746f41b9?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8Mnx8c2t5ZGl2aW5nfGVufDB8fDB8fHwy" alt="Skydiving adventure with spectacular aerial views" class="experience-image">
+                        <div class="image-overlay-title">
+                            <h4>Skydiving</h4>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <span class="duration">6 hours</span>
+                        <button class="book-btn purple" onclick="bookExperience('platinumlist', 'skydiving')">Book</button>
+                    </div>
+                </div>
+                <div class="experience-card" data-experience="souk">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1616760678404-8b62322959c8?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8MTR8fHNvdWt8ZW58MHx8MHx8fDI%3D" alt="Traditional souk with gold and spices" class="experience-image">
+                        <div class="image-overlay-title">
+                            <h4>Traditional Souk</h4>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <span class="duration">3 hours</span>
+                        <button class="book-btn purple" onclick="bookExperience('platinumlist', 'souk')">Book</button>
                     </div>
                 </div>
             </div>
@@ -330,7 +392,18 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 GoUAE. Affiliate partnerships disclosed. Explore responsibly.</p>
+            <div class="footer-bottom">
+                <div class="footer-brand">
+                    <p>&copy; 2025 UAE Adventures - Your complete UAE tourism companion</p>
+                    <p class="disclaimer">Affiliate partnerships help us provide free, comprehensive travel guides</p>
+                </div>
+                <div class="footer-links">
+                    <a href="about-uae.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                </div>
+            </div>
         </div>
     </footer>
 

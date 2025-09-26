@@ -1224,6 +1224,785 @@ const modalContent = {
                 </div>
             </div>
         `
+    },
+    'burj-khalifa': {
+        title: 'Burj Khalifa Experience',
+        content: `
+            <div class="experience-highlights">
+                <div class="highlight-card">
+                    <h5>World's Tallest Building</h5>
+                    <p>Visit the iconic 828-meter skyscraper with breathtaking 360° views from levels 124, 125, and exclusive level 148</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Skip-the-Line Access</h5>
+                    <p>Bypass the crowds with priority entry tickets and high-speed elevators that reach level 124 in just 35 seconds</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Dubai Mall Experience</h5>
+                    <p>Explore the world's largest shopping mall with 1,200 stores, Dubai Aquarium, and countless dining options</p>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>What's Included</h4>
+                <div class="included-grid">
+                    <div class="included-card standard">
+                        <h5>Standard Experience</h5>
+                        <ul>
+                            <li>Burj Khalifa Level 124 & 125 access</li>
+                            <li>Dubai Mall exploration time</li>
+                            <li>High-speed elevator ride</li>
+                            <li>Observation deck access</li>
+                            <li>Free Dubai Mall parking</li>
+                        </ul>
+                    </div>
+                    <div class="included-card premium">
+                        <h5>Premium Experience</h5>
+                        <ul>
+                            <li>Everything from Standard</li>
+                            <li>Burj Khalifa Level 148 access</li>
+                            <li>Exclusive Sky Lounge access</li>
+                            <li>Complimentary refreshments</li>
+                            <li>Priority boarding</li>
+                            <li>Souvenir photo package</li>
+                        </ul>
+                    </div>
+                    <div class="included-card vip">
+                        <h5>VIP Experience</h5>
+                        <ul>
+                            <li>Everything from Premium</li>
+                            <li>Private tour guide</li>
+                            <li>Sunset or sunrise timing</li>
+                            <li>Champagne & canapes</li>
+                            <li>Professional photography</li>
+                            <li>Behind-scenes access</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Meeting Point & Timing</h4>
+                <div class="logistics-info">
+                    <div class="logistics-card">
+                        <h5>Location</h5>
+                        <p><strong>Dubai Mall, Lower Ground Level</strong><br>
+                        Near the Dubai Aquarium entrance<br>
+                        Free parking available (4+ hours)</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Best Times</h5>
+                        <p><strong>Sunrise:</strong> 6:30 AM - 8:30 AM<br>
+                        <strong>Sunset:</strong> 4:30 PM - 6:30 PM<br>
+                        <strong>Night:</strong> 7:00 PM - 10:00 PM</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>How to Get There</h5>
+                        <p><strong>Dubai Metro:</strong> Burj Khalifa/Dubai Mall Station (2-min walk)<br>
+                        <strong>Taxi:</strong> Ask for "Dubai Mall main entrance"<br>
+                        <strong>Car:</strong> Follow Dubai Mall parking signs</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Important Information</h4>
+                <div class="info-list">
+                    <p><strong>Ticket Validity:</strong> Tickets are date and time specific. Allow 30-45 minutes total visit time for levels 124-125.</p>
+                    <p><strong>Restrictions:</strong> No outside food/drinks. Security screening required. Large bags not permitted.</p>
+                    <p><strong>Accessibility:</strong> Fully wheelchair accessible. Special assistance available with advance notice.</p>
+                    <p><strong>Weather Policy:</strong> Open in all weather. Outdoor terraces may close during high winds or rain.</p>
+                </div>
+            </div>
+
+
+
+            <div class="modal-guide-hint">
+                <p><strong>Pro tip:</strong> Book through our Partner links to enjoy discounts of up to 25% — at no extra cost to you, it also helps us keep this guide running</p>
+            </div>
+        `
+    },
+    'img-worlds': {
+        title: 'IMG Worlds of Adventure',
+        content: `
+            <div class="modal-section">
+                <h4>World's Largest Indoor Theme Park</h4>
+                <p>Experience thrilling rides and attractions featuring Marvel superheroes, Cartoon Network characters, and more.</p>
+
+                <div class="experience-details">
+                    <div class="detail-card">
+                        <h5>📍 Location</h5>
+                        <p>City of Arabia, Dubai</p>
+                    </div>
+                    <div class="detail-card">
+                        <h5>⏰ Duration</h5>
+                        <p>Full day (6-8 hours recommended)</p>
+                    </div>
+                    <div class="detail-card">
+                        <h5>💰 Price Range</h5>
+                        <p>AED 300-400 per person</p>
+                    </div>
+                </div>
+
+                <div class="booking-options">
+                    <h5>Featured Zones:</h5>
+                    <ul>
+                        <li><strong>Marvel Zone:</strong> Spider-Man, Avengers rides</li>
+                        <li><strong>Cartoon Network Zone:</strong> Ben 10, Powerpuff Girls</li>
+                        <li><strong>Lost Valley:</strong> Dinosaur adventures</li>
+                        <li><strong>IMG Boulevard:</strong> Shops and dining</li>
+                    </ul>
+                </div>
+
+                <p class="booking-note">Perfect for families and thrill-seekers. Air-conditioned comfort year-round!</p>
+            </div>
+        `
+    },
+    'desert-safari': {
+        title: 'Desert Safari Experience',
+        content: `
+            <div class="modal-section">
+                <h4>Traditional Bedouin Adventure</h4>
+                <p>Experience the magic of the Arabian desert with dune bashing, camel riding, and traditional entertainment.</p>
+
+                <div class="experience-details">
+                    <div class="detail-card">
+                        <h5>📍 Location</h5>
+                        <p>Dubai Desert Conservation Reserve</p>
+                    </div>
+                    <div class="detail-card">
+                        <h5>⏰ Duration</h5>
+                        <p>6 hours (2:30 PM - 8:30 PM typical)</p>
+                    </div>
+                    <div class="detail-card">
+                        <h5>💰 Price Range</h5>
+                        <p>AED 200-600 (varies by package)</p>
+                    </div>
+                </div>
+
+                <div class="booking-options">
+                    <h5>What's Included:</h5>
+                    <ul>
+                        <li><strong>Dune Bashing:</strong> 4WD adventure across sand dunes</li>
+                        <li><strong>Camel Riding:</strong> Traditional desert transport</li>
+                        <li><strong>BBQ Dinner:</strong> Traditional Arabic buffet</li>
+                        <li><strong>Entertainment:</strong> Belly dancing, Tanoura shows</li>
+                        <li><strong>Activities:</strong> Sandboarding, henna painting</li>
+                    </ul>
+                </div>
+
+                <p class="booking-note">Best experienced during cooler months (Nov-Mar). Sunset views included!</p>
+            </div>
+        `
+    },
+    'sheikh-zayed-mosque': {
+        title: 'Sheikh Zayed Grand Mosque',
+        content: `
+            <div class="modal-section">
+                <h4>Architectural Marvel & Cultural Site</h4>
+                <p>Visit one of the world's most beautiful mosques, showcasing stunning Islamic architecture and cultural heritage.</p>
+
+                <div class="experience-details">
+                    <div class="detail-card">
+                        <h5>📍 Location</h5>
+                        <p>Abu Dhabi</p>
+                    </div>
+                    <div class="detail-card">
+                        <h5>⏰ Duration</h5>
+                        <p>2-3 hours (including travel from Dubai)</p>
+                    </div>
+                    <div class="detail-card">
+                        <h5>💰 Price</h5>
+                        <p>FREE entry (guided tours available)</p>
+                    </div>
+                </div>
+
+                <div class="booking-options">
+                    <h5>What to Expect:</h5>
+                    <ul>
+                        <li><strong>Architecture:</strong> 82 white marble domes, gold-plated chandeliers</li>
+                        <li><strong>Capacity:</strong> Over 40,000 worshippers</li>
+                        <li><strong>Features:</strong> World's largest hand-knotted carpet</li>
+                        <li><strong>Photography:</strong> Allowed in designated areas</li>
+                    </ul>
+                </div>
+
+                <div class="dress-requirements">
+                    <h5>Dress Code (Strictly Enforced):</h5>
+                    <ul>
+                        <li><strong>Women:</strong> Long sleeves, long pants/skirt, headscarf (provided)</li>
+                        <li><strong>Men:</strong> Long pants, covered shoulders</li>
+                        <li><strong>Colors:</strong> Modest colors, avoid tight or transparent clothing</li>
+                    </ul>
+                </div>
+
+                <p class="booking-note">Free entry. Tours available through our partner for transportation and guided experience.</p>
+            </div>
+        `
+    },
+    'louvre-abu-dhabi': {
+        title: 'Louvre Abu Dhabi',
+        content: `
+            <div class="modal-section">
+                <h4>World-Class Art & Culture</h4>
+                <p>Discover masterpieces from around the world in this stunning museum featuring works from ancient to contemporary times.</p>
+
+                <div class="experience-details">
+                    <div class="detail-card">
+                        <h5>📍 Location</h5>
+                        <p>Saadiyat Island, Abu Dhabi</p>
+                    </div>
+                    <div class="detail-card">
+                        <h5>⏰ Duration</h5>
+                        <p>3-4 hours</p>
+                    </div>
+                    <div class="detail-card">
+                        <h5>💰 Price Range</h5>
+                        <p>AED 63-200 (varies by exhibitions)</p>
+                    </div>
+                </div>
+
+                <div class="booking-options">
+                    <h5>Highlights:</h5>
+                    <ul>
+                        <li><strong>Iconic Dome:</strong> Stunning geometric architecture</li>
+                        <li><strong>Collection:</strong> Works by Leonardo da Vinci, Van Gogh</li>
+                        <li><strong>Special Exhibitions:</strong> Rotating international displays</li>
+                        <li><strong>Children's Museum:</strong> Interactive family experiences</li>
+                    </ul>
+                </div>
+
+                <p class="booking-note">Book online for discounts. Audio guides available in multiple languages.</p>
+            </div>
+        `
+    },
+    'yas-island': {
+        title: 'Yas Island Theme Parks & Adventures',
+        content: `
+            <div class="experience-highlights">
+                <div class="highlight-card">
+                    <h5>Yas Waterworld</h5>
+                    <p>43 rides, slides & attractions including world's first hydro-magnetic tornado and longest suspended roller coaster over water</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Warner Bros World</h5>
+                    <p>Batman, Superman & Wonder Woman rides, Looney Tunes attractions, and world's largest indoor theme park</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Ferrari World</h5>
+                    <p>Formula Rossa - world's fastest coaster, F1 simulators, Ferrari gallery and family racing experiences</p>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Park Packages</h4>
+                <div class="included-grid">
+                    <div class="included-card standard">
+                        <h5>Single Park Access</h5>
+                        <ul>
+                            <li>Choice of ONE park (full day)</li>
+                            <li>All rides & attractions included</li>
+                            <li>Free parking at Yas Island</li>
+                            <li>Free shuttle between parks</li>
+                            <li>Basic locker access</li>
+                        </ul>
+                    </div>
+                    <div class="included-card premium">
+                        <h5>Multi-Park Pass</h5>
+                        <ul>
+                            <li>Everything from Single Park</li>
+                            <li>Access to 2 parks in one day</li>
+                            <li>Fast track entry to all rides</li>
+                            <li>Premium locker & towel service</li>
+                            <li>Meal vouchers at each park</li>
+                            <li>Character meet & greet priority</li>
+                        </ul>
+                    </div>
+                    <div class="included-card vip">
+                        <h5>Ultimate Yas Experience</h5>
+                        <ul>
+                            <li>Everything from Multi-Park</li>
+                            <li>All 3 major parks access</li>
+                            <li>VIP express lanes</li>
+                            <li>Private cabanas & premium dining</li>
+                            <li>Personal park guide</li>
+                            <li>Professional photography package</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Park Information</h4>
+                <div class="logistics-info">
+                    <div class="logistics-card">
+                        <h5>Location</h5>
+                        <p><strong>Yas Island, Abu Dhabi</strong><br>
+                        30 minutes from Abu Dhabi city<br>
+                        Free parking and shuttle service</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Best Times</h5>
+                        <p><strong>Weekdays:</strong> Less crowded<br>
+                        <strong>Opening:</strong> 10:00 AM<br>
+                        <strong>Cool Season:</strong> Nov-Mar ideal</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Getting There</h5>
+                        <p><strong>From Dubai:</strong> 1 hour drive<br>
+                        <strong>From Abu Dhabi:</strong> 30 minutes<br>
+                        <strong>Public Transport:</strong> Bus 170 from city</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Important Information</h4>
+                <div class="info-list">
+                    <p><strong>Height Restrictions:</strong> Some rides have minimum height requirements. Ferrari World and Warner Bros are suitable for all ages.</p>
+                    <p><strong>Weather Policy:</strong> Ferrari World and Warner Bros are fully indoor. Yas Waterworld has both indoor and outdoor areas.</p>
+                    <p><strong>Best for Families:</strong> All three parks cater to different age groups with dedicated kids' areas and family-friendly attractions.</p>
+                    <p><strong>Food & Dining:</strong> Multiple restaurants and cafes in each park. Outside food not permitted.</p>
+                </div>
+            </div>
+
+            <div class="modal-guide-hint">
+                <p><strong>Pro tip:</strong> Book through our Partner links to enjoy discounts of up to 25% — at no extra cost to you, it also helps us keep this guide running</p>
+            </div>
+        `
+    },
+    'theme-parks': {
+        title: 'Theme Parks & Family Adventure',
+        content: `
+            <div class="experience-highlights">
+                <div class="highlight-card">
+                    <h5>World-Class Theme Parks</h5>
+                    <p>Experience IMG Worlds, Motiongate Dubai, and Legoland - featuring Hollywood movies, superheroes, and family adventures</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Movie & Superhero Themes</h5>
+                    <p>Meet your favorite characters from Marvel, Cartoon Network, and DreamWorks in immersive themed experiences</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Perfect for All Ages</h5>
+                    <p>From toddler-friendly rides to adrenaline-pumping roller coasters - entertainment for the entire family</p>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Park Packages</h4>
+                <div class="included-grid">
+                    <div class="included-card standard">
+                        <h5>Single Park</h5>
+                        <ul>
+                            <li>Choice of IMG Worlds OR Motiongate</li>
+                            <li>All rides & attractions access</li>
+                            <li>Fast-track entry included</li>
+                            <li>Free parking at venue</li>
+                            <li>Basic photo opportunities</li>
+                            <li>Transportation from Dubai Mall</li>
+                        </ul>
+                    </div>
+                    <div class="included-card premium">
+                        <h5>Multi-Park Pass</h5>
+                        <ul>
+                            <li>Everything from Single Park</li>
+                            <li>2 parks in one day OR 2 days</li>
+                            <li>Meal voucher at each park</li>
+                            <li>Character meet & greet priority</li>
+                            <li>Souvenir photo package</li>
+                            <li>VIP entrance lanes</li>
+                        </ul>
+                    </div>
+                    <div class="included-card vip">
+                        <h5>Ultimate Family</h5>
+                        <ul>
+                            <li>Everything from Multi-Park</li>
+                            <li>All 3 major parks access</li>
+                            <li>Private character experiences</li>
+                            <li>Premium dining reservations</li>
+                            <li>Professional family photoshoot</li>
+                            <li>Exclusive VIP lounge access</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Park Information</h4>
+                <div class="logistics-info">
+                    <div class="logistics-card">
+                        <h5>Location</h5>
+                        <p><strong>Dubai Parks & Resorts</strong><br>
+                        Jebel Ali area, Dubai<br>
+                        Free shuttle from key hotels</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Best Times</h5>
+                        <p><strong>Weekdays:</strong> Less crowded<br>
+                        <strong>Opening:</strong> 10:00 AM<br>
+                        <strong>Peak Season:</strong> Oct-Mar</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Getting There</h5>
+                        <p><strong>Metro + Bus:</strong> Red Line to Ibn Battuta<br>
+                        <strong>Taxi:</strong> Direct from Dubai (45 mins)<br>
+                        <strong>Shuttle:</strong> From major hotels</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Important Information</h4>
+                <div class="info-list">
+                    <p><strong>Height Restrictions:</strong> Some rides have minimum height requirements. Check park guidelines for children.</p>
+                    <p><strong>Food Policy:</strong> Outside food not allowed. Variety of dining options available in each park.</p>
+                    <p><strong>Weather:</strong> Indoor air-conditioned attractions perfect for hot weather. Some outdoor rides may close during storms.</p>
+                    <p><strong>Best for Families:</strong> Recommended for families with children 3-15 years. Adult-only attractions also available.</p>
+                </div>
+            </div>
+
+            <div class="modal-guide-hint">
+                <p><strong>Pro tip:</strong> Book through our Partner links to enjoy discounts of up to 25% — at no extra cost to you, it also helps us keep this guide running</p>
+            </div>
+        `
+    },
+    'aquarium': {
+        title: 'Dubai Aquarium & VR Park',
+        content: `
+            <div class="experience-highlights">
+                <div class="highlight-card">
+                    <h5>48-Meter Tunnel</h5>
+                    <p>Walk through a massive underwater tunnel surrounded by sharks, rays, and thousands of marine species</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>VR Park Experience</h5>
+                    <p>Cutting-edge virtual reality experiences and interactive games in the world's largest VR park</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>King Croc Encounter</h5>
+                    <p>Meet King Croc, one of the largest crocodiles in captivity, in the Underwater Zoo</p>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Experience Options</h4>
+                <div class="included-grid">
+                    <div class="included-card standard">
+                        <h5>Aquarium Tunnel</h5>
+                        <ul>
+                            <li>48-meter underwater tunnel</li>
+                            <li>Viewing panel access</li>
+                            <li>Shark and ray encounters</li>
+                            <li>Basic photography allowed</li>
+                        </ul>
+                    </div>
+                    <div class="included-card premium">
+                        <h5>Aquarium + VR Park</h5>
+                        <ul>
+                            <li>Everything from Tunnel</li>
+                            <li>Full VR Park access</li>
+                            <li>All VR games included</li>
+                            <li>Behind-the-scenes tour</li>
+                            <li>Professional photos</li>
+                        </ul>
+                    </div>
+                    <div class="included-card vip">
+                        <h5>Ultimate Experience</h5>
+                        <ul>
+                            <li>Everything from Premium</li>
+                            <li>Underwater Zoo access</li>
+                            <li>Glass bottom boat ride</li>
+                            <li>Private marine biologist tour</li>
+                            <li>Cage snorkeling with sharks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Location & Timing</h4>
+                <div class="logistics-info">
+                    <div class="logistics-card">
+                        <h5>Location</h5>
+                        <p><strong>Dubai Mall, Ground Level</strong><br>
+                        Next to Dubai Fountain<br>
+                        Free parking at Dubai Mall</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Best Times</h5>
+                        <p><strong>Early Morning:</strong> 10:00 AM - Less crowded<br>
+                        <strong>Feeding Times:</strong> 2:00 PM & 7:00 PM<br>
+                        <strong>VR Peak:</strong> Evenings after 6:00 PM</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Getting There</h5>
+                        <p><strong>Metro:</strong> Burj Khalifa/Dubai Mall Station<br>
+                        <strong>Taxi:</strong> Ask for Dubai Mall main entrance<br>
+                        <strong>Walking:</strong> From Burj Khalifa (5 mins)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-guide-hint">
+                <p><strong>Pro tip:</strong> Book through our Partner links to enjoy discounts of up to 25% — at no extra cost to you, it also helps us keep this guide running</p>
+            </div>
+        `
+    },
+    'yacht': {
+        title: 'Luxury Yacht & Marina Experience',
+        content: `
+            <div class="experience-highlights">
+                <div class="highlight-card">
+                    <h5>Premium Yacht Charter</h5>
+                    <p>Sail in luxury yachts with professional crew through Dubai Marina and Palm Jumeirah waters</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Iconic Views</h5>
+                    <p>See Burj Al Arab, Palm Jumeirah, and Dubai Marina skyline from the water with unique photo opportunities</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>All-Inclusive Service</h5>
+                    <p>Professional crew, refreshments, water sports equipment, and luxury amenities included</p>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Charter Options</h4>
+                <div class="included-grid">
+                    <div class="included-card standard">
+                        <h5>Marina Cruise</h5>
+                        <ul>
+                            <li>2-hour Dubai Marina cruise</li>
+                            <li>Welcome drinks and snacks</li>
+                            <li>Professional crew service</li>
+                            <li>Swimming and snorkeling gear</li>
+                            <li>Bluetooth music system</li>
+                        </ul>
+                    </div>
+                    <div class="included-card premium">
+                        <h5>Sunset Experience</h5>
+                        <ul>
+                            <li>Everything from Marina Cruise</li>
+                            <li>4-hour premium charter</li>
+                            <li>Gourmet catering service</li>
+                            <li>Jet ski and water sports</li>
+                            <li>Sunset photography session</li>
+                            <li>Premium bar service</li>
+                        </ul>
+                    </div>
+                    <div class="included-card vip">
+                        <h5>Luxury Day Charter</h5>
+                        <ul>
+                            <li>Everything from Sunset</li>
+                            <li>Full day 8-hour charter</li>
+                            <li>Private chef and butler service</li>
+                            <li>Multiple water sports included</li>
+                            <li>Professional photography crew</li>
+                            <li>Helicopter transfer option</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Marina Information</h4>
+                <div class="logistics-info">
+                    <div class="logistics-card">
+                        <h5>Departure</h5>
+                        <p><strong>Dubai Marina</strong><br>
+                        Marina Walk promenade<br>
+                        Valet parking available</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Best Times</h5>
+                        <p><strong>Morning:</strong> 9:00 AM - 1:00 PM<br>
+                        <strong>Sunset:</strong> 4:00 PM - 8:00 PM<br>
+                        <strong>Season:</strong> Oct-Apr ideal weather</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>What to Bring</h5>
+                        <p><strong>Essentials:</strong> Sunscreen, swimwear<br>
+                        <strong>Photography:</strong> Waterproof camera<br>
+                        <strong>Clothing:</strong> Light layers for evening</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-guide-hint">
+                <p><strong>Pro tip:</strong> Book through our Partner links to enjoy discounts of up to 25% — at no extra cost to you, it also helps us keep this guide running</p>
+            </div>
+        `
+    },
+    'skydiving': {
+        title: 'Skydiving & Extreme Watersports',
+        content: `
+            <div class="experience-highlights">
+                <div class="highlight-card">
+                    <h5>Tandem Skydiving</h5>
+                    <p>Freefall from 13,000 feet with certified instructors, experiencing unmatched views of Dubai's coastline and landmarks</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Water Sports Package</h5>
+                    <p>Jet skiing, parasailing, wakeboarding, and flyboarding - all the adrenaline-pumping water activities you crave</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Professional Safety</h5>
+                    <p>Internationally certified instructors, top-quality equipment, and comprehensive safety briefings for all activities</p>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Adventure Packages</h4>
+                <div class="included-grid">
+                    <div class="included-card standard">
+                        <h5>Single Activity</h5>
+                        <ul>
+                            <li>Choice of skydiving OR water sports</li>
+                            <li>Professional safety equipment</li>
+                            <li>Basic photo package included</li>
+                            <li>Safety briefing and training</li>
+                            <li>Transportation to/from hotel</li>
+                        </ul>
+                    </div>
+                    <div class="included-card premium">
+                        <h5>Combo Adventure</h5>
+                        <ul>
+                            <li>Everything from Single Activity</li>
+                            <li>Skydiving + water sports combo</li>
+                            <li>HD video footage included</li>
+                            <li>Priority scheduling</li>
+                            <li>Lunch at beachfront restaurant</li>
+                            <li>Professional photography</li>
+                        </ul>
+                    </div>
+                    <div class="included-card vip">
+                        <h5>Ultimate Adrenaline</h5>
+                        <ul>
+                            <li>Everything from Combo</li>
+                            <li>Private instructor sessions</li>
+                            <li>Helicopter scenic flight</li>
+                            <li>Premium equipment upgrade</li>
+                            <li>VIP lounge access</li>
+                            <li>Professional video crew</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Activity Information</h4>
+                <div class="logistics-info">
+                    <div class="logistics-card">
+                        <h5>Location</h5>
+                        <p><strong>Skydive Dubai Desert Campus</strong><br>
+                        Al Lisaili area, Dubai<br>
+                        Free shuttle from city hotels</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Requirements</h5>
+                        <p><strong>Age:</strong> 18+ years (parental consent 16-17)<br>
+                        <strong>Weight:</strong> 90kg maximum<br>
+                        <strong>Health:</strong> Medical clearance required</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Weather</h5>
+                        <p><strong>Best Conditions:</strong> Clear skies, low wind<br>
+                        <strong>Season:</strong> Oct-May ideal<br>
+                        <strong>Backup:</strong> Indoor simulator available</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-guide-hint">
+                <p><strong>Pro tip:</strong> Book through our Partner links to enjoy discounts of up to 25% — at no extra cost to you, it also helps us keep this guide running</p>
+            </div>
+        `
+    },
+    'souk': {
+        title: 'Traditional Souks & Markets',
+        content: `
+            <div class="experience-highlights">
+                <div class="highlight-card">
+                    <h5>Gold Souk Heritage</h5>
+                    <p>Explore the world's largest gold jewelry market with over 380 retailers in Dubai's historic Deira district</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Spice Souk Aromas</h5>
+                    <p>Discover exotic spices, herbs, perfumes, and traditional remedies in the atmospheric covered market</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Cultural Immersion</h5>
+                    <p>Experience authentic Emirati trading culture with guided tours and traditional bargaining techniques</p>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Souk Experiences</h4>
+                <div class="included-grid">
+                    <div class="included-card standard">
+                        <h5>Self-Guided Tour</h5>
+                        <ul>
+                            <li>Gold Souk and Spice Souk access</li>
+                            <li>Traditional abra boat ride</li>
+                            <li>Basic map and recommendations</li>
+                            <li>Market entry and exploration</li>
+                            <li>Shopping bargaining tips</li>
+                        </ul>
+                    </div>
+                    <div class="included-card premium">
+                        <h5>Guided Heritage Tour</h5>
+                        <ul>
+                            <li>Everything from Self-Guided</li>
+                            <li>Professional local guide</li>
+                            <li>Cultural history presentation</li>
+                            <li>Traditional refreshments</li>
+                            <li>Perfume blending workshop</li>
+                            <li>Souvenir shopping assistance</li>
+                        </ul>
+                    </div>
+                    <div class="included-card vip">
+                        <h5>Private Market Experience</h5>
+                        <ul>
+                            <li>Everything from Guided Tour</li>
+                            <li>Private guide and translator</li>
+                            <li>VIP trader introductions</li>
+                            <li>Traditional Emirati lunch</li>
+                            <li>Custom jewelry consultation</li>
+                            <li>Heritage museum access</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Market Information</h4>
+                <div class="logistics-info">
+                    <div class="logistics-card">
+                        <h5>Location</h5>
+                        <p><strong>Deira District</strong><br>
+                        Gold Souk and Spice Souk area<br>
+                        Metro: Al Ras Station</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Best Times</h5>
+                        <p><strong>Morning:</strong> 10:00 AM - 1:00 PM<br>
+                        <strong>Evening:</strong> 4:00 PM - 10:00 PM<br>
+                        <strong>Avoid:</strong> Friday prayers & midday heat</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Shopping Tips</h5>
+                        <p><strong>Bargaining:</strong> Start at 30-40% of asking price<br>
+                        <strong>Payment:</strong> Cash preferred, cards accepted<br>
+                        <strong>Authenticity:</strong> Check hallmarks on gold</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-guide-hint">
+                <p><strong>Pro tip:</strong> Book through our Partner links to enjoy discounts of up to 25% — at no extra cost to you, it also helps us keep this guide running</p>
+            </div>
+        `
     },    trackingParam: 'ref'
 };
 
@@ -1319,7 +2098,13 @@ window.closeModal = function() {
     document.body.style.overflow = 'auto'; // Restore scrolling
 }
 
-// Platinumlist Integration
+// Platinumlist Integration Configuration
+const platinumlistConfig = {
+    baseUrl: 'https://www.platinumlist.net/',
+    affiliateCode: 'gouae2024',
+    trackingParam: 'ref'
+};
+
 function generatePlatinumlistUrl(experienceId) {
     return `${platinumlistConfig.baseUrl}experience/${experienceId}?${platinumlistConfig.trackingParam}=${platinumlistConfig.affiliateCode}`;
 }
@@ -1547,11 +2332,22 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
 
-        // Experience bookings
-        if (e.target.classList.contains('book-btn')) {
-            const experienceId = e.target.dataset.experience;
-            if (experienceId) {
-                bookExperience('platinumlist', experienceId);
+        // Experience cards - open modal for experience details
+        if (e.target.closest('.experience-card')) {
+            const card = e.target.closest('.experience-card');
+            const experienceId = card.dataset.experience;
+
+            // If clicking the book button, handle booking
+            if (e.target.classList.contains('book-btn')) {
+                if (experienceId) {
+                    bookExperience('platinumlist', experienceId);
+                }
+                return;
+            }
+
+            // Otherwise, open modal with experience details
+            if (experienceId && modalContent[experienceId]) {
+                openModal(experienceId);
             }
         }
 
@@ -1642,6 +2438,304 @@ const additionalCSS = `
     .venues-list {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
+}
+
+.experience-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-md);
+    margin: var(--space-lg) 0;
+}
+
+.detail-card {
+    background: var(--surface-light);
+    border-radius: var(--radius-sm);
+    padding: var(--space-md);
+    text-align: center;
+}
+
+.detail-card h5 {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    font-size: 14px;
+}
+
+.detail-card p {
+    color: var(--text-primary);
+    font-weight: 500;
+    margin: 0;
+}
+
+.booking-options {
+    margin: var(--space-lg) 0;
+}
+
+.booking-options h5 {
+    color: var(--text-primary);
+    margin-bottom: var(--space-md);
+    font-weight: 600;
+}
+
+.booking-options ul {
+    list-style: none;
+    padding: 0;
+}
+
+.booking-options li {
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.booking-options li:last-child {
+    border-bottom: none;
+}
+
+.booking-note {
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    padding: var(--space-md);
+    border-radius: var(--radius-sm);
+    margin-top: var(--space-lg);
+    font-weight: 500;
+    text-align: center;
+}
+
+.dress-requirements {
+    background: var(--warning-light);
+    padding: var(--space-lg);
+    border-radius: var(--radius-sm);
+    margin: var(--space-lg) 0;
+}
+
+.dress-requirements h5 {
+    color: var(--warning-dark);
+    margin-bottom: var(--space-md);
+    font-weight: 600;
+}
+
+/* New Enhanced Modal Styles */
+.experience-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-lg);
+    margin: var(--space-lg) 0;
+}
+
+.highlight-card {
+    background: var(--surface-light);
+    border-radius: var(--radius-sm);
+    padding: var(--space-lg);
+    text-align: center;
+    border: 1px solid var(--border-light);
+}
+
+.highlight-icon {
+    font-size: 2rem;
+    margin-bottom: var(--space-sm);
+    display: block;
+}
+
+.highlight-card h5 {
+    color: var(--text-primary);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+}
+
+.highlight-card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.included-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+    margin: var(--space-lg) 0;
+}
+
+.included-card {
+    background: white;
+    border-radius: var(--radius-sm);
+    padding: var(--space-lg);
+    border: 2px solid var(--border-light);
+    transition: border-color 0.2s ease;
+}
+
+.included-card.standard {
+    border-color: #4ade80;
+}
+
+.included-card.premium {
+    border-color: #f59e0b;
+}
+
+.included-card.vip {
+    border-color: #8b5cf6;
+}
+
+.included-card h5 {
+    color: var(--text-primary);
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+    font-size: 16px;
+}
+
+.included-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.included-card li {
+    padding: var(--space-xs) 0;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.logistics-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-lg);
+    margin: var(--space-lg) 0;
+}
+
+.logistics-card {
+    background: var(--surface-light);
+    border-radius: var(--radius-sm);
+    padding: var(--space-lg);
+    text-align: center;
+}
+
+.logistics-icon {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-sm);
+    display: block;
+}
+
+.logistics-card h5 {
+    color: var(--text-primary);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+}
+
+.logistics-card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.info-list p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: var(--space-md);
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.info-list p:last-child {
+    border-bottom: none;
+}
+
+.testimonials {
+    margin: var(--space-lg) 0;
+}
+
+.testimonials blockquote {
+    background: var(--surface-light);
+    border-left: 4px solid var(--primary);
+    margin: var(--space-md) 0;
+    padding: var(--space-lg);
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+.testimonials cite {
+    display: block;
+    margin-top: var(--space-sm);
+    font-style: normal;
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 14px;
+}
+
+.booking-partners {
+    display: grid;
+    gap: var(--space-md);
+    margin: var(--space-lg) 0;
+}
+
+.partner-option-card {
+    background: white;
+    border: 2px solid var(--border-light);
+    border-radius: var(--radius-sm);
+    padding: var(--space-lg);
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.partner-option-card:hover {
+    border-color: var(--primary);
+    box-shadow: var(--shadow-md);
+}
+
+.partner-logo {
+    font-size: 2rem;
+    min-width: 50px;
+    text-align: center;
+}
+
+.partner-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.partner-name {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 16px;
+}
+
+.partner-desc {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.partner-price {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.book-now-btn {
+    background: var(--primary);
+    color: white;
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    min-width: 100px;
+    text-align: center;
+}
+
+.modal-guide-hint {
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    padding: var(--space-lg);
+    border-radius: var(--radius-sm);
+    margin-top: var(--space-lg);
+    text-align: center;
+}
+
+.guide-link {
+    color: var(--primary);
+    text-decoration: underline;
+    font-weight: 600;
 }
 `;
 
