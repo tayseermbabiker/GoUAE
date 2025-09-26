@@ -1309,19 +1309,18 @@ body {
 
 .digital-cta-title {
     text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--cta-primary);
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 0;
     margin-bottom: var(--space-2xl);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    background: linear-gradient(135deg, var(--cta-primary), var(--cta-secondary));
+    background: linear-gradient(135deg, var(--purple-start), var(--purple-mid));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
+    display: block;
+    width: 100%;
 }
 
 .digital-cta-title:hover {
@@ -1343,7 +1342,7 @@ body {
 .products-grid {
     display: flex;
     gap: var(--space-md);
-    margin-bottom: var(--space-2xl);
+    margin-bottom: 0;
     position: relative;
     z-index: 1;
     overflow-x: auto;
@@ -1427,11 +1426,14 @@ body {
 
 .product-name-overlay {
     position: absolute;
-    bottom: 70px;
-    left: 1rem;
-    right: 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 3;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .product-name-overlay h3 {
@@ -1441,8 +1443,8 @@ body {
     margin: 0 !important;
     text-align: center !important;
     text-shadow: 0 1px 3px rgba(0,0,0,0.5) !important;
-    display: block !important;
-    width: 100% !important;
+    display: inline-block !important;
+    white-space: nowrap !important;
 }
 
 .price-overlay {
@@ -1855,11 +1857,14 @@ body {
 
     .product-name-overlay {
         position: absolute;
-        bottom: 48px;
-        left: 0.75rem;
-        right: 0.75rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         z-index: 3;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .product-name-overlay h3 {
@@ -1869,6 +1874,7 @@ body {
         margin: 0 !important;
         text-align: center !important;
         text-shadow: 0 1px 3px rgba(0,0,0,0.5) !important;
-        display: block !important;
+        display: inline-block !important;
+        white-space: nowrap !important;
     }
 }
