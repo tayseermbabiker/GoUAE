@@ -1649,3 +1649,42 @@ const additionalCSS = `
 const style = document.createElement('style');
 style.textContent = additionalCSS;
 document.head.appendChild(style);
+
+// Digital Products Purchase Functionality
+const productLinks = {
+    'packing-list': 'https://eternabasics.myshopify.com/products/uae-ultimate-interactive-packing-guide',
+    'instamoments': 'https://eternabasics.myshopify.com/products/uae-insta-moment-ultimate-photography-golden-hour-guide-1',
+    'survival': 'https://eternabasics.myshopify.com/products/uae-survival-arabic-phrases-apps'
+};
+
+function purchaseProduct(productId) {
+    const productUrl = productLinks[productId];
+
+    if (productUrl) {
+        // Track purchase click for analytics (if needed)
+        console.log(`Purchase clicked for: ${productId}`);
+
+        // Open product page in new tab
+        window.open(productUrl, '_blank');
+    } else {
+        console.error(`Product link not found for: ${productId}`);
+        alert('Product link not available. Please try again later.');
+    }
+}
+
+// Add click tracking for analytics (optional)
+document.addEventListener('DOMContentLoaded', function() {
+    const productCards = document.querySelectorAll('.product-card');
+
+    productCards.forEach(card => {
+        card.addEventListener('click', function(e) {
+            // Only track if clicking on the card itself, not the button
+            if (e.target.classList.contains('product-btn')) {
+                return; // Let the button handle its own click
+            }
+
+            const productId = this.dataset.product;
+            console.log(`Product card viewed: ${productId}`);
+        });
+    });
+});
