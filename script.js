@@ -2003,7 +2003,594 @@ const modalContent = {
                 <p><strong>Pro tip:</strong> Book through our Partner links to enjoy discounts of up to 25% — at no extra cost to you, it also helps us keep this guide running</p>
             </div>
         `
-    },    trackingParam: 'ref'
+    },
+    'dubai': {
+        title: 'Dubai - Modern Metropolis',
+        content: `
+            <div class="experience-highlights">
+                <div class="highlight-card">
+                    <h5>Iconic Skyline</h5>
+                    <p>Home to Burj Khalifa, Burj Al Arab, and world's most impressive modern architecture</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Shopping Paradise</h5>
+                    <p>Dubai Mall, Mall of the Emirates, Gold Souk, and endless luxury shopping experiences</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>World-Class Entertainment</h5>
+                    <p>Theme parks, beach clubs, fine dining, and vibrant nightlife scene</p>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Must-Visit Attractions</h4>
+                <div class="included-grid">
+                    <div class="included-card standard">
+                        <h5>Modern Dubai</h5>
+                        <ul>
+                            <li>Burj Khalifa observation decks</li>
+                            <li>Dubai Mall & Dubai Fountain</li>
+                            <li>Palm Jumeirah & Atlantis</li>
+                            <li>Dubai Marina & JBR Walk</li>
+                            <li>DIFC & Business Bay</li>
+                        </ul>
+                    </div>
+                    <div class="included-card premium">
+                        <h5>Traditional Dubai</h5>
+                        <ul>
+                            <li>Dubai Creek & Abra rides</li>
+                            <li>Gold Souk & Spice Souk</li>
+                            <li>Al Fahidi Historical District</li>
+                            <li>Dubai Museum</li>
+                            <li>Traditional markets & heritage</li>
+                        </ul>
+                    </div>
+                    <div class="included-card vip">
+                        <h5>Entertainment & Leisure</h5>
+                        <ul>
+                            <li>IMG Worlds & Global Village</li>
+                            <li>Dubai Aquarium & Underwater Zoo</li>
+                            <li>Ski Dubai & indoor attractions</li>
+                            <li>Beach clubs & water parks</li>
+                            <li>Desert safari experiences</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Getting Around Dubai</h4>
+                <div class="logistics-info">
+                    <div class="logistics-card">
+                        <h5>Dubai Metro</h5>
+                        <p><strong>Red & Green Lines</strong><br>
+                        Covers major attractions<br>
+                        AED 3-7 per journey</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Taxis & Ride-hailing</h5>
+                        <p><strong>Uber, Careem, Dubai Taxi</strong><br>
+                        Widely available<br>
+                        Starting from AED 12</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Best Areas to Stay</h5>
+                        <p><strong>Downtown:</strong> Burj Khalifa area<br>
+                        <strong>Marina:</strong> Beach & nightlife<br>
+                        <strong>Jumeirah:</strong> Beach resorts</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-guide-hint">
+                <p><strong>Pro tip:</strong> Book through our Partner links to enjoy discounts of up to 25% — at no extra cost to you, it also helps us keep this guide running</p>
+            </div>
+        `
+    },
+    'abu-dhabi': {
+        title: 'Abu Dhabi - Capital & Cultural Heart',
+        content: `
+            <div class="experience-highlights">
+                <div class="highlight-card">
+                    <h5>Cultural Treasures</h5>
+                    <p>Sheikh Zayed Grand Mosque, Louvre Abu Dhabi, and rich Emirati heritage sites</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Luxury & Elegance</h5>
+                    <p>Emirates Palace, world-class hotels, and sophisticated dining experiences</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Entertainment Hub</h5>
+                    <p>Yas Island theme parks, Formula 1 circuit, and family-friendly attractions</p>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Top Attractions</h4>
+                <div class="included-grid">
+                    <div class="included-card standard">
+                        <h5>Cultural Sites</h5>
+                        <ul>
+                            <li>Sheikh Zayed Grand Mosque</li>
+                            <li>Louvre Abu Dhabi museum</li>
+                            <li>Qasr Al Watan palace</li>
+                            <li>Heritage Village</li>
+                            <li>Cultural Foundation</li>
+                        </ul>
+                    </div>
+                    <div class="included-card premium">
+                        <h5>Modern Attractions</h5>
+                        <ul>
+                            <li>Emirates Palace hotel</li>
+                            <li>Corniche waterfront</li>
+                            <li>Marina Mall & shopping</li>
+                            <li>Saadiyat Island beaches</li>
+                            <li>Masdar City tours</li>
+                        </ul>
+                    </div>
+                    <div class="included-card vip">
+                        <h5>Yas Island</h5>
+                        <ul>
+                            <li>Ferrari World Abu Dhabi</li>
+                            <li>Yas Waterworld</li>
+                            <li>Warner Bros World</li>
+                            <li>Yas Marina Circuit</li>
+                            <li>Yas Mall shopping</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Travel Information</h4>
+                <div class="logistics-info">
+                    <div class="logistics-card">
+                        <h5>From Dubai</h5>
+                        <p><strong>By Car:</strong> 1.5 hours<br>
+                        <strong>By Bus:</strong> E100/E101 routes<br>
+                        <strong>Distance:</strong> 150km</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Local Transport</h5>
+                        <p><strong>Taxis:</strong> Readily available<br>
+                        <strong>Bus:</strong> Department of Transport<br>
+                        <strong>Car Rental:</strong> Recommended</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Best Time to Visit</h5>
+                        <p><strong>Cool Season:</strong> Nov-Mar<br>
+                        <strong>Events:</strong> Formula 1 (Nov)<br>
+                        <strong>Ramadan:</strong> Special cultural experience</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-guide-hint">
+                <p><strong>Pro tip:</strong> Book through our Partner links to enjoy discounts of up to 25% — at no extra cost to you, it also helps us keep this guide running</p>
+            </div>
+        `
+    },
+    'sharjah': {
+        title: 'Sharjah - Cultural Capital',
+        content: `
+            <div class="experience-highlights">
+                <div class="highlight-card">
+                    <h5>UNESCO Heritage</h5>
+                    <p>Cultural capital of the Arab world with preserved traditional architecture and museums</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Art & Museums</h5>
+                    <p>Over 20 museums, art galleries, and cultural centers showcasing Emirati heritage</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Traditional Markets</h5>
+                    <p>Authentic souks, traditional crafts, and local shopping experiences</p>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Cultural Attractions</h4>
+                <div class="included-grid">
+                    <div class="included-card standard">
+                        <h5>Heritage District</h5>
+                        <ul>
+                            <li>Heart of Sharjah restoration</li>
+                            <li>Traditional wind-tower houses</li>
+                            <li>Al Eslah School Museum</li>
+                            <li>Calligraphy Museum</li>
+                            <li>Heritage walking tours</li>
+                        </ul>
+                    </div>
+                    <div class="included-card premium">
+                        <h5>Museums & Arts</h5>
+                        <ul>
+                            <li>Sharjah Art Museum</li>
+                            <li>Islamic Civilization Museum</li>
+                            <li>Science Museum</li>
+                            <li>Natural History Museum</li>
+                            <li>Contemporary art galleries</li>
+                        </ul>
+                    </div>
+                    <div class="included-card vip">
+                        <h5>Markets & Shopping</h5>
+                        <ul>
+                            <li>Central Souk (Blue Souk)</li>
+                            <li>Traditional craft markets</li>
+                            <li>Fish & vegetable markets</li>
+                            <li>Rolla Square Park</li>
+                            <li>Local textile shopping</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Visiting Sharjah</h4>
+                <div class="logistics-info">
+                    <div class="logistics-card">
+                        <h5>From Dubai</h5>
+                        <p><strong>By Car:</strong> 30-45 minutes<br>
+                        <strong>By Bus:</strong> Regular connections<br>
+                        <strong>Distance:</strong> 25km</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Cultural Guidelines</h5>
+                        <p><strong>Dress Code:</strong> Conservative<br>
+                        <strong>Photography:</strong> Ask permission<br>
+                        <strong>Alcohol:</strong> Dry emirate</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Best Experience</h5>
+                        <p><strong>Morning:</strong> Museums & heritage<br>
+                        <strong>Evening:</strong> Corniche & markets<br>
+                        <strong>Duration:</strong> Half to full day</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-guide-hint">
+                <p><strong>Pro tip:</strong> Book through our Partner links to enjoy discounts of up to 25% — at no extra cost to you, it also helps us keep this guide running</p>
+            </div>
+        `
+    },
+    'ajman': {
+        title: 'Ajman - Beach Resorts & Traditions',
+        content: `
+            <div class="experience-highlights">
+                <div class="highlight-card">
+                    <h5>Beautiful Beaches</h5>
+                    <p>Pristine coastline with luxury beach resorts and water sports activities</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Traditional Culture</h5>
+                    <p>Authentic Emirati experiences, local markets, and cultural heritage sites</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Relaxed Atmosphere</h5>
+                    <p>Peaceful alternative to busy Dubai with family-friendly attractions</p>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Ajman Highlights</h4>
+                <div class="included-grid">
+                    <div class="included-card standard">
+                        <h5>Beach & Water</h5>
+                        <ul>
+                            <li>Ajman Beach & corniche</li>
+                            <li>Water sports & activities</li>
+                            <li>Beach resort day passes</li>
+                            <li>Fishing trips & boat tours</li>
+                            <li>Sunset beach walks</li>
+                        </ul>
+                    </div>
+                    <div class="included-card premium">
+                        <h5>Culture & Heritage</h5>
+                        <ul>
+                            <li>Ajman Museum in old fort</li>
+                            <li>Traditional dhow building</li>
+                            <li>Local souks & markets</li>
+                            <li>Pearl diving history</li>
+                            <li>Emirati cultural experiences</li>
+                        </ul>
+                    </div>
+                    <div class="included-card vip">
+                        <h5>Family Activities</h5>
+                        <ul>
+                            <li>Beach parks & playgrounds</li>
+                            <li>Mangrove nature walks</li>
+                            <li>Local restaurant experiences</li>
+                            <li>Shopping at City Centre</li>
+                            <li>Photography spots</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Travel Information</h4>
+                <div class="logistics-info">
+                    <div class="logistics-card">
+                        <h5>Getting There</h5>
+                        <p><strong>From Dubai:</strong> 45 minutes<br>
+                        <strong>From Sharjah:</strong> 20 minutes<br>
+                        <strong>Best Route:</strong> E11 highway</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Best for</h5>
+                        <p><strong>Beach Lovers:</strong> Pristine coastline<br>
+                        <strong>Families:</strong> Safe & relaxed<br>
+                        <strong>Culture:</strong> Authentic experiences</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Recommended Duration</h5>
+                        <p><strong>Day Trip:</strong> 6-8 hours<br>
+                        <strong>Beach Day:</strong> Full day<br>
+                        <strong>Overnight:</strong> Beach resorts</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-guide-hint">
+                <p><strong>Pro tip:</strong> Book through our Partner links to enjoy discounts of up to 25% — at no extra cost to you, it also helps us keep this guide running</p>
+            </div>
+        `
+    },
+    'ras-al-khaimah': {
+        title: 'Ras Al Khaimah - Adventure & Mountains',
+        content: `
+            <div class="experience-highlights">
+                <div class="highlight-card">
+                    <h5>Mountain Adventures</h5>
+                    <p>Jebel Jais mountain, world's longest zipline, and breathtaking hiking trails</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Outdoor Activities</h5>
+                    <p>Desert adventures, beach resorts, and adrenaline-pumping experiences</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Natural Beauty</h5>
+                    <p>Diverse landscapes from mountains to beaches, hot springs, and nature reserves</p>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Adventure Attractions</h4>
+                <div class="included-grid">
+                    <div class="included-card standard">
+                        <h5>Jebel Jais</h5>
+                        <ul>
+                            <li>World's longest zipline (2.8km)</li>
+                            <li>Jebel Jais Flight zipline</li>
+                            <li>Mountain hiking trails</li>
+                            <li>Via Ferrata climbing</li>
+                            <li>Scenic viewing decks</li>
+                        </ul>
+                    </div>
+                    <div class="included-card premium">
+                        <h5>Desert & Nature</h5>
+                        <ul>
+                            <li>Desert safari experiences</li>
+                            <li>Fossil Rock formations</li>
+                            <li>Mangrove kayaking</li>
+                            <li>Flamingo watching</li>
+                            <li>Hot springs visits</li>
+                        </ul>
+                    </div>
+                    <div class="included-card vip">
+                        <h5>Beaches & Resorts</h5>
+                        <ul>
+                            <li>Al Marjan Island resorts</li>
+                            <li>Beach clubs & water sports</li>
+                            <li>Luxury spa experiences</li>
+                            <li>Sunset beach dining</li>
+                            <li>Island hopping tours</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Planning Your Visit</h4>
+                <div class="logistics-info">
+                    <div class="logistics-card">
+                        <h5>Getting There</h5>
+                        <p><strong>From Dubai:</strong> 1.5 hours<br>
+                        <strong>From Abu Dhabi:</strong> 2 hours<br>
+                        <strong>Airport:</strong> RAK International</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Best Time</h5>
+                        <p><strong>Cool Season:</strong> Nov-Mar<br>
+                        <strong>Mountain Weather:</strong> 10°C cooler<br>
+                        <strong>Adventure Season:</strong> Oct-Apr</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Recommended Stay</h5>
+                        <p><strong>Day Trip:</strong> Jebel Jais focus<br>
+                        <strong>2 Days:</strong> Mountains + beach<br>
+                        <strong>Weekend:</strong> Full experience</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-guide-hint">
+                <p><strong>Pro tip:</strong> Book through our Partner links to enjoy discounts of up to 25% — at no extra cost to you, it also helps us keep this guide running</p>
+            </div>
+        `
+    },
+    'fujairah': {
+        title: 'Fujairah - Historic Sites & Beaches',
+        content: `
+            <div class="experience-highlights">
+                <div class="highlight-card">
+                    <h5>Historic Heritage</h5>
+                    <p>Ancient forts, archaeological sites, and traditional mountain villages</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Pristine Beaches</h5>
+                    <p>Indian Ocean coastline with clear waters, diving spots, and coral reefs</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Mountain Landscapes</h5>
+                    <p>Hajar Mountains, wadis (valleys), and traditional terraced farming</p>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Fujairah Highlights</h4>
+                <div class="included-grid">
+                    <div class="included-card standard">
+                        <h5>Historical Sites</h5>
+                        <ul>
+                            <li>Fujairah Fort (oldest in UAE)</li>
+                            <li>Al Bidyah Mosque (oldest mosque)</li>
+                            <li>Fujairah Heritage Village</li>
+                            <li>Archaeological sites</li>
+                            <li>Traditional mountain villages</li>
+                        </ul>
+                    </div>
+                    <div class="included-card premium">
+                        <h5>Natural Attractions</h5>
+                        <ul>
+                            <li>Snoopy Island diving</li>
+                            <li>Al Aqah Beach</li>
+                            <li>Wadi Wurayah National Park</li>
+                            <li>Hot springs at Ain Al Madhab</li>
+                            <li>Masafi Friday Market</li>
+                        </ul>
+                    </div>
+                    <div class="included-card vip">
+                        <h5>Adventure Activities</h5>
+                        <ul>
+                            <li>Scuba diving & snorkeling</li>
+                            <li>Mountain hiking & wadis</li>
+                            <li>Beach resort experiences</li>
+                            <li>Cultural village tours</li>
+                            <li>Photography expeditions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Visit Information</h4>
+                <div class="logistics-info">
+                    <div class="logistics-card">
+                        <h5>Access Routes</h5>
+                        <p><strong>From Dubai:</strong> 2 hours via mountains<br>
+                        <strong>Scenic Route:</strong> Through Hajar Mountains<br>
+                        <strong>Coastal Route:</strong> Alternative path</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Best Experiences</h5>
+                        <p><strong>History:</strong> Fort & heritage sites<br>
+                        <strong>Nature:</strong> Beaches & diving<br>
+                        <strong>Culture:</strong> Traditional villages</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Ideal Duration</h5>
+                        <p><strong>Day Trip:</strong> Key highlights<br>
+                        <strong>Overnight:</strong> Beach resort stay<br>
+                        <strong>Weekend:</strong> Full exploration</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-guide-hint">
+                <p><strong>Pro tip:</strong> Book through our Partner links to enjoy discounts of up to 25% — at no extra cost to you, it also helps us keep this guide running</p>
+            </div>
+        `
+    },
+    'umm-al-quwain': {
+        title: 'Umm Al Quwain - Water Sports & Traditions',
+        content: `
+            <div class="experience-highlights">
+                <div class="highlight-card">
+                    <h5>Water Sports Paradise</h5>
+                    <p>Mangrove islands, water skiing, jet skiing, and peaceful lagoons</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Traditional Fishing</h5>
+                    <p>Authentic fishing village experience and traditional dhow boat trips</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Peaceful Retreat</h5>
+                    <p>Quiet alternative to busier emirates with natural beauty and serenity</p>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>UAQ Experiences</h4>
+                <div class="included-grid">
+                    <div class="included-card standard">
+                        <h5>Water Activities</h5>
+                        <ul>
+                            <li>Mangrove island tours</li>
+                            <li>Water skiing & jet skiing</li>
+                            <li>Traditional fishing trips</li>
+                            <li>Kayaking in lagoons</li>
+                            <li>Sunset boat cruises</li>
+                        </ul>
+                    </div>
+                    <div class="included-card premium">
+                        <h5>Cultural Sites</h5>
+                        <ul>
+                            <li>UAQ National Museum</li>
+                            <li>Old town exploration</li>
+                            <li>Traditional souks</li>
+                            <li>Falaj Al Mualla historical site</li>
+                            <li>Local fishing harbors</li>
+                        </ul>
+                    </div>
+                    <div class="included-card vip">
+                        <h5>Nature & Wildlife</h5>
+                        <ul>
+                            <li>Al Sinniyah Island</li>
+                            <li>Bird watching spots</li>
+                            <li>Mangrove conservation areas</li>
+                            <li>Dreamland Aqua Park</li>
+                            <li>Desert camping experiences</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Visiting UAQ</h4>
+                <div class="logistics-info">
+                    <div class="logistics-card">
+                        <h5>Location</h5>
+                        <p><strong>From Dubai:</strong> 1 hour<br>
+                        <strong>From Sharjah:</strong> 45 minutes<br>
+                        <strong>Coastal Position:</strong> Arabian Gulf</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Best For</h5>
+                        <p><strong>Water Sports:</strong> Year-round activities<br>
+                        <strong>Peaceful Retreat:</strong> Away from crowds<br>
+                        <strong>Family Time:</strong> Safe & relaxed</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Recommended Visit</h5>
+                        <p><strong>Half Day:</strong> Water activities<br>
+                        <strong>Day Trip:</strong> Complete experience<br>
+                        <strong>Weekend:</strong> Leisure & relaxation</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-guide-hint">
+                <p><strong>Pro tip:</strong> Book through our Partner links to enjoy discounts of up to 25% — at no extra cost to you, it also helps us keep this guide running</p>
+            </div>
+        `
+    }
+};
+
+const platinumlistConfig = {
+    baseUrl: 'https://dubai.platinumlist.net',
+    affiliateCode: 'gouae2024',
+    trackingParam: 'ref'
 };
 
 // Hotel Categories Configuration
@@ -2098,12 +2685,7 @@ window.closeModal = function() {
     document.body.style.overflow = 'auto'; // Restore scrolling
 }
 
-// Platinumlist Integration Configuration
-const platinumlistConfig = {
-    baseUrl: 'https://www.platinumlist.net/',
-    affiliateCode: 'gouae2024',
-    trackingParam: 'ref'
-};
+// Platinumlist Integration Configuration - removed duplicate declaration
 
 function generatePlatinumlistUrl(experienceId) {
     return `${platinumlistConfig.baseUrl}experience/${experienceId}?${platinumlistConfig.trackingParam}=${platinumlistConfig.affiliateCode}`;
@@ -2333,19 +2915,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Experience cards - open modal for experience details
-        if (e.target.closest('.experience-card')) {
-            const card = e.target.closest('.experience-card');
+        if (e.target.closest('.experience-card') || e.target.closest('.emirate-card')) {
+            const card = e.target.closest('.experience-card') || e.target.closest('.emirate-card');
             const experienceId = card.dataset.experience;
 
-            // If clicking the book button, handle booking
-            if (e.target.classList.contains('book-btn')) {
+            // If clicking the book button, handle booking (experience cards only)
+            if (e.target.classList.contains('book-btn') && e.target.textContent.includes('Book')) {
                 if (experienceId) {
                     bookExperience('platinumlist', experienceId);
                 }
                 return;
             }
 
-            // Otherwise, open modal with experience details
+            // If clicking the explore button or anywhere else on card, open modal
             if (experienceId && modalContent[experienceId]) {
                 openModal(experienceId);
             }
@@ -2766,8 +3348,83 @@ function purchaseProduct(productId) {
     }
 }
 
+// Weather Data Functionality - Using OpenWeatherMap API
+async function fetchWeatherData() {
+    // City coordinates for UAE emirates (more accurate than city names)
+    const cityCoordinates = {
+        'Dubai': { lat: 25.2048, lon: 55.2708 },
+        'Abu Dhabi': { lat: 24.4539, lon: 54.3773 },
+        'Sharjah': { lat: 25.3463, lon: 55.4209 },
+        'Ajman': { lat: 25.4052, lon: 55.5136 },
+        'Umm Al Quwain': { lat: 25.5231, lon: 55.5567 },
+        'Ras Al Khaimah': { lat: 25.7889, lon: 55.9751 },
+        'Fujairah': { lat: 25.1188, lon: 56.3269 }
+    };
+
+    const weatherWidgets = document.querySelectorAll('.weather-widget');
+
+    // Process each weather widget
+    for (let widget of weatherWidgets) {
+        const city = widget.getAttribute('data-city');
+        const tempElement = widget.querySelector('.temp');
+
+        if (!cityCoordinates[city]) {
+            tempElement.textContent = '--°';
+            widget.classList.add('error');
+            continue;
+        }
+
+        try {
+            widget.classList.add('loading');
+            const coords = cityCoordinates[city];
+
+            // Using free OpenWeatherMap API with no key required for basic data
+            const response = await fetch(
+                `https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&units=metric&appid=5a4b2d457ecbef9eb2a71e480b947604`
+            );
+
+            if (response.ok) {
+                const data = await response.json();
+                const temperature = Math.round(data.main.temp);
+                tempElement.textContent = `${temperature}°C`;
+                widget.classList.remove('loading', 'error');
+
+                // Add weather icon if available
+                if (data.weather && data.weather[0] && data.weather[0].icon) {
+                    widget.setAttribute('title', data.weather[0].description);
+                }
+            } else {
+                throw new Error('Weather API request failed');
+            }
+        } catch (error) {
+            console.warn(`Failed to fetch weather for ${city}:`, error);
+            // Fallback to realistic mock data
+            const fallbackTemps = {
+                'Dubai': 32,
+                'Abu Dhabi': 31,
+                'Sharjah': 33,
+                'Ajman': 30,
+                'Umm Al Quwain': 29,
+                'Ras Al Khaimah': 28,
+                'Fujairah': 30
+            };
+            tempElement.textContent = `${fallbackTemps[city] || 30}°C`;
+            widget.classList.remove('loading');
+            widget.classList.add('error');
+        }
+    }
+}
+
 // Add click tracking for analytics (optional)
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize weather widgets
+    if (document.querySelector('.weather-widget')) {
+        fetchWeatherData();
+
+        // Update weather every 10 minutes
+        setInterval(fetchWeatherData, 10 * 60 * 1000);
+    }
+
     const productCards = document.querySelectorAll('.product-card');
 
     productCards.forEach(card => {

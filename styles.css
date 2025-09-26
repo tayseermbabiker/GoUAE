@@ -380,8 +380,17 @@ body {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
     border: 1px solid var(--border-light);
-    padding: var(--space-lg);
     flex-shrink: 0;
+}
+
+.info-card {
+    padding: var(--space-lg);
+}
+
+.experience-card, .emirate-card {
+    padding: 0 !important;
+    position: relative !important;
+    overflow: hidden !important;
 }
 
 /* Mobile card dimensions - smaller and narrower */
@@ -549,8 +558,8 @@ body {
 /* Emirates Grid */
 .emirates-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-lg);
+    grid-template-columns: 1fr 1fr !important;
+    gap: var(--space-md) !important;
 }
 
 /* Summer Section - Rich Purple with Nature Accents */
@@ -925,7 +934,7 @@ body {
     }
 
     .emirates-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 
     .cooling-features {
@@ -953,7 +962,7 @@ body {
     }
 
     .emirates-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr) !important;
     }
 
     .hero-content h1 {
@@ -961,8 +970,97 @@ body {
     }
 }
 
-/* Mobile optimizations for slider */
+/* Card Badges */
+.card-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 8px;
+  font-size: 8px;
+  font-weight: 600;
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  box-shadow: 0 1px 3px rgba(102, 126, 234, 0.3);
+  backdrop-filter: blur(10px);
+  max-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+/* Weather Widget Styles */
+.weather-widget {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 2px 6px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  z-index: 3;
+  transition: all 0.3s ease;
+  min-width: 30px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px !important;
+  line-height: 1;
+}
+
+.weather-widget:hover {
+  background: rgba(255, 255, 255, 0.98);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.weather-widget .temp {
+  font-size: 10px !important;
+  font-weight: 500;
+  color: var(--text-primary);
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.weather-widget.loading .temp {
+  color: var(--text-secondary);
+}
+
+.weather-widget.error .temp {
+  color: var(--error-red);
+}
+
+/* Mobile optimizations for cards */
 @media (max-width: 768px) {
+    .card-badge {
+        top: 6px;
+        left: 6px;
+        padding: 1px 4px;
+        font-size: 7px;
+        border-radius: 6px;
+        max-width: 60px;
+    }
+
+    .weather-widget {
+        top: 6px;
+        right: 6px;
+        padding: 1px 4px;
+        border-radius: 6px;
+        min-width: 24px;
+        height: 14px;
+    }
+
+    .weather-widget .temp {
+        font-size: 8px !important;
+    }
+
     .info-slider-track {
         animation-duration: 15s;
     }
@@ -1133,7 +1231,7 @@ body {
         white-space: nowrap !important;
     }
 
-    .image-overlay-title h4 {
+    .image-overlay-title h4, .image-overlay-title h3 {
         color: white !important;
         font-size: 14px !important;
         font-weight: 600 !important;
