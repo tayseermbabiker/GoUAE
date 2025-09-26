@@ -1,0 +1,1288 @@
+:root {
+    /* UAE-Inspired Enhanced Color Palette */
+
+    /* Primary Palette - Desert & Gold Tones with Sunset Enhancement */
+    --primary: #C8A882;        /* Warm desert gold - main brand color */
+    --primary-light: #E5D4B7;  /* Light desert sand */
+    --primary-dark: #A0865B;   /* Deep desert bronze */
+
+    /* Secondary Palette - Arabian Blue Tones */
+    --secondary: #4A90B8;      /* Arabian gulf blue */
+    --secondary-light: #7AB3D3; /* Sky blue */
+    --secondary-dark: #2E5A7A;  /* Deep ocean blue */
+
+    /* Rich Purple Gradient Base - From Reference */
+    --purple-start: #667eea;   /* Rich purple blue */
+    --purple-mid: #764ba2;     /* Deep purple */
+    --purple-bright: #f093fb;  /* Bright pink-purple */
+    --purple-coral: #f5576c;   /* Coral-pink */
+
+    /* Enhanced with Sunset & Nature Accents */
+    --accent-warm: #F5A623;    /* Bright sunset yellow-orange for excitement */
+    --accent-sunset: #FF6B4A;  /* Vibrant sunset orange for hero areas */
+    --nature-primary: #6B8E5A; /* Desert plant green for eco-tourism */
+
+    /* CTA & Booking - Rich Purple Theme */
+    --cta-primary: #667eea;    /* Rich purple for primary CTAs */
+    --cta-secondary: #f093fb;  /* Bright pink-purple for secondary CTAs */
+    --cta-success: #6B8E5A;    /* Nature green for confirmations */
+
+    /* Cooling & Summer Theme */
+    --summer-blue: #0EA5E9;    /* Cooling theme */
+    --cooling-mint: #10B981;   /* Summer comfort */
+
+    /* Neutrals - Sand & Stone */
+    --neutral-50: #FDFCFA;     /* Pure white with warmth */
+    --neutral-100: #F7F4F0;    /* Lightest sand */
+    --neutral-200: #EDE6DD;    /* Light sand */
+    --neutral-300: #D6C7B5;    /* Medium sand */
+    --neutral-400: #B8A488;    /* Warm stone */
+    --neutral-500: #8B7B65;    /* Stone */
+    --neutral-600: #6B5B47;    /* Dark stone */
+    --neutral-700: #4D3F2F;    /* Deep stone */
+    --neutral-800: #2F2419;    /* Almost black stone */
+    --neutral-900: #1A140C;    /* Rich black */
+
+    /* Semantic Colors - Using enhanced palette */
+    --success: #6B8E5A;        /* Nature green */
+    --warning: #F5A623;        /* Bright sunset yellow */
+    --error: #B85450;          /* Desert rose red */
+    --info: #4A90B8;          /* Arabian blue */
+
+    /* Text Colors */
+    --text-primary: #2F2419;   /* Rich dark stone */
+    --text-secondary: #6B5B47; /* Dark stone */
+    --text-muted: #8B7B65;     /* Stone */
+    --text-white: #FFFFFF;
+
+    /* Background Colors */
+    --background: #FDFCFA;     /* Warm white */
+    --bg-primary: #FDFCFA;     /* Warm white */
+    --bg-secondary: #F7F4F0;   /* Light sand */
+    --bg-tertiary: #EDE6DD;    /* Light sand */
+    --border-light: #D6C7B5;   /* Medium sand */
+    --shadow-color: rgba(47, 36, 25, 0.12); /* Warm shadow */
+
+    /* Typography */
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+    /* Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 48px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 3px var(--shadow-color);
+    --shadow-md: 0 2px 16px var(--shadow-color);
+    --shadow-lg: 0 6px 24px rgba(47, 36, 25, 0.18);
+
+    /* Border radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+}
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    color: var(--text-primary);
+    background: var(--background);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+/* Header */
+.header {
+    background: var(--background);
+    box-shadow: var(--shadow-sm);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-md);
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--purple-start) 0%, var(--purple-mid) 30%, var(--purple-bright) 70%, var(--purple-coral) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2px;
+}
+
+.tagline {
+    font-size: 12px;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: var(--space-lg);
+}
+
+/* Hide desktop navigation on mobile screens */
+@media (max-width: 768px) {
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+    }
+
+    .nav-list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: auto;
+        width: 200px;
+        background: var(--background);
+        flex-direction: column;
+        padding: var(--space-lg);
+        box-shadow: var(--shadow-md);
+        border-radius: 0 0 12px 12px;
+        z-index: 1000;
+        list-style: none;
+        gap: 0;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+    }
+
+    .nav-list.active {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .nav-list li {
+        margin-bottom: var(--space-md);
+    }
+
+    .nav-list li:last-child {
+        margin-bottom: 0;
+    }
+
+    .nav-list a {
+        font-size: 16px;
+        padding: var(--space-sm) 0;
+        border-bottom: 1px solid var(--neutral-200);
+        display: block;
+        transition: all 0.2s ease;
+    }
+
+    .nav-list a:hover {
+        color: var(--primary);
+        background: var(--neutral-100);
+        padding-left: var(--space-sm);
+        border-radius: 8px;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.nav-list a:hover {
+    color: var(--primary);
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 3px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex !important;
+        z-index: 1001;
+    }
+}
+
+.menu-toggle span {
+    width: 20px;
+    height: 2px;
+    background: var(--text-primary);
+    transition: all 0.3s ease;
+}
+
+/* Summer Alert Banner */
+.summer-alert {
+    background: linear-gradient(135deg, var(--summer-blue), var(--cooling-mint));
+    color: white;
+    padding: 16px;
+    text-align: center;
+    margin: 0;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1 !important; }
+    50% { opacity: 0.95 !important; }
+}
+
+/* Hero Section - Rich Purple Gradient with Sunset Touches */
+.hero {
+    height: 60vh;
+    background: linear-gradient(135deg, var(--purple-start) 0%, var(--purple-mid) 30%, var(--purple-bright) 70%, var(--accent-sunset) 85%, var(--purple-coral) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(circle at 20% 80%, rgba(245, 166, 35, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 107, 74, 0.3) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: var(--space-md);
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: var(--space-xl);
+    opacity: 0.9;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--cta-primary);
+    color: white;
+    padding: var(--space-md) var(--space-xl);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    box-shadow: var(--shadow-md);
+    border: 2px solid transparent;
+}
+
+.cta-button:hover {
+    background: var(--cta-secondary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Section Styles */
+.section {
+    padding: var(--space-2xl) 0;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: var(--space-2xl);
+    color: var(--text-primary);
+}
+
+/* Card System - Sliding Animation */
+.info-slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.info-slider-container {
+    width: 100%;
+    position: relative;
+}
+
+.info-slider-track {
+    display: flex;
+    gap: var(--space-md);
+    animation: slideLeft 15s linear infinite;
+    will-change: transform;
+}
+
+.info-slider-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.info-card, .experience-card, .emirate-card, .cooling-card {
+    background: var(--background);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    border: 1px solid var(--border-light);
+    padding: var(--space-lg);
+    flex-shrink: 0;
+}
+
+/* Mobile card dimensions - smaller and narrower */
+.info-card {
+    width: 180px;
+    min-height: 120px;
+    padding: var(--space-sm);
+}
+
+.info-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.experience-card:hover, .emirate-card:hover, .cooling-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.info-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Vibrant card color themes - individual gradients */
+.info-card[data-modal="visa"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.info-card[data-modal="alcohol"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.info-card[data-modal="security"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.info-card[data-modal="weather"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.info-card[data-modal="culture"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.info-card[data-modal="currency"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.info-card[data-modal="transport"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.info-card[data-modal="health"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.info-card h3 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.card-icon {
+    font-size: 32px;
+    margin-bottom: var(--space-md);
+}
+
+.experience-card h4, .emirate-card h3, .cooling-card h3 {
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    color: var(--text-primary);
+}
+
+.info-card h3 {
+    font-weight: 600;
+    color: inherit;
+    margin: 0;
+    font-size: 1.1rem;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.info-card p, .experience-card p, .emirate-card p, .cooling-card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+/* Experience Cards - Horizontal Scroll */
+.emirate-section {
+    margin-bottom: var(--space-2xl);
+}
+
+.emirate-section h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: var(--space-lg);
+    color: var(--text-primary);
+}
+
+.experience-scroll {
+    display: flex;
+    gap: var(--space-md);
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding-bottom: var(--space-sm);
+}
+
+.experience-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.experience-card {
+    flex: 0 0 280px;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.book-btn, .category-btn, .tab-btn {
+    background: var(--cta-primary);
+    color: white;
+    border: none;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    margin-top: var(--space-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.book-btn:hover, .category-btn:hover, .tab-btn:hover {
+    background: var(--cta-secondary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Emirates Grid */
+.emirates-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+}
+
+/* Summer Section - Rich Purple with Nature Accents */
+.summer-section {
+    background: linear-gradient(135deg, var(--purple-start) 0%, var(--nature-primary) 40%, var(--accent-sunset) 70%, var(--purple-bright) 100%);
+    color: white;
+}
+
+.summer-section h2 {
+    color: white;
+}
+
+.cooling-features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+}
+
+.cooling-card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    position: relative;
+}
+
+.cooling-badge {
+    background: var(--nature-primary);
+    color: white;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+    top: var(--space-md);
+    right: var(--space-md);
+}
+
+/* Booking Section */
+.booking-widget {
+    background: var(--background);
+    border-radius: var(--radius-md);
+    padding: var(--space-xl);
+    margin-bottom: var(--space-xl);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-light);
+}
+
+.booking-widget h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: var(--space-lg);
+    color: var(--text-primary);
+}
+
+.hotel-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+}
+
+.category-btn {
+    background: var(--secondary);
+    flex: 1;
+    min-width: 120px;
+}
+
+.dining-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-lg);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.tab-btn {
+    background: transparent;
+    color: var(--text-secondary);
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: var(--space-md) var(--space-lg);
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.tab-btn.active, .tab-btn:hover {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+    background: transparent;
+}
+
+.dining-content {
+    min-height: 200px;
+    padding: var(--space-lg);
+    background: #FAFAFA;
+    border-radius: var(--radius-sm);
+}
+
+/* Modal System */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(47, 36, 25, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    backdrop-filter: blur(4px);
+}
+
+.modal-container {
+    background: var(--background);
+    border-radius: var(--radius-lg);
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: var(--shadow-lg);
+}
+
+.modal-header {
+    padding: var(--space-lg);
+    border-bottom: 1px solid var(--border-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: var(--background);
+    z-index: 10;
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: var(--space-sm);
+    color: var(--text-secondary);
+    border-radius: var(--radius-sm);
+    transition: background 0.2s ease;
+}
+
+.modal-close:hover {
+    background: var(--border-light);
+}
+
+.modal-content {
+    padding: var(--space-lg);
+}
+
+.info-section h4 {
+    font-weight: 600;
+    margin: var(--space-lg) 0 var(--space-md) 0;
+    color: var(--text-primary);
+}
+
+.info-section ul {
+    margin-left: var(--space-lg);
+    margin-bottom: var(--space-lg);
+}
+
+.info-section li {
+    margin-bottom: var(--space-sm);
+    color: var(--text-secondary);
+}
+
+/* Modal Section Styling - Reference Site Structure */
+.modal-section {
+    margin-bottom: var(--space-xl);
+}
+
+.modal-section h4 {
+    text-align: center;
+    border-bottom: 2px solid var(--border-light);
+    padding-bottom: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.modal-section h5 {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--space-sm);
+    margin-top: var(--space-lg);
+}
+
+.modal-section h6 {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--space-sm);
+}
+
+/* Visa Grid Styling */
+.visa-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.visa-card {
+    background: var(--background);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    border: 2px solid var(--border-light);
+    transition: all 0.2s ease;
+}
+
+.visa-card.easy {
+    border-color: var(--success);
+    background: linear-gradient(135deg, var(--background) 0%, rgba(107, 142, 90, 0.05) 100%);
+}
+
+.visa-card.advance {
+    border-color: var(--warning);
+    background: linear-gradient(135deg, var(--background) 0%, rgba(212, 149, 107, 0.05) 100%);
+}
+
+.visa-flag {
+    background: var(--primary);
+    color: white;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: var(--space-sm);
+}
+
+/* Safety Stats Styling */
+.safety-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.stat-item {
+    text-align: center;
+    background: var(--bg-secondary);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-light);
+}
+
+.stat-number {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: var(--space-xs);
+}
+
+.stat-label {
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Requirements Grid */
+.requirements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.requirement-card {
+    background: var(--bg-secondary);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-light);
+}
+
+/* Rule Cards */
+.medication-rules, .rule-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.rule-card {
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    border: 2px solid var(--border-light);
+}
+
+.rule-card.critical {
+    border-color: var(--error);
+    background: linear-gradient(135deg, var(--background) 0%, rgba(184, 84, 80, 0.05) 100%);
+}
+
+.rule-card.allowed {
+    border-color: var(--success);
+    background: linear-gradient(135deg, var(--background) 0%, rgba(107, 142, 90, 0.05) 100%);
+}
+
+/* Emergency Contacts */
+.emergency-contacts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+}
+
+.contact-card {
+    background: var(--bg-secondary);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--primary);
+}
+
+.contact-number {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary);
+    margin: var(--space-sm) 0;
+}
+
+.contact-note {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* Scam Warnings */
+.scam-warnings {
+    display: grid;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.scam-card {
+    background: var(--bg-secondary);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--warning);
+}
+
+/* Footer */
+.footer {
+    background: var(--text-primary);
+    color: white;
+    text-align: center;
+    padding: var(--space-xl);
+}
+
+.footer p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Responsive Design - Mobile First */
+@media (min-width: 768px) {
+    /* Desktop card dimensions - wider */
+    .info-card {
+        width: 200px;
+        min-height: 140px;
+        padding: var(--space-md);
+    }
+
+    .emirates-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cooling-features {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hotel-categories {
+        justify-content: center;
+    }
+
+    .category-btn {
+        flex: 0 1 auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .info-cards-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .experience-scroll {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        overflow-x: visible;
+    }
+
+    .emirates-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero-content h1 {
+        font-size: 56px;
+    }
+}
+
+/* Mobile optimizations for slider */
+@media (max-width: 768px) {
+    .info-slider-track {
+        animation-duration: 15s;
+    }
+
+    .info-card {
+        width: 160px; /* Adjusted for mobile sliding */
+        min-height: 120px; /* Shorter height for mobile */
+    }
+
+    .card-icon {
+        font-size: 28px; /* Smaller icons on mobile */
+    }
+
+    .info-card h3 {
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .info-card p {
+        font-size: 13px;
+    }
+}
+
+
+    .header {
+        position: relative;
+    }
+
+    .hero {
+        margin-top: 0;
+    }
+
+    .summer-alert {
+        margin: var(--space-md) 0;
+        padding: var(--space-md);
+        display: block;
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .modal-container {
+        margin: var(--space-md);
+        width: calc(100% - 2 * var(--space-md));
+        max-height: 90vh;
+    }
+
+    .booking-widget {
+        padding: var(--space-lg);
+    }
+
+    .dining-tabs {
+        justify-content: flex-start;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .dining-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .tab-btn {
+        font-size: 12px;
+        padding: var(--space-sm) var(--space-md);
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .experience-card {
+        flex: 0 0 260px;
+    }
+
+    .hotel-categories {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+
+    .category-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Touch-friendly spacing */
+    .info-card, .experience-card, .emirate-card {
+        min-height: 44px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Improved mobile text sizes */
+    .section h2 {
+        font-size: 24px;
+        margin-bottom: var(--space-lg);
+    }
+
+    .emirate-section h3 {
+        font-size: 20px;
+    }
+
+    /* Mobile-optimized modal */
+    .modal-header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        border-bottom: 1px solid var(--border-light);
+    }
+
+    .modal-content {
+        padding: var(--space-md);
+    }
+
+    /* Mobile optimizations for new modal styles */
+    .visa-grid, .safety-stats, .requirements-grid,
+    .medication-rules, .emergency-contacts {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-item {
+        padding: var(--space-md);
+    }
+
+    .stat-number {
+        font-size: 24px;
+    }
+
+    .contact-number {
+        font-size: 20px;
+    }
+}
+/* Enhanced Weather Modal Styles */
+.timing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.season-card {
+    background: var(--bg-primary);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--bg-secondary);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.season-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.season-card.peak {
+    border-color: var(--success);
+    background: linear-gradient(135deg, var(--bg-primary) 0%, rgba(107, 142, 90, 0.05) 100%);
+}
+
+.season-card.shoulder {
+    border-color: var(--primary);
+    background: linear-gradient(135deg, var(--bg-primary) 0%, rgba(200, 168, 130, 0.05) 100%);
+}
+
+.season-card.hot {
+    border-color: var(--error);
+    background: linear-gradient(135deg, var(--bg-primary) 0%, rgba(184, 84, 80, 0.05) 100%);
+}
+
+.season-badge {
+    position: absolute;
+    top: var(--space-md);
+    right: var(--space-md);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-white);
+}
+
+.season-badge.best {
+    background: var(--success);
+}
+
+.season-badge.good {
+    background: var(--primary);
+}
+
+.season-badge.challenging {
+    background: var(--error);
+}
+
+.monthly-guide {
+    display: grid;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.month-group {
+    background: var(--bg-secondary);
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--primary);
+    transition: background-color 0.3s ease;
+}
+
+.month-group:hover {
+    background: var(--bg-tertiary);
+}
+
+.month-group.excellent {
+    border-left-color: var(--success);
+}
+
+.month-group.very-good {
+    border-left-color: var(--primary);
+}
+
+.month-group.good {
+    border-left-color: var(--accent-warm);
+}
+
+.month-group.challenging {
+    border-left-color: var(--error);
+}
+
+.activity-timing {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.activity-card {
+    background: var(--bg-secondary);
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.activity-card:hover {
+    background: var(--bg-tertiary);
+}
+
+.timing-tips {
+    display: grid;
+    gap: var(--space-md);
+}
+
+.timing-tips .tip {
+    background: var(--bg-secondary);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--primary);
+}
+
+.modal-section.highlight {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    margin-top: var(--space-lg);
+}
+
+/* Fix bullet point spacing - bring text closer to bullets */
+.timing-grid ul,
+.monthly-guide ul,
+.activity-timing ul,
+.timing-tips ul,
+.modal-section ul,
+.info-section ul {
+    padding-left: 20px;
+    margin-left: 0;
+}
+
+.timing-grid li,
+.monthly-guide li,
+.activity-timing li,
+.timing-tips li,
+.modal-section li,
+.info-section li {
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+/* Mobile responsiveness for weather modal */
+@media (max-width: 767px) {
+    .timing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .activity-timing {
+        grid-template-columns: 1fr;
+    }
+
+    .season-badge {
+        position: static;
+        display: inline-block;
+        margin: var(--space-sm) 0;
+    }
+
+    /* Tighter spacing on mobile */
+    .timing-grid ul,
+    .monthly-guide ul,
+    .activity-timing ul,
+    .timing-tips ul,
+    .modal-section ul,
+    .info-section ul {
+        padding-left: 16px;
+    }
+}
+
+/* Fix season card bullet alignment */
+.season-card ul {
+    text-align: left;
+    margin: var(--space-md) auto 0;
+    max-width: fit-content;
+    padding-left: 16px;
+}
+
+.season-card li {
+    margin-bottom: 4px;
+    line-height: 1.4;
+}

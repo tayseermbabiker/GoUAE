@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GoUAE - Complete tourism guide for all 7 UAE emirates. Discover Dubai, Abu Dhabi and more with insider tips for Western travelers.">
+    <title>🏜️ GoUAE - Explore More, Stress Less</title>
+    <meta name="theme-color" content="#FF385C">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🏜️ GoUAE</h1>
+                <span class="tagline">Explore More, Stress Less</span>
+            </div>
+            <nav class="nav">
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#essentials">Travel Info</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#emirates">Emirates</a></li>
+                    <li><a href="#booking">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Summer Travel Alert Banner -->
+    <div class="summer-alert">
+        <div class="container">
+            <p>☀️ Summer Travel Alert: Beat the heat with our curated indoor experiences & cooling spots!</p>
+        </div>
+    </div>
+
+
+    <!-- Essential Travel Info Cards -->
+    <section id="essentials" class="section">
+        <div class="container">
+            <h2>Before You Arrive</h2>
+            <div class="info-slider-wrapper">
+                <div class="info-slider-container">
+                    <div class="info-slider-track">
+                <div class="info-card" data-modal="visa">
+                    <h3>Visa Requirements</h3>
+                </div>
+                <div class="info-card" data-modal="alcohol">
+                    <h3>Alcohol Laws</h3>
+                </div>
+                <div class="info-card" data-modal="security">
+                    <h3>Safety & Security</h3>
+                </div>
+                <div class="info-card" data-modal="weather">
+                    <h3>Best Times to Visit</h3>
+                </div>
+                <div class="info-card" data-modal="culture">
+                    <h3>Cultural Guidelines</h3>
+                </div>
+                <div class="info-card" data-modal="currency">
+                    <h3>Currency & Payments</h3>
+                </div>
+                <div class="info-card" data-modal="transport">
+                    <h3>Transportation</h3>
+                </div>
+                        <div class="info-card" data-modal="health">
+                            <h3>Health & Medical</h3>
+                        </div>
+
+                        <!-- Duplicate cards for infinite loop -->
+                        <div class="info-card" data-modal="visa">
+                            <h3>Visa Requirements</h3>
+                        </div>
+                        <div class="info-card" data-modal="alcohol">
+                            <h3>Alcohol Laws</h3>
+                        </div>
+                        <div class="info-card" data-modal="security">
+                            <h3>Safety & Security</h3>
+                        </div>
+                        <div class="info-card" data-modal="weather">
+                            <h3>Best Times to Visit</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UAE Experiences by Emirate -->
+    <section id="experiences" class="section">
+        <div class="container">
+            <h2>UAE Experiences by Emirate</h2>
+
+            <!-- Dubai -->
+            <div class="emirate-section">
+                <h3>Dubai</h3>
+                <div class="experience-scroll">
+                    <div class="experience-card" data-experience="burj-khalifa">
+                        <h4>Burj Khalifa</h4>
+                        <p>World's tallest building experience</p>
+                        <button class="book-btn" onclick="bookExperience('platinumlist', 'burj-khalifa')">Book Now</button>
+                    </div>
+                    <div class="experience-card" data-experience="img-worlds">
+                        <h4>IMG Worlds of Adventure</h4>
+                        <p>Indoor theme park experience</p>
+                        <button class="book-btn" onclick="bookExperience('platinumlist', 'img-worlds')">Book Now</button>
+                    </div>
+                    <div class="experience-card" data-experience="desert-safari">
+                        <h4>Desert Safari</h4>
+                        <p>Traditional Bedouin experience</p>
+                        <button class="book-btn" onclick="bookExperience('platinumlist', 'desert-safari')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Abu Dhabi -->
+            <div class="emirate-section">
+                <h3>Abu Dhabi</h3>
+                <div class="experience-scroll">
+                    <div class="experience-card" data-experience="sheikh-zayed-mosque">
+                        <h4>Sheikh Zayed Grand Mosque</h4>
+                        <p>Architectural marvel & cultural site</p>
+                        <button class="book-btn" onclick="bookExperience('platinumlist', 'sheikh-zayed-mosque')">Book Now</button>
+                    </div>
+                    <div class="experience-card" data-experience="louvre-abu-dhabi">
+                        <h4>Louvre Abu Dhabi</h4>
+                        <p>World-class art & culture</p>
+                        <button class="book-btn" onclick="bookExperience('platinumlist', 'louvre-abu-dhabi')">Book Now</button>
+                    </div>
+                    <div class="experience-card" data-experience="ferrari-world">
+                        <h4>Ferrari World</h4>
+                        <p>High-speed thrills & racing</p>
+                        <button class="book-btn" onclick="bookExperience('platinumlist', 'ferrari-world')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Emirates -->
+            <div class="emirate-section">
+                <h3>Fujairah</h3>
+                <div class="experience-scroll">
+                    <div class="experience-card">
+                        <h4>Al Bidyah Mosque</h4>
+                        <p>UAE's oldest mosque</p>
+                        <button class="book-btn">Explore</button>
+                    </div>
+                    <div class="experience-card">
+                        <h4>Fujairah Fort</h4>
+                        <p>Historic fortress & museum</p>
+                        <button class="book-btn">Explore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Seven Emirates Overview -->
+    <section id="emirates" class="section">
+        <div class="container">
+            <h2>All Seven Emirates</h2>
+            <div class="emirates-grid">
+                <div class="emirate-card">
+                    <h3>Dubai</h3>
+                    <p>Modern metropolis & shopping paradise</p>
+                </div>
+                <div class="emirate-card">
+                    <h3>Abu Dhabi</h3>
+                    <p>Capital city & cultural heart</p>
+                </div>
+                <div class="emirate-card">
+                    <h3>Sharjah</h3>
+                    <p>Cultural capital & heritage sites</p>
+                </div>
+                <div class="emirate-card">
+                    <h3>Ajman</h3>
+                    <p>Beach resorts & traditional culture</p>
+                </div>
+                <div class="emirate-card">
+                    <h3>Ras Al Khaimah</h3>
+                    <p>Adventure activities & mountains</p>
+                </div>
+                <div class="emirate-card">
+                    <h3>Fujairah</h3>
+                    <p>Historic sites & pristine beaches</p>
+                </div>
+                <div class="emirate-card">
+                    <h3>Umm Al Quwain</h3>
+                    <p>Water sports & traditional experiences</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summer Tourism Section -->
+    <section class="section summer-section">
+        <div class="container">
+            <h2>Summer Tourism - Beat the Heat!</h2>
+            <div class="cooling-features">
+                <div class="cooling-card">
+                    <span class="cooling-badge">AC ✓</span>
+                    <h3>Air-Conditioned Attractions</h3>
+                    <p>Top-rated indoor experiences</p>
+                </div>
+                <div class="cooling-card">
+                    <span class="cooling-badge">Cool ✓</span>
+                    <h3>Early Morning Tours</h3>
+                    <p>Beat the heat with dawn experiences</p>
+                </div>
+                <div class="cooling-card">
+                    <span class="cooling-badge">Indoor ✓</span>
+                    <h3>Shopping Malls</h3>
+                    <p>Climate-controlled retail therapy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="section">
+        <div class="container">
+            <h2>Book Your UAE Experience</h2>
+
+            <!-- Flight Booking -->
+            <div class="booking-widget">
+                <h3>✈️ Flights to UAE</h3>
+                <div class="skyscanner-widget">
+                    <p>Find the best flight deals to Dubai (DXB), Abu Dhabi (AUH), or Sharjah (SHJ)</p>
+                    <button class="book-btn" onclick="searchFlights()">Search Flights</button>
+                </div>
+            </div>
+
+            <!-- Hotel Categories -->
+            <div class="booking-widget">
+                <h3>🏨 Hotels by Category</h3>
+                <div class="hotel-categories">
+                    <button class="category-btn" onclick="searchHotels('family')">👨‍👩‍👧‍👦 Family</button>
+                    <button class="category-btn" onclick="searchHotels('solo')">🎒 Solo</button>
+                    <button class="category-btn" onclick="searchHotels('business')">💼 Business</button>
+                    <button class="category-btn" onclick="searchHotels('luxury')">⭐ Luxury</button>
+                    <button class="category-btn" onclick="searchHotels('budget')">💰 Budget</button>
+                </div>
+            </div>
+
+            <!-- Dining Guide -->
+            <div class="booking-widget">
+                <h3>🍽️ Dining Guide</h3>
+                <div class="dining-tabs">
+                    <button class="tab-btn active" data-category="rooftop">🏙️ Rooftop</button>
+                    <button class="tab-btn" data-category="street">🥙 Street Food</button>
+                    <button class="tab-btn" data-category="international">🌍 International</button>
+                    <button class="tab-btn" data-category="local">🇦🇪 Local</button>
+                    <button class="tab-btn" data-category="fine">🍾 Fine Dining</button>
+                </div>
+                <div id="dining-content" class="dining-content">
+                    <!-- Content loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 GoUAE. Affiliate partnerships disclosed. Explore responsibly.</p>
+        </div>
+    </footer>
+
+    <!-- Single Modal System -->
+    <div class="modal-overlay" id="modal-overlay" onclick="closeModal()">
+        <div class="modal-container" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title">Information</h3>
+                <button class="modal-close" onclick="closeModal()">×</button>
+            </div>
+            <div class="modal-content" id="modal-content">
+                <!-- Content injected dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Debug: Test if functions are loaded
+        console.log('GoUAE site loaded successfully');
+        console.log('Modal system initialized');
+    </script>
+</body>
+</html>
