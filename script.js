@@ -1920,87 +1920,109 @@ const modalContent = {
         `
     },
     'souk': {
-        title: 'Traditional Souks & Markets',
+        title: 'Traditional Souks & Markets - Free Self-Guided',
         content: `
             <div class="experience-highlights">
                 <div class="highlight-card">
                     <h5>Gold Souk Heritage</h5>
-                    <p>Explore the world's largest gold jewelry market with over 380 retailers in Dubai's historic Deira district</p>
+                    <p>Explore the world's largest gold jewelry market with over 380 retailers in Dubai's historic Deira district - completely free!</p>
                 </div>
                 <div class="highlight-card">
                     <h5>Spice Souk Aromas</h5>
                     <p>Discover exotic spices, herbs, perfumes, and traditional remedies in the atmospheric covered market</p>
                 </div>
                 <div class="highlight-card">
-                    <h5>Cultural Immersion</h5>
-                    <p>Experience authentic Emirati trading culture with guided tours and traditional bargaining techniques</p>
+                    <h5>Traditional Abra Ride</h5>
+                    <p>Cross Dubai Creek on traditional wooden boats for just 1 AED - an authentic experience connecting both souks</p>
                 </div>
             </div>
 
             <div class="modal-section">
-                <h4>Souk Experiences</h4>
-                <div class="included-grid">
-                    <div class="included-card standard">
-                        <h5>Self-Guided Tour</h5>
+                <h4>Essential Bargaining Guide</h4>
+                <div class="bargaining-tips">
+                    <div class="tip-card">
+                        <h5>Starting Prices</h5>
                         <ul>
-                            <li>Gold Souk and Spice Souk access</li>
-                            <li>Traditional abra boat ride</li>
-                            <li>Basic map and recommendations</li>
-                            <li>Market entry and exploration</li>
-                            <li>Shopping bargaining tips</li>
+                            <li><strong>Gold:</strong> Start at 40-50% of asking price</li>
+                            <li><strong>Spices:</strong> Start at 30-40% of asking price</li>
+                            <li><strong>Souvenirs:</strong> Start at 25-35% of asking price</li>
+                            <li><strong>Perfumes:</strong> Start at 50% of asking price</li>
                         </ul>
                     </div>
-                    <div class="included-card premium">
-                        <h5>Guided Heritage Tour</h5>
+                    <div class="tip-card">
+                        <h5>Bargaining Phrases</h5>
                         <ul>
-                            <li>Everything from Self-Guided</li>
-                            <li>Professional local guide</li>
-                            <li>Cultural history presentation</li>
-                            <li>Traditional refreshments</li>
-                            <li>Perfume blending workshop</li>
-                            <li>Souvenir shopping assistance</li>
+                            <li><strong>"What's your best price?"</strong> - Opens negotiation</li>
+                            <li><strong>"I'll take 3 for..."</strong> - Bundle discount</li>
+                            <li><strong>"Cash price?"</strong> - Often gets better deals</li>
+                            <li><strong>"I'll think about it"</strong> - Walk away technique</li>
                         </ul>
                     </div>
-                    <div class="included-card vip">
-                        <h5>Private Market Experience</h5>
+                    <div class="tip-card">
+                        <h5>Pro Bargaining Tips</h5>
                         <ul>
-                            <li>Everything from Guided Tour</li>
-                            <li>Private guide and translator</li>
-                            <li>VIP trader introductions</li>
-                            <li>Traditional Emirati lunch</li>
-                            <li>Custom jewelry consultation</li>
-                            <li>Heritage museum access</li>
+                            <li>Visit multiple shops to compare prices first</li>
+                            <li>Don't show too much interest initially</li>
+                            <li>Bundle items for better discounts</li>
+                            <li>Be prepared to walk away - they'll often call you back</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <div class="modal-section">
-                <h4>Market Information</h4>
+                <h4>Self-Touring Guide</h4>
                 <div class="logistics-info">
                     <div class="logistics-card">
-                        <h5>Location</h5>
-                        <p><strong>Deira District</strong><br>
-                        Gold Souk and Spice Souk area<br>
-                        Metro: Al Ras Station</p>
+                        <h5>Getting There</h5>
+                        <p><strong>Metro:</strong> Al Ras Station (Green Line)<br>
+                        <strong>Bus:</strong> Routes 8, 15, C2<br>
+                        <strong>Taxi:</strong> Ask for "Gold Souk, Deira"<br>
+                        <strong>Parking:</strong> Limited street parking available</p>
                     </div>
                     <div class="logistics-card">
-                        <h5>Best Times</h5>
-                        <p><strong>Morning:</strong> 10:00 AM - 1:00 PM<br>
-                        <strong>Evening:</strong> 4:00 PM - 10:00 PM<br>
-                        <strong>Avoid:</strong> Friday prayers & midday heat</p>
+                        <h5>Best Visiting Times</h5>
+                        <p><strong>Morning:</strong> 10:00 AM - 1:00 PM (cooler, less crowded)<br>
+                        <strong>Evening:</strong> 4:00 PM - 10:00 PM (atmospheric lighting)<br>
+                        <strong>Avoid:</strong> Friday 12-2 PM (prayer time), midday heat<br>
+                        <strong>Peak season:</strong> October to March</p>
                     </div>
                     <div class="logistics-card">
-                        <h5>Shopping Tips</h5>
-                        <p><strong>Bargaining:</strong> Start at 30-40% of asking price<br>
-                        <strong>Payment:</strong> Cash preferred, cards accepted<br>
-                        <strong>Authenticity:</strong> Check hallmarks on gold</p>
+                        <h5>What to Bring</h5>
+                        <p><strong>Cash:</strong> AED preferred for better prices<br>
+                        <strong>Comfortable shoes:</strong> Lots of walking<br>
+                        <strong>Bag:</strong> For your purchases<br>
+                        <strong>Phone:</strong> Camera for memories, calculator for prices</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Quality & Safety Tips</h4>
+                <div class="safety-grid">
+                    <div class="safety-card">
+                        <h5>Gold Authenticity</h5>
+                        <ul>
+                            <li>Look for hallmark stamps (18K, 21K, 22K)</li>
+                            <li>Ask for certificates for expensive pieces</li>
+                            <li>Reputable shops display trade licenses</li>
+                            <li>Weight and purity should be clearly marked</li>
+                        </ul>
+                    </div>
+                    <div class="safety-card">
+                        <h5>General Shopping Safety</h5>
+                        <ul>
+                            <li>Keep valuables secure while browsing</li>
+                            <li>Agree on final price before payment</li>
+                            <li>Count your change carefully</li>
+                            <li>Keep receipts for valuable purchases</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
             <div class="modal-guide-hint">
-                <p><strong>Pro tip:</strong> Book through our Partner links to enjoy discounts of up to 25% — at no extra cost to you, it also helps us keep this guide running</p>
+                <p><strong>Free Experience:</strong> Both Gold Souk and Spice Souk are completely free to explore. Take your time, enjoy the atmosphere, and bargain with confidence!</p>
             </div>
         `
     },
@@ -2713,15 +2735,32 @@ function generatePlatinumlistUrl(experienceId) {
 
 window.bookExperience = function(platform, experienceId) {
     if (platform === 'platinumlist') {
-        const affiliateUrl = generatePlatinumlistUrl(experienceId);
-        window.open(affiliateUrl, '_blank');
+        // PlatinumList experience URLs
+        const experienceUrls = {
+            'burj-khalifa': 'https://dubai.platinumlist.net/event-tickets/at-the-top?ref=yjzkmgy&link=',
+            'theme-parks': 'https://dubai.platinumlist.net/event-tickets/img-worlds-of-adventure?ref=yjzkmgy&link=',
+            'desert-safari': 'https://dubai.platinumlist.net/attraction/desertsafaris?ref=yjzkmgy&link=',
+            'aquarium': 'https://dubai.platinumlist.net/event-tickets/dubai-aquarium-underwater-zoo-penguin-cove-nursery-experience?ref=yjzkmgy&link=',
+            'skydiving': 'https://dubai.platinumlist.net/attraction/skydive-dubai?ref=yjzkmgy&link=',
+            'yacht': 'https://dubai.platinumlist.net/attraction/attractions-yacht-brunches?ref=yjzkmgy&link=',
+            'louvre-abu-dhabi': 'https://abu-dhabi.platinumlist.net/event-tickets/louvre-abu-dhabi-museum-light-and-peace-museum',
+            'yas-island': 'https://abu-dhabi.platinumlist.net/event-tickets/yas-island-theme-parks-ferrari-world-abu-dhabi-yas-waterworld-warner-bros-world'
+        };
 
-        // Track the click for analytics
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'affiliate_click', {
-                'platform': 'platinumlist',
-                'experience_id': experienceId
-            });
+        const affiliateUrl = experienceUrls[experienceId];
+
+        if (affiliateUrl) {
+            window.open(affiliateUrl, '_blank');
+
+            // Track the click for analytics
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'affiliate_click', {
+                    'platform': 'platinumlist',
+                    'experience_id': experienceId
+                });
+            }
+        } else {
+            console.log(`No PlatinumList URL found for experience: ${experienceId}`);
         }
     }
 }
