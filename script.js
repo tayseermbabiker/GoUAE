@@ -2609,13 +2609,6 @@ const modalContent = {
     }
 };
 
-const platinumlistConfig = {
-    baseUrl: 'https://dubai.platinumlist.net',
-    affiliateCode: 'gouae2024',
-    trackingParam: 'ref'
-};
-
-// Hotel Categories Configuration
 const hotelCategories = {
     family: {
         title: 'Family-Friendly Hotels',
@@ -2649,7 +2642,7 @@ const diningCategories = {
             { name: 'FZN by Björn Frantzén', type: 'European-Japanese ⭐⭐', emirate: 'Dubai', description: 'Only 27 seats in two-story intimate space - Modern European with Japanese influences and skyline views' },
             { name: 'STAY by Yannick Alléno', type: 'French ⭐⭐', emirate: 'Dubai', description: 'One&Only The Palm island location - "Less is more" French cuisine with surprise tasting menus' },
             { name: 'Al Muntaha', type: 'European ⭐', emirate: 'Dubai', description: '27th floor Burj Al Arab location - Floor-to-ceiling windows with European cuisine and Mediterranean touches' },
-            { name: 'Jara by Martín Berasategui', type: 'Basque ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: '8-Michelin star chef\'s first Dubai restaurant - Traditional Basque family-style with clay-pit oven specialties' },
+            { name: 'Jara by Martín Berasategui', type: 'Basque ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: '8-Michelin star chefs first Dubai restaurant - Traditional Basque family-style with clay-pit oven specialties' },
             { name: 'Erth', type: 'Emirati ⭐', emirate: 'Abu Dhabi', description: 'First Michelin-starred Emirati restaurant - Modern Emirati cuisine in Qasr Al Hosn cultural district' },
             { name: 'Hakkasan', type: 'Cantonese ⭐', emirate: 'Abu Dhabi', description: 'Emirates Palace location - Contemporary Cantonese with Peking Duck and caviar specialty' },
             { name: 'COYA', type: 'Peruvian ⭐⭐⭐⭐⭐', emirate: 'Abu Dhabi', description: 'Vibrant Peruvian fusion at Four Seasons - Chilean Sea Bass with Pisco Sour cocktails and live Latin music' },
@@ -2663,7 +2656,7 @@ const diningCategories = {
             { name: 'Zuma Dubai', type: 'Japanese ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: 'Contemporary Japanese robatayaki in DIFC - Miso black cod signature with trendy atmosphere and live DJ evenings' },
             { name: '3Fils', type: 'Asian Fusion ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: 'Asian-fusion waterfront with Instagram appeal - Wagyu sliders and truffle dishes in casual fine dining setting' },
             { name: 'BOCA', type: 'Contemporary ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: '#12 MENA ranking contemporary international - Four Seasons DIFC with modern European techniques' },
-            { name: 'Jun\'s', type: 'Asian-Western ⭐⭐⭐⭐', emirate: 'Dubai', description: 'Third-culture cuisine by Chef Kelvin Cheung - Asian-Western hybrid dishes with innovative presentations' },
+            { name: 'Juns', type: 'Asian-Western ⭐⭐⭐⭐', emirate: 'Dubai', description: 'Third-culture cuisine by Chef Kelvin Cheung - Asian-Western hybrid dishes with innovative presentations' },
             { name: 'Long Teng Seafood', type: 'Chinese ⭐⭐⭐⭐', emirate: 'Dubai', description: 'Live seafood tanks for freshness - Best dim sum in Dubai with family-style sharing portions' },
             { name: 'LPM Abu Dhabi', type: 'French-Mediterranean ⭐⭐⭐⭐⭐', emirate: 'Abu Dhabi', description: 'Al Maryah Island location - Provence-inspired menu with extensive French wine list and marina views' },
             { name: 'BB Social Dining', type: 'Asian Fusion ⭐⭐⭐⭐⭐', emirate: 'Abu Dhabi', description: 'Creative Asian fusion from Dubai import - Dim sum and habibti bao specialties at Rosewood with "achingly cool" vibe' },
@@ -2693,19 +2686,251 @@ const diningCategories = {
             { name: 'Ibn Al Bahr', type: 'Seafood ⭐⭐⭐⭐', emirate: 'Dubai', description: 'Affordable beachside seafood on Palm Jumeirah - Direct beach access with fresh catch daily and palm tree setting' },
             { name: 'Blu Sky Lounge', type: 'International ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: 'Dubai skyline panorama with rooftop infinity pool setting - Sunset timing perfect for Western dinner preferences' },
             { name: 'Secret Garden by VII', type: 'Seafood ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: 'Enchanting garden atmosphere with twinkling lights - Seafood bar with Instagram-worthy presentation' },
-            { name: 'At.mosphere (Burj Khalifa)', type: 'International ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: 'World\'s highest restaurant on 122nd floor - 360-degree views with international fine dining and European techniques' },
+            { name: 'At.mosphere (Burj Khalifa)', type: 'International ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: 'Worlds highest restaurant on 122nd floor - 360-degree views with international fine dining and European techniques' },
             { name: 'Shimmers', type: 'Greek ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: 'Beachfront Greek cuisine with Arabian Gulf views - Jumeirah Beach access with fresh seafood grilled with Greek herbs' },
             { name: 'Azura Panoramic Lounge', type: 'International ⭐⭐⭐⭐⭐', emirate: 'Abu Dhabi', description: 'St. Regis Nation Towers 74th floor - Highest dining in Abu Dhabi with 360-degree revolving restaurant views' },
             { name: 'SAL Saadiyat Island', type: 'Mediterranean ⭐⭐⭐⭐⭐', emirate: 'Abu Dhabi', description: 'Beachfront Mediterranean with white sand beach access - Saadiyat Island cultural district with sunset terrace' },
             { name: 'Café Del Mar Abu Dhabi', type: 'Mediterranean ⭐⭐⭐⭐⭐', emirate: 'Abu Dhabi', description: 'Sunset dining with Mediterranean vibes - Beach club atmosphere with international DJs and Arabian Gulf views' },
             { name: 'Al Sakher (Ajman Saray)', type: 'Seafood ⭐⭐⭐⭐⭐', emirate: 'Ajman', description: 'Overwater dining on stilts extending into Arabian Gulf - Traditional dhow boat transfers with fresh seafood and Emirati preparation' }
         ]
+    },
+    'dubai-mall': {
+        title: 'Dubai Mall - Indoor Entertainment Hub',
+        content: `
+            <div class="experience-highlights">
+                <div class="highlight-card">
+                    <h5>Dubai Aquarium & Underwater Zoo</h5>
+                    <p>Walk through the world's largest suspended aquarium with over 33,000 marine animals</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>VR Park & Gaming</h5>
+                    <p>State-of-the-art virtual reality experiences and arcade games for all ages</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Ice Rink & Winter Sports</h5>
+                    <p>Olympic-size ice skating rink with lessons and equipment rental available</p>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Summer Benefits</h4>
+                <div class="included-grid">
+                    <div class="included-card standard">
+                        <h5>Climate Control</h5>
+                        <ul>
+                            <li>Constant 22°C temperature</li>
+                            <li>Premium air conditioning</li>
+                            <li>Covered walkways</li>
+                            <li>Metro-connected access</li>
+                        </ul>
+                    </div>
+                    <div class="included-card premium">
+                        <h5>Family Facilities</h5>
+                        <ul>
+                            <li>Stroller-friendly pathways</li>
+                            <li>Baby changing facilities</li>
+                            <li>Family prayer rooms</li>
+                            <li>Kids play areas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>What's Included</h4>
+                <p><strong>Mall Access:</strong> Free entry to shopping areas and food courts</p>
+                <p><strong>Paid Attractions:</strong> Aquarium, VR Park, and Ice Rink require separate tickets</p>
+                <p><strong>Summer Discounts:</strong> Up to 30% off attraction combo tickets</p>
+            </div>
+
+            <div class="modal-guide-hint">
+                <p><strong>Pro tip:</strong> Book attraction combos through our partner links for additional summer discounts</p>
+            </div>
+        `
+    },
+    'mall-emirates': {
+        title: 'Mall of the Emirates - Alpine Experience',
+        content: `
+            <div class="experience-highlights">
+                <div class="highlight-card">
+                    <h5>Ski Dubai</h5>
+                    <p>Real snow skiing and snowboarding in 18°C alpine conditions</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Penguin Encounters</h5>
+                    <p>Meet and interact with real penguins in sub-zero environments</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Luxury Shopping</h5>
+                    <p>High-end fashion brands and premium dining options</p>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Alpine Experiences</h4>
+                <div class="included-grid">
+                    <div class="included-card standard">
+                        <h5>Snow Park</h5>
+                        <ul>
+                            <li>2-hour snow play session</li>
+                            <li>Winter clothing included</li>
+                            <li>Chairlift access</li>
+                            <li>Snow activities</li>
+                        </ul>
+                    </div>
+                    <div class="included-card premium">
+                        <h5>Ski Lessons</h5>
+                        <ul>
+                            <li>Professional ski instruction</li>
+                            <li>Equipment rental included</li>
+                            <li>Beginner to advanced slopes</li>
+                            <li>Group or private lessons</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Climate & Comfort</h4>
+                <p><strong>Temperature:</strong> Main mall 20°C, Ski Dubai 18°C</p>
+                <p><strong>Clothing:</strong> Winter gear provided for snow activities</p>
+                <p><strong>Summer Special:</strong> 40% off ski packages during peak heat season</p>
+            </div>
+
+            <div class="modal-guide-hint">
+                <p><strong>Pro tip:</strong> Book early morning sessions for the best snow conditions and smaller crowds</p>
+            </div>
+        `
+    },
+    'ibn-battuta': {
+        title: 'Ibn Battuta Mall - Cultural Journey',
+        content: `
+            <div class="experience-highlights">
+                <div class="highlight-card">
+                    <h5>Six Themed Courts</h5>
+                    <p>Experience architecture inspired by India, China, Persia, Egypt, Tunisia, and Andalusia</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>IMAX Cinema</h5>
+                    <p>Premium movie experience with latest blockbusters in air-conditioned comfort</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Family Entertainment</h5>
+                    <p>Kids play areas, arcade games, and family dining options throughout themed courts</p>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Cultural Themes</h4>
+                <div class="included-grid">
+                    <div class="included-card standard">
+                        <h5>Eastern Courts</h5>
+                        <ul>
+                            <li>India Court - Traditional architecture</li>
+                            <li>China Court - Imperial palace design</li>
+                            <li>Persia Court - Ancient Persian motifs</li>
+                            <li>Cultural exhibitions</li>
+                        </ul>
+                    </div>
+                    <div class="included-card premium">
+                        <h5>Western Courts</h5>
+                        <ul>
+                            <li>Egypt Court - Pharaonic themes</li>
+                            <li>Tunisia Court - Islamic architecture</li>
+                            <li>Andalusia Court - Spanish Moorish style</li>
+                            <li>Photo opportunities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Facilities</h4>
+                <p><strong>Temperature:</strong> Consistent 20°C throughout all courts</p>
+                <p><strong>Accessibility:</strong> Metro-connected with covered walkways</p>
+                <p><strong>Summer Offer:</strong> 25% off cinema tickets and dining combos</p>
+            </div>
+
+            <div class="modal-guide-hint">
+                <p><strong>Pro tip:</strong> Visit during weekdays for the best cultural photography without crowds</p>
+            </div>
+        `
+    },
+    'marina-mall': {
+        title: 'Dubai Marina Mall - Waterfront Experience',
+        content: `
+            <div class="experience-highlights">
+                <div class="highlight-card">
+                    <h5>Marina Views</h5>
+                    <p>Stunning waterfront views of luxury yachts and modern architecture</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Premium Dining</h5>
+                    <p>International restaurants with Marina views and outdoor terraces</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Entertainment Complex</h5>
+                    <p>Bowling, arcade games, and family entertainment zones</p>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Marina Experience</h4>
+                <div class="included-grid">
+                    <div class="included-card standard">
+                        <h5>Shopping & Dining</h5>
+                        <ul>
+                            <li>Marina-view restaurants</li>
+                            <li>International fashion brands</li>
+                            <li>Covered outdoor terraces</li>
+                            <li>Yacht watching areas</li>
+                        </ul>
+                    </div>
+                    <div class="included-card premium">
+                        <h5>Entertainment Zone</h5>
+                        <ul>
+                            <li>Bowling alley with Marina views</li>
+                            <li>Arcade and gaming center</li>
+                            <li>Kids activity areas</li>
+                            <li>Event spaces</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Location Benefits</h4>
+                <p><strong>Temperature:</strong> 21°C with sea breeze circulation</p>
+                <p><strong>Views:</strong> Direct Marina and yacht views from dining areas</p>
+                <p><strong>Summer Special:</strong> 35% off dining packages with entertainment combos</p>
+            </div>
+
+            <div class="modal-guide-hint">
+                <p><strong>Pro tip:</strong> Visit during sunset hours for the best Marina views and photo opportunities</p>
+            </div>
+        `
     }
 };
+
+// Debug: Check modalContent construction
+console.log('modalContent construction complete');
+console.log('Total keys:', Object.keys(modalContent).length);
+console.log('Has dubai-mall?', modalContent.hasOwnProperty('dubai-mall'));
+console.log('Has mall-emirates?', modalContent.hasOwnProperty('mall-emirates'));
 
 // Modal Functions - Global scope
 window.openModal = function(type) {
     console.log('Opening modal:', type);
+    console.log('Available modal keys:', Object.keys(modalContent));
+    console.log('Looking for key:', `'${type}'`);
+    console.log('Key exists?', modalContent.hasOwnProperty(type));
+
+    // Direct test for our problematic keys
+    console.log('Direct test dubai-mall:', !!modalContent['dubai-mall']);
+    console.log('Direct test mall-emirates:', !!modalContent['mall-emirates']);
+    console.log('Direct test ibn-battuta:', !!modalContent['ibn-battuta']);
+    console.log('Direct test marina-mall:', !!modalContent['marina-mall']);
+
     const modal = document.getElementById('modal-overlay');
     const title = document.getElementById('modal-title');
     const content = document.getElementById('modal-content');
@@ -2717,6 +2942,7 @@ window.openModal = function(type) {
         document.body.style.overflow = 'hidden'; // Prevent background scrolling
     } else {
         console.error('Modal content not found for:', type);
+        console.error('Available modal types:', Object.keys(modalContent));
     }
 }
 
@@ -2802,6 +3028,158 @@ window.searchHotels = function(category) {
             'platform': 'booking_com'
         });
     }
+}
+
+// Beat the Heat Category Functions
+window.showHeatCategory = function(category, targetElement) {
+    // Update active tab
+    document.querySelectorAll('.heat-tab').forEach(tab => {
+        tab.classList.remove('active');
+    });
+
+    if (targetElement) {
+        targetElement.classList.add('active');
+    }
+
+    // Heat category content
+    const heatCategories = {
+        shopping: {
+            title: 'Luxury Shopping Malls with Attractions',
+            stat: '38% of Western tourist summer activities',
+            attractions: [
+                {
+                    name: 'Dubai Mall',
+                    features: ['Worlds largest aquarium', 'VR Park gaming', 'Ice rink skating', 'Fashion Avenue luxury'],
+                    temp: '22°C',
+                    discount: '30% OFF',
+                    highlight: 'Aquarium + VR + Ice Rink'
+                },
+                {
+                    name: 'Mall of the Emirates',
+                    features: ['Ski Dubai snow experience', 'Luxury brand outlets', 'Cinema complex', 'Family entertainment'],
+                    temp: '18°C',
+                    discount: '40% OFF',
+                    highlight: 'Sub-zero Alpine Experience'
+                },
+                {
+                    name: 'City Centre Mirdif',
+                    features: ['Exclusive beach clubs', 'Premium shopping', 'Family zones', 'Covered walkways'],
+                    temp: '20°C',
+                    discount: '25% OFF',
+                    highlight: 'Beach Club Access'
+                }
+            ]
+        },
+        culture: {
+            title: 'Cultural Indoor Experiences',
+            stat: '29% of Western tourists seeking authentic experiences',
+            attractions: [
+                {
+                    name: 'Louvre Abu Dhabi',
+                    features: ['World-class art collection', 'Saadiyat Cultural District', 'Interactive exhibits', 'Educational programs'],
+                    temp: '21°C',
+                    discount: '35% OFF',
+                    highlight: 'Global Art Masterpieces'
+                },
+                {
+                    name: 'Museum of the Future',
+                    features: ['Futuristic exhibitions', 'Interactive technology', 'Climate innovation', 'Space exploration'],
+                    temp: '23°C',
+                    discount: '20% OFF',
+                    highlight: 'Tomorrows Technology Today'
+                },
+                {
+                    name: 'Dubai Opera',
+                    features: ['World-class performances', 'Cultural events', 'Premium dining', 'Architectural marvel'],
+                    temp: '22°C',
+                    discount: '50% OFF',
+                    highlight: 'Live Cultural Performances'
+                }
+            ]
+        },
+        sports: {
+            title: 'Indoor Sports & Adventure Activities',
+            stat: '26% of Western visitors seeking active entertainment',
+            attractions: [
+                {
+                    name: 'Ski Dubai',
+                    features: ['Sub-zero alpine experience', 'Penguin encounters', 'Snow activities', 'Winter sports'],
+                    temp: '-4°C',
+                    discount: '45% OFF',
+                    highlight: 'Real Snow in the Desert'
+                },
+                {
+                    name: 'CLYMB Abu Dhabi',
+                    features: ['Indoor climbing walls', 'Skydiving simulator', 'Adventure courses', 'Fitness challenges'],
+                    temp: '19°C',
+                    discount: '30% OFF',
+                    highlight: 'Worlds Largest Climbing Wall'
+                },
+                {
+                    name: 'Bounce Dubai',
+                    features: ['Trampoline parks', 'Ninja courses', 'Basketball zones', 'Family activities'],
+                    temp: '20°C',
+                    discount: '35% OFF',
+                    highlight: 'Ultimate Trampoline Experience'
+                }
+            ]
+        }
+    };
+
+    const contentDiv = document.getElementById('heat-content');
+    const categoryData = heatCategories[category];
+
+    if (categoryData) {
+        let html = `
+            <div class="heat-category-header">
+                <h3>${categoryData.title}</h3>
+                <p class="category-stat">${categoryData.stat}</p>
+            </div>
+            <div class="heat-attractions">
+        `;
+
+        categoryData.attractions.forEach(attraction => {
+            html += `
+                <div class="heat-attraction-card">
+                    <div class="attraction-header">
+                        <h4>${attraction.name}</h4>
+                        <div class="attraction-badges">
+                            <span class="temp-badge">${attraction.temp}</span>
+                            <span class="discount-badge">${attraction.discount}</span>
+                        </div>
+                    </div>
+                    <div class="attraction-highlight">
+                        <span class="highlight-icon">BEST</span>
+                        <span class="highlight-text">${attraction.highlight}</span>
+                    </div>
+                    <div class="attraction-features">
+                        ${attraction.features.map(feature => `
+                            <div class="feature-item">
+                                <span class="feature-icon">+</span>
+                                <span class="feature-text">${feature}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="attraction-action">
+                        <button class="heat-book-btn" onclick="bookHeatExperience('${attraction.name.toLowerCase().replace(/\s+/g, '-')}')">
+                            Book Summer Deal
+                        </button>
+                    </div>
+                </div>
+            `;
+        });
+
+        html += '</div>';
+        contentDiv.innerHTML = html;
+    }
+}
+
+// Heat Experience Booking
+window.bookHeatExperience = function(attractionId) {
+    // For now, this can link to general booking or specific partner URLs
+    console.log('Booking heat experience:', attractionId);
+    // You can add specific booking URLs later
+    alert('Summer booking coming soon! Contact us for exclusive deals.');
 }
 
 // Dining Guide Functions
@@ -2989,6 +3367,15 @@ document.addEventListener('DOMContentLoaded', function() {
             // If clicking the explore button or anywhere else on card, open modal
             if (experienceId && modalContent[experienceId]) {
                 openModal(experienceId);
+            }
+        }
+
+        // Escape cards - open modal for mall details
+        if (e.target.closest('.escape-card')) {
+            const card = e.target.closest('.escape-card');
+            const modalType = card.dataset.modal;
+            if (modalType) {
+                openModal(modalType);
             }
         }
 
@@ -3556,3 +3943,20 @@ function searchFlights() {
 
     console.log('Flight search:', { departure, destination, departureDate, returnDate });
 }
+
+// Image Loading Optimization
+document.addEventListener('DOMContentLoaded', function() {
+    // Handle lazy loading animation
+    const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+
+    lazyImages.forEach(img => {
+        img.addEventListener('load', function() {
+            this.classList.add('loaded');
+        });
+
+        // If image is already loaded
+        if (img.complete) {
+            img.classList.add('loaded');
+        }
+    });
+});

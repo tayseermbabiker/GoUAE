@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- Preload critical images -->
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1639598003276-8a70fcaaad6c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bHVnZ2FnZXxlbnwwfHwwfHx8Mg%3D%3D">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=85">
 </head>
 <body>
     <!-- Header -->
@@ -94,7 +97,7 @@
                 <!-- UAE Packing List -->
                 <div class="product-card" data-product="packing-list">
                     <div class="product-image-container">
-                        <img src="https://images.unsplash.com/photo-1639598003276-8a70fcaaad6c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bHVnZ2FnZXxlbnwwfHwwfHx8Mg%3D%3D" alt="UAE Packing List" class="product-image">
+                        <img src="https://images.unsplash.com/photo-1639598003276-8a70fcaaad6c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bHVnZ2FnZXxlbnwwfHwwfHx8Mg%3D%3D" alt="UAE Packing List" class="product-image" loading="lazy">
                         <div class="product-pricing">
                             <span class="price-current">$5.99</span>
                         </div>
@@ -112,7 +115,7 @@
                 <!-- UAE Instamoments -->
                 <div class="product-card" data-product="instamoments">
                     <div class="product-image-container">
-                        <img src="https://images.unsplash.com/photo-1660924198520-85447f410eff?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aW5zdGFncmFtfGVufDB8fDB8fHwy" alt="UAE Instamoments" class="product-image">
+                        <img src="https://images.unsplash.com/photo-1660924198520-85447f410eff?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aW5zdGFncmFtfGVufDB8fDB8fHwy" alt="UAE Instamoments" class="product-image" loading="lazy">
                         <div class="product-pricing">
                             <span class="price-current">$5.99</span>
                         </div>
@@ -130,7 +133,7 @@
                 <!-- UAE Survival -->
                 <div class="product-card" data-product="survival">
                     <div class="product-image-container">
-                        <img src="https://images.unsplash.com/photo-1630255452925-41c35e9313bf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YXJhYmljfGVufDB8fDB8fHwy" alt="UAE Survival" class="product-image">
+                        <img src="https://images.unsplash.com/photo-1630255452925-41c35e9313bf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YXJhYmljfGVufDB8fDB8fHwy" alt="UAE Survival" class="product-image" loading="lazy">
                         <div class="product-pricing">
                             <span class="price-current">$5.99</span>
                         </div>
@@ -156,7 +159,7 @@
             <div class="experience-scroll">
                 <div class="experience-card" data-experience="burj-khalifa">
                     <div class="card-image-container">
-                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=85" alt="Burj Khalifa and Dubai skyline at sunset" class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=85" alt="Burj Khalifa and Dubai skyline at sunset" class="experience-image" loading="lazy">
                         <div class="image-overlay-title">
                             <h4>Burj Khalifa</h4>
                         </div>
@@ -168,7 +171,7 @@
                 </div>
                 <div class="experience-card" data-experience="theme-parks">
                     <div class="card-image-container">
-                        <img src="https://images.unsplash.com/photo-1542577731-55541be363d4?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRoZW1lJTIwcGFya3xlbnwwfHwwfHx8Mg%3D%3D" alt="Theme park with exciting rides and family attractions" class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1542577731-55541be363d4?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRoZW1lJTIwcGFya3xlbnwwfHwwfHx8Mg%3D%3D" alt="Theme park with exciting rides and family attractions" class="experience-image" loading="lazy">
                         <div class="image-overlay-title">
                             <h4>Theme Parks</h4>
                         </div>
@@ -180,7 +183,7 @@
                 </div>
                 <div class="experience-card" data-experience="desert-safari">
                     <div class="card-image-container">
-                        <img src="https://images.unsplash.com/photo-1624062999726-083e5268525d?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGVzZXJ0JTIwc2FmYXJpfGVufDB8fDB8fHwy" alt="Desert safari with camels in UAE golden dunes" class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1624062999726-083e5268525d?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGVzZXJ0JTIwc2FmYXJpfGVufDB8fDB8fHwy" alt="Desert safari with camels in UAE golden dunes" class="experience-image" loading="lazy">
                         <div class="image-overlay-title">
                             <h4>Desert Safari</h4>
                         </div>
@@ -192,7 +195,7 @@
                 </div>
                 <div class="experience-card" data-experience="sheikh-zayed-mosque">
                     <div class="card-image-container">
-                        <img src="https://images.unsplash.com/photo-1512632578888-169bbbc64f33?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=95" alt="Sheikh Zayed Grand Mosque in Abu Dhabi" class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1512632578888-169bbbc64f33?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=95" alt="Sheikh Zayed Grand Mosque in Abu Dhabi" class="experience-image" loading="lazy">
                         <div class="image-overlay-title">
                             <h4>Grand Mosque</h4>
                         </div>
@@ -204,7 +207,7 @@
                 </div>
                 <div class="experience-card" data-experience="louvre-abu-dhabi">
                     <div class="card-image-container">
-                        <img src="https://images.unsplash.com/photo-1683490486254-502c4c7d8282?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bG91dnJlJTIwYWJ1JTIwZGhhYml8ZW58MHx8MHx8fDI%3D" alt="Louvre Abu Dhabi museum with stunning architecture and cultural exhibitions" class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1683490486254-502c4c7d8282?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bG91dnJlJTIwYWJ1JTIwZGhhYml8ZW58MHx8MHx8fDI%3D" alt="Louvre Abu Dhabi museum with stunning architecture and cultural exhibitions" class="experience-image" loading="lazy">
                         <div class="image-overlay-title">
                             <h4>Louvre Abu Dhabi</h4>
                         </div>
@@ -216,7 +219,7 @@
                 </div>
                 <div class="experience-card" data-experience="yas-island">
                     <div class="card-image-container">
-                        <img src="https://images.unsplash.com/photo-1505731110654-99d7f7f8e39c?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8Mnx8dGhlbWUlMjBwYXJrfGVufDB8fDB8fHwy" alt="Yas Island theme park with exciting attractions and family adventures" class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1505731110654-99d7f7f8e39c?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8Mnx8dGhlbWUlMjBwYXJrfGVufDB8fDB8fHwy" alt="Yas Island theme park with exciting attractions and family adventures" class="experience-image" loading="lazy">
                         <div class="image-overlay-title">
                             <h4>Yas Island</h4>
                         </div>
@@ -228,7 +231,7 @@
                 </div>
                 <div class="experience-card" data-experience="aquarium">
                     <div class="card-image-container">
-                        <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=95" alt="Dubai Aquarium with sharks and underwater tunnel" class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=95" alt="Dubai Aquarium with sharks and underwater tunnel" class="experience-image" loading="lazy">
                         <div class="image-overlay-title">
                             <h4>Dubai Aquarium</h4>
                         </div>
@@ -240,7 +243,7 @@
                 </div>
                 <div class="experience-card" data-experience="yacht">
                     <div class="card-image-container">
-                        <img src="https://images.unsplash.com/photo-1540946485063-a40da27545f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=95" alt="Luxury yacht experience in Dubai marina" class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1540946485063-a40da27545f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=95" alt="Luxury yacht experience in Dubai marina" class="experience-image" loading="lazy">
                         <div class="image-overlay-title">
                             <h4>Luxury Yacht</h4>
                         </div>
@@ -252,7 +255,7 @@
                 </div>
                 <div class="experience-card" data-experience="skydiving">
                     <div class="card-image-container">
-                        <img src="https://images.unsplash.com/photo-1659221876406-31a3746f41b9?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8Mnx8c2t5ZGl2aW5nfGVufDB8fDB8fHwy" alt="Skydiving adventure with spectacular aerial views" class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1659221876406-31a3746f41b9?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8Mnx8c2t5ZGl2aW5nfGVufDB8fDB8fHwy" alt="Skydiving adventure with spectacular aerial views" class="experience-image" loading="lazy">
                         <div class="image-overlay-title">
                             <h4>Skydiving</h4>
                         </div>
@@ -264,7 +267,7 @@
                 </div>
                 <div class="experience-card" data-experience="souk">
                     <div class="card-image-container">
-                        <img src="https://images.unsplash.com/photo-1616760678404-8b62322959c8?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8MTR8fHNvdWt8ZW58MHx8MHx8fDI%3D" alt="Traditional souk with gold and spices" class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1616760678404-8b62322959c8?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8MTR8fHNvdWt8ZW58MHx8MHx8fDI%3D" alt="Traditional souk with gold and spices" class="experience-image" loading="lazy">
                         <div class="image-overlay-title">
                             <h4>Traditional Souk</h4>
                         </div>
@@ -285,7 +288,7 @@
             <div class="emirates-grid">
                 <div class="emirate-card" data-experience="dubai">
                     <div class="card-image-container">
-                        <img src="https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8NHx8ZHViYWklMjBza3lsaW5lfGVufDB8fDB8fHww" alt="Dubai skyline with modern skyscrapers" class="experience-image">
+                        <img src="https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8NHx8ZHViYWklMjBza3lsaW5lfGVufDB8fDB8fHww" alt="Dubai skyline with modern skyscrapers" class="experience-image" loading="lazy">
                         <div class="card-badge">Most Popular</div>
                         <div class="weather-widget" data-city="Dubai">
                             <span class="temp">--°</span>
@@ -301,7 +304,7 @@
                 </div>
                 <div class="emirate-card" data-experience="abu-dhabi">
                     <div class="card-image-container">
-                        <img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8NHx8YWJ1JTIwZGhhYml8ZW58MHx8MHx8fDA%3D" alt="Abu Dhabi city skyline and Emirates Palace" class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8NHx8YWJ1JTIwZGhhYml8ZW58MHx8MHx8fDA%3D" alt="Abu Dhabi city skyline and Emirates Palace" class="experience-image" loading="lazy">
                         <div class="card-badge">Capital</div>
                         <div class="weather-widget" data-city="Abu Dhabi">
                             <span class="temp">--°</span>
@@ -317,7 +320,7 @@
                 </div>
                 <div class="emirate-card" data-experience="sharjah">
                     <div class="card-image-container">
-                        <img src="https://images.unsplash.com/photo-1683471546843-3dd6eace89b5?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8Mnx8c2hhcmphaHxlbnwwfHwwfHx8Mg%3D%3D" alt="Sharjah heritage area and cultural sites" class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1683471546843-3dd6eace89b5?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8Mnx8c2hhcmphaHxlbnwwfHwwfHx8Mg%3D%3D" alt="Sharjah heritage area and cultural sites" class="experience-image" loading="lazy">
                         <div class="card-badge">Cultural Capital</div>
                         <div class="weather-widget" data-city="Sharjah">
                             <span class="temp">--°</span>
@@ -333,7 +336,7 @@
                 </div>
                 <div class="emirate-card" data-experience="ajman">
                     <div class="card-image-container">
-                        <img src="https://images.unsplash.com/photo-1593334305856-1c6281efaa18?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8MXx8QWptYW58ZW58MHx8MHx8fDI%3D" alt="Ajman beach resorts and corniche" class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1593334305856-1c6281efaa18?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8MXx8QWptYW58ZW58MHx8MHx8fDI%3D" alt="Ajman beach resorts and corniche" class="experience-image" loading="lazy">
                         <div class="card-badge">Hidden Gem</div>
                         <div class="weather-widget" data-city="Ajman">
                             <span class="temp">--°</span>
@@ -349,7 +352,7 @@
                 </div>
                 <div class="emirate-card" data-experience="ras-al-khaimah">
                     <div class="card-image-container">
-                        <img src="https://images.unsplash.com/photo-1542878447-e2b6df2526fa?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8Mnx8amViZWwlMjBqYWlzfGVufDB8fDB8fHww" alt="Ras Al Khaimah mountains and adventure activities" class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1542878447-e2b6df2526fa?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8Mnx8amViZWwlMjBqYWlzfGVufDB8fDB8fHww" alt="Ras Al Khaimah mountains and adventure activities" class="experience-image" loading="lazy">
                         <div class="card-badge">Adventure Capital</div>
                         <div class="weather-widget" data-city="Ras Al Khaimah">
                             <span class="temp">--°</span>
@@ -365,7 +368,7 @@
                 </div>
                 <div class="emirate-card" data-experience="fujairah">
                     <div class="card-image-container">
-                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8Mnx8ZnVqYWlyYWh8ZW58MHx8MHx8fDI%3D" alt="Fujairah historic fort and pristine beaches" class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8Mnx8ZnVqYWlyYWh8ZW58MHx8MHx8fDI%3D" alt="Fujairah historic fort and pristine beaches" class="experience-image" loading="lazy">
                         <div class="card-badge">East Coast</div>
                         <div class="weather-widget" data-city="Fujairah">
                             <span class="temp">--°</span>
@@ -381,7 +384,7 @@
                 </div>
                 <div class="emirate-card" data-experience="umm-al-quwain">
                     <div class="card-image-container">
-                        <img src="https://plus.unsplash.com/premium_photo-1661893427047-16f6ddc173f6?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8MXx8a2F5YWtpbmd8ZW58MHx8MHx8fDA%3D" alt="Umm Al Quwain water sports and traditional experiences" class="experience-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1661893427047-16f6ddc173f6?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8MXx8a2F5YWtpbmd8ZW58MHx8MHx8fDA%3D" alt="Umm Al Quwain water sports and traditional experiences" class="experience-image" loading="lazy">
                         <div class="card-badge">Adventure Hub</div>
                         <div class="weather-widget" data-city="Umm Al Quwain">
                             <span class="temp">--°</span>
@@ -399,27 +402,81 @@
         </div>
     </section>
 
-    <!-- Summer Tourism Section -->
-    <section class="section summer-section">
+    <!-- Beat the Heat Section -->
+    <section class="section beat-heat-section">
         <div class="container">
-            <h2>Summer Tourism - Beat the Heat!</h2>
-            <div class="cooling-features">
-                <div class="cooling-card">
-                    <span class="cooling-badge">AC ✓</span>
-                    <h3>Air-Conditioned Attractions</h3>
-                    <p>Top-rated indoor experiences</p>
+            <div class="beat-heat-header">
+                <h2>Beat the Heat</h2>
+            </div>
+
+            <!-- Indoor Escapes Grid -->
+            <div class="indoor-escapes-grid">
+                <!-- Dubai Mall -->
+                <div class="escape-card" data-modal="dubai-mall">
+                    <div class="escape-image">
+                        <img src="https://www.visitdubai.com/-/media/gathercontent/poi/t/the-dubai-mall/fallback-image/the-dubai-mall-poi-shutterstock.jpg?rev=76ad7b9dc8a0410a8c45816dc73c1725&cx=0.64&cy=0.38&cw=1556&ch=690" alt="Dubai Mall">
+                        <div class="temp-badge">22°C</div>
+                    </div>
+                    <div class="escape-content">
+                        <h3>Dubai Mall</h3>
+                        <p class="escape-description">World's largest shopping destination with aquarium & entertainment</p>
+                        <div class="escape-features">
+                            <span class="feature-badge family">Family Friendly</span>
+                            <span class="feature-badge discount">30% OFF</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="cooling-card">
-                    <span class="cooling-badge">Cool ✓</span>
-                    <h3>Early Morning Tours</h3>
-                    <p>Beat the heat with dawn experiences</p>
+
+                <!-- Mall of the Emirates -->
+                <div class="escape-card" data-modal="mall-emirates">
+                    <div class="escape-image">
+                        <img src="https://www.malloftheemirates.com/images/default-source/default-album/ski-school-1.jpg?sfvrsn=2df41059_5" alt="Mall of the Emirates">
+                        <div class="temp-badge">18°C</div>
+                    </div>
+                    <div class="escape-content">
+                        <h3>Mall of the Emirates</h3>
+                        <p class="escape-description">Real snow skiing and luxury shopping experience</p>
+                        <div class="escape-features">
+                            <span class="feature-badge luxury">Luxury Experience</span>
+                            <span class="feature-badge discount">40% OFF</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="cooling-card">
-                    <span class="cooling-badge">Indoor ✓</span>
-                    <h3>Shopping Malls</h3>
-                    <p>Climate-controlled retail therapy</p>
+
+                <!-- Ibn Battuta Mall -->
+                <div class="escape-card" data-modal="ibn-battuta">
+                    <div class="escape-image">
+                        <img src="https://www.ibnbattutamall.com/styles/files/images/court/india1.png" alt="Ibn Battuta Mall">
+                        <div class="temp-badge">20°C</div>
+                    </div>
+                    <div class="escape-content">
+                        <h3>Ibn Battuta Mall</h3>
+                        <p class="escape-description">Cultural themed courts with cinema and family entertainment</p>
+                        <div class="escape-features">
+                            <span class="feature-badge family">Family Friendly</span>
+                            <span class="feature-badge discount">25% OFF</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dubai Marina Mall -->
+                <div class="escape-card" data-modal="marina-mall">
+                    <div class="escape-image">
+                        <img src="https://www.visitdubai.com/-/media/gathercontent/poi/d/dubai-marina-mall/fallback-image/dubai-marina-mall-02.jpg?rev=1f643a4d2b7f4639b06b424a0195065c&cx=0.5&cy=0.64&cw=1556&ch=690" alt="Dubai Marina Mall">
+                        <div class="temp-badge">21°C</div>
+                    </div>
+                    <div class="escape-content">
+                        <h3>Dubai Marina Mall</h3>
+                        <p class="escape-description">Waterfront views with premium dining and entertainment</p>
+                        <div class="escape-features">
+                            <span class="feature-badge premium">Premium Location</span>
+                            <span class="feature-badge discount">35% OFF</span>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
         </div>
     </section>
 
@@ -481,7 +538,7 @@
                     <div class="hotels-grid">
                         <!-- Atlantis The Palm -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/85235522.jpg" alt="Atlantis The Palm" class="hotel-image">
+                            <img src="https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/85235522.jpg" alt="Atlantis The Palm" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -512,7 +569,7 @@
 
                         <!-- Four Seasons Resort Jumeirah Beach -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/123456789.jpg" alt="Four Seasons Resort Jumeirah Beach" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400&h=250&fit=crop" alt="Four Seasons Resort Jumeirah Beach" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -543,7 +600,7 @@
 
                         <!-- One&Only The Palm -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/987654321.jpg" alt="One&Only The Palm" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&h=250&fit=crop" alt="One&Only The Palm" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -574,7 +631,7 @@
 
                         <!-- Raffles The Palm Dubai -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/45678904.jpg" alt="Raffles The Palm Dubai" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=45678904.jpg" alt="Raffles The Palm Dubai" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -605,7 +662,7 @@
 
                         <!-- Anantara Dubai The Palm -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/55678905.jpg" alt="Anantara Dubai The Palm" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=55678905.jpg" alt="Anantara Dubai The Palm" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -636,7 +693,7 @@
 
                         <!-- Jumeirah Zabeel Saray -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/65678906.jpg" alt="Jumeirah Zabeel Saray" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=65678906.jpg" alt="Jumeirah Zabeel Saray" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -667,7 +724,7 @@
 
                         <!-- St. Regis Saadiyat Island Resort -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/75678907.jpg" alt="St. Regis Saadiyat Island Resort" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=75678907.jpg" alt="St. Regis Saadiyat Island Resort" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -698,7 +755,7 @@
 
                         <!-- Emirates Palace Mandarin Oriental -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/85678908.jpg" alt="Emirates Palace Mandarin Oriental" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=85678908.jpg" alt="Emirates Palace Mandarin Oriental" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -729,7 +786,7 @@
 
                         <!-- Park Hyatt Abu Dhabi -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/95678909.jpg" alt="Park Hyatt Abu Dhabi" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=95678909.jpg" alt="Park Hyatt Abu Dhabi" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -760,7 +817,7 @@
 
                         <!-- Ajman Saray Luxury Collection -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/10567891.jpg" alt="Ajman Saray Luxury Collection" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=10567891.jpg" alt="Ajman Saray Luxury Collection" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -796,7 +853,7 @@
                     <div class="hotels-grid">
                         <!-- Address Downtown -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/15678901.jpg" alt="Address Downtown" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=15678901.jpg" alt="Address Downtown" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -827,7 +884,7 @@
 
                         <!-- Armani Hotel Dubai -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/25678902.jpg" alt="Armani Hotel Dubai" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=25678902.jpg" alt="Armani Hotel Dubai" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -858,7 +915,7 @@
 
                         <!-- Palace Downtown -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/35678903.jpg" alt="Palace Downtown" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=35678903.jpg" alt="Palace Downtown" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -889,7 +946,7 @@
 
                         <!-- Taj Dubai -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/46578910.jpg" alt="Taj Dubai" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=46578910.jpg" alt="Taj Dubai" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -920,7 +977,7 @@
 
                         <!-- Address Sky View -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/56578911.jpg" alt="Address Sky View" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=56578911.jpg" alt="Address Sky View" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -951,7 +1008,7 @@
 
                         <!-- Kempinski The Boulevard -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/66578912.jpg" alt="Kempinski The Boulevard" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=66578912.jpg" alt="Kempinski The Boulevard" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -982,7 +1039,7 @@
 
                         <!-- Conrad Abu Dhabi Etihad Towers -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/76578913.jpg" alt="Conrad Abu Dhabi Etihad Towers" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=76578913.jpg" alt="Conrad Abu Dhabi Etihad Towers" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -1013,7 +1070,7 @@
 
                         <!-- Rosewood Al Maryah Island -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/86578914.jpg" alt="Rosewood Al Maryah Island" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=86578914.jpg" alt="Rosewood Al Maryah Island" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -1044,7 +1101,7 @@
 
                         <!-- Shangri-La Qaryat Al Beri -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/96578915.jpg" alt="Shangri-La Qaryat Al Beri" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=96578915.jpg" alt="Shangri-La Qaryat Al Beri" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -1075,7 +1132,7 @@
 
                         <!-- Radisson Blu Hotel Ajman -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/10657891.jpg" alt="Radisson Blu Hotel Ajman" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=10657891.jpg" alt="Radisson Blu Hotel Ajman" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★</span>
@@ -1111,7 +1168,7 @@
                     <div class="hotels-grid">
                         <!-- Four Seasons DIFC -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/11678920.jpg" alt="Four Seasons DIFC" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=11678920.jpg" alt="Four Seasons DIFC" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -1142,7 +1199,7 @@
 
                         <!-- JW Marriott Marquis Dubai -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/21678921.jpg" alt="JW Marriott Marquis Dubai" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=21678921.jpg" alt="JW Marriott Marquis Dubai" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -1173,7 +1230,7 @@
 
                         <!-- Hilton Dubai Creek -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/31678922.jpg" alt="Hilton Dubai Creek" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=31678922.jpg" alt="Hilton Dubai Creek" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -1204,7 +1261,7 @@
 
                         <!-- Hyatt Regency Dubai -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/41678923.jpg" alt="Hyatt Regency Dubai" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=41678923.jpg" alt="Hyatt Regency Dubai" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -1235,7 +1292,7 @@
 
                         <!-- Grand Hyatt Dubai -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/51678924.jpg" alt="Grand Hyatt Dubai" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=51678924.jpg" alt="Grand Hyatt Dubai" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -1266,7 +1323,7 @@
 
                         <!-- InterContinental Dubai Marina -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/61678925.jpg" alt="InterContinental Dubai Marina" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=61678925.jpg" alt="InterContinental Dubai Marina" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -1297,7 +1354,7 @@
 
                         <!-- Le Meridien Dubai -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/71678926.jpg" alt="Le Meridien Dubai" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=71678926.jpg" alt="Le Meridien Dubai" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -1328,7 +1385,7 @@
 
                         <!-- Fairmont Dubai -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/81678927.jpg" alt="Fairmont Dubai" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=81678927.jpg" alt="Fairmont Dubai" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -1359,7 +1416,7 @@
 
                         <!-- Crowne Plaza Dubai -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/91678928.jpg" alt="Crowne Plaza Dubai" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=91678928.jpg" alt="Crowne Plaza Dubai" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★</span>
@@ -1390,7 +1447,7 @@
 
                         <!-- Millennium Airport Hotel Dubai -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/10167892.jpg" alt="Millennium Airport Hotel Dubai" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=10167892.jpg" alt="Millennium Airport Hotel Dubai" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★</span>
@@ -1426,7 +1483,7 @@
                     <div class="hotels-grid">
                         <!-- JA Beach Hotel -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/12678930.jpg" alt="JA Beach Hotel" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=12678930.jpg" alt="JA Beach Hotel" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -1457,7 +1514,7 @@
 
                         <!-- Westin Dubai Mina Seyahi -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/22678931.jpg" alt="Westin Dubai Mina Seyahi" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=22678931.jpg" alt="Westin Dubai Mina Seyahi" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -1488,7 +1545,7 @@
 
                         <!-- Sheraton Jumeirah Beach Resort -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/32678932.jpg" alt="Sheraton Jumeirah Beach Resort" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=32678932.jpg" alt="Sheraton Jumeirah Beach Resort" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -1519,7 +1576,7 @@
 
                         <!-- Hilton Dubai Jumeirah -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/42678933.jpg" alt="Hilton Dubai Jumeirah" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=42678933.jpg" alt="Hilton Dubai Jumeirah" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -1550,7 +1607,7 @@
 
                         <!-- Le Royal Meridien Beach Resort -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/52678934.jpg" alt="Le Royal Meridien Beach Resort" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=52678934.jpg" alt="Le Royal Meridien Beach Resort" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -1581,7 +1638,7 @@
 
                         <!-- Jumeirah Beach Hotel -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/62678935.jpg" alt="Jumeirah Beach Hotel" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=62678935.jpg" alt="Jumeirah Beach Hotel" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -1612,7 +1669,7 @@
 
                         <!-- Rixos The Palm Dubai -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/72678936.jpg" alt="Rixos The Palm Dubai" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=72678936.jpg" alt="Rixos The Palm Dubai" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -1643,7 +1700,7 @@
 
                         <!-- Habtoor Grand Resort -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/82678937.jpg" alt="Habtoor Grand Resort" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=82678937.jpg" alt="Habtoor Grand Resort" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -1674,7 +1731,7 @@
 
                         <!-- Waldorf Astoria Dubai Palm Jumeirah -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/92678938.jpg" alt="Waldorf Astoria Dubai Palm Jumeirah" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=92678938.jpg" alt="Waldorf Astoria Dubai Palm Jumeirah" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★★</span>
@@ -1705,7 +1762,7 @@
 
                         <!-- JA Lake View Hotel -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/10267893.jpg" alt="JA Lake View Hotel" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=10267893.jpg" alt="JA Lake View Hotel" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★</span>
@@ -1741,7 +1798,7 @@
                     <div class="hotels-grid">
                         <!-- Rove Downtown -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/13678940.jpg" alt="Rove Downtown" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=13678940.jpg" alt="Rove Downtown" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★</span>
@@ -1772,7 +1829,7 @@
 
                         <!-- Citymax Hotel Bur Dubai -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/23678941.jpg" alt="Citymax Hotel Bur Dubai" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=23678941.jpg" alt="Citymax Hotel Bur Dubai" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★</span>
@@ -1803,7 +1860,7 @@
 
                         <!-- Hampton by Hilton Dubai Airport -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/33678942.jpg" alt="Hampton by Hilton Dubai Airport" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=33678942.jpg" alt="Hampton by Hilton Dubai Airport" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★</span>
@@ -1834,7 +1891,7 @@
 
                         <!-- Ibis Styles Dubai Jumeira -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/43678943.jpg" alt="Ibis Styles Dubai Jumeira" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=43678943.jpg" alt="Ibis Styles Dubai Jumeira" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★</span>
@@ -1865,7 +1922,7 @@
 
                         <!-- Holiday Inn Express Dubai Airport -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/53678944.jpg" alt="Holiday Inn Express Dubai Airport" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=53678944.jpg" alt="Holiday Inn Express Dubai Airport" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★</span>
@@ -1896,7 +1953,7 @@
 
                         <!-- Citymax Hotel Al Barsha -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/63678945.jpg" alt="Citymax Hotel Al Barsha" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=63678945.jpg" alt="Citymax Hotel Al Barsha" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★</span>
@@ -1927,7 +1984,7 @@
 
                         <!-- Premier Inn Dubai International Airport -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/73678946.jpg" alt="Premier Inn Dubai International Airport" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=73678946.jpg" alt="Premier Inn Dubai International Airport" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★</span>
@@ -1958,7 +2015,7 @@
 
                         <!-- Rove City Centre -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/83678947.jpg" alt="Rove City Centre" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=83678947.jpg" alt="Rove City Centre" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★</span>
@@ -1989,7 +2046,7 @@
 
                         <!-- Novotel Dubai Al Barsha -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/93678948.jpg" alt="Novotel Dubai Al Barsha" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=93678948.jpg" alt="Novotel Dubai Al Barsha" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★★</span>
@@ -2020,7 +2077,7 @@
 
                         <!-- Al Seef Heritage Hotel -->
                         <div class="hotel-card">
-                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/10367894.jpg" alt="Al Seef Heritage Hotel" class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop&q=10367894.jpg" alt="Al Seef Heritage Hotel" class="hotel-image" loading="lazy">
                             <div class="hotel-content">
                                 <div class="hotel-rating">
                                     <span class="stars">★★★</span>
