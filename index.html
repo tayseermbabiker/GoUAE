@@ -426,42 +426,1811 @@
     <!-- Booking Section -->
     <section id="booking" class="section">
         <div class="container">
-            <h2>Book Your UAE Experience</h2>
+            <h2 class="booking-title">Stay Where It Matters, Fly When It Fits.</h2>
 
-            <!-- Flight Booking -->
-            <div class="booking-widget">
-                <h3>✈️ Flights to UAE</h3>
-                <div class="skyscanner-widget">
-                    <p>Find the best flight deals to Dubai (DXB), Abu Dhabi (AUH), or Sharjah (SHJ)</p>
-                    <button class="book-btn" onclick="searchFlights()">Search Flights</button>
-                </div>
+            <!-- Primary Booking Tabs -->
+            <div class="booking-main-tabs">
+                <button class="main-tab-btn active" data-tab="flights" onclick="showMainTab('flights')">Flights</button>
+                <button class="main-tab-btn" data-tab="hotels" onclick="showMainTab('hotels')">Hotels</button>
             </div>
 
-            <!-- Hotel Categories -->
-            <div class="booking-widget">
-                <h3>🏨 Hotels by Category</h3>
-                <div class="hotel-categories">
-                    <button class="category-btn" onclick="searchHotels('family')">👨‍👩‍👧‍👦 Family</button>
-                    <button class="category-btn" onclick="searchHotels('solo')">🎒 Solo</button>
-                    <button class="category-btn" onclick="searchHotels('business')">💼 Business</button>
-                    <button class="category-btn" onclick="searchHotels('luxury')">⭐ Luxury</button>
-                    <button class="category-btn" onclick="searchHotels('budget')">💰 Budget</button>
+            <!-- Flights Content -->
+            <div id="flights-content" class="booking-content active">
+                <div class="search-fields">
+                    <div class="search-field">
+                        <label>From</label>
+                        <input type="text" placeholder="Departure city" id="departure">
+                    </div>
+                    <div class="search-field">
+                        <label>To</label>
+                        <select id="destination">
+                            <option value="DXB">Dubai (DXB)</option>
+                            <option value="AUH">Abu Dhabi (AUH)</option>
+                            <option value="SHJ">Sharjah (SHJ)</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label>Departure</label>
+                        <input type="date" id="departure-date">
+                    </div>
+                    <div class="search-field">
+                        <label>Return</label>
+                        <input type="date" id="return-date">
+                    </div>
                 </div>
+                <button class="search-flights-btn" onclick="searchFlights()">Search Flights</button>
+                <p class="flight-protip">Powered by Skyscanner: same great deals, no extra cost. Book with us and support this guide</p>
             </div>
 
-            <!-- Dining Guide -->
-            <div class="booking-widget">
-                <h3>🍽️ Dining Guide</h3>
-                <div class="dining-tabs">
-                    <button class="tab-btn active" data-category="rooftop">🏙️ Rooftop</button>
-                    <button class="tab-btn" data-category="street">🥙 Street Food</button>
-                    <button class="tab-btn" data-category="international">🌍 International</button>
-                    <button class="tab-btn" data-category="local">🇦🇪 Local</button>
-                    <button class="tab-btn" data-category="fine">🍾 Fine Dining</button>
+            <!-- Hotels Content -->
+            <div id="hotels-content" class="booking-content">
+                <p class="hotel-protip">powered by Booking.com, same trusted prices, no extra cost, and booking through our links helps keep this guide free.</p>
+
+                <!-- Secondary Hotel Category Tabs -->
+                <div class="hotel-category-tabs">
+                    <button class="category-tab-btn active" data-category="beachfront" onclick="showHotelCategory('beachfront')">Beach</button>
+                    <button class="category-tab-btn" data-category="downtown" onclick="showHotelCategory('downtown')">Downtown</button>
+                    <button class="category-tab-btn" data-category="business" onclick="showHotelCategory('business')">Business</button>
+                    <button class="category-tab-btn" data-category="family" onclick="showHotelCategory('family')">Family</button>
+                    <button class="category-tab-btn" data-category="budget" onclick="showHotelCategory('budget')">Budget</button>
                 </div>
-                <div id="dining-content" class="dining-content">
-                    <!-- Content loaded dynamically -->
+
+                <!-- Hotel Category Content Areas -->
+                <div id="beachfront-hotels" class="hotel-category-content active">
+                    <h3>Beachfront Hotels</h3>
+                    <div class="hotels-grid">
+                        <!-- Atlantis The Palm -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/85235522.jpg" alt="Atlantis The Palm" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Atlantis The Palm</h4>
+                                <div class="hotel-location">
+                                    Palm Jumeirah, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Aquaventure Waterpark included - 105 slides & attractions for resort guests</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>The Lost Chambers Aquarium access - 65,000 marine animals viewing</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Underwater suites available - Sleep surrounded by Ambassador Lagoon</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/atlantis-the-palm.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Four Seasons Resort Jumeirah Beach -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/123456789.jpg" alt="Four Seasons Resort Jumeirah Beach" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Four Seasons Resort Jumeirah Beach</h4>
+                                <div class="hotel-location">
+                                    Jumeirah Beach, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Private beach cabanas with butler service - Dedicated staff for each cabana</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Nobu restaurant on-site - Celebrity chef dining without leaving resort</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Kids For All Seasons program - Supervised activities in 4 languages</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/four-seasons-resort-jumeirah-beach.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- One&Only The Palm -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/987654321.jpg" alt="One&Only The Palm" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">One&Only The Palm</h4>
+                                <div class="hotel-location">
+                                    Palm Jumeirah, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Overwater spa pavilions - Treatments suspended above Arabian Gulf</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>101 Marina restaurant - Only floating restaurant in Middle East</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Beachfront villas with private pools - Direct beach access from room</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/one-only-the-palm.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Raffles The Palm Dubai -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/45678904.jpg" alt="Raffles The Palm Dubai" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Raffles The Palm Dubai</h4>
+                                <div class="hotel-location">
+                                    Palm Jumeirah, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Sky Pool on 23rd floor - Infinity pool 100 meters above Palm Jumeirah</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Cinq Mondes Spa treatments - Exclusive French spa rituals</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>All suites minimum 86 sqm - Largest entry-level accommodations in Dubai</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/raffles-the-palm-dubai.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Anantara Dubai The Palm -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/55678905.jpg" alt="Anantara Dubai The Palm" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Anantara Dubai The Palm</h4>
+                                <div class="hotel-location">
+                                    Palm Jumeirah, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Overwater villas with glass floors - First in Middle East to offer this</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Lagoon-facing infinity pools - Private pools in each villa</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Thai cooking classes on stilts - Unique cultural experience over water</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/anantara-dubai-the-palm.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Jumeirah Zabeel Saray -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/65678906.jpg" alt="Jumeirah Zabeel Saray" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Jumeirah Zabeel Saray</h4>
+                                <div class="hotel-location">
+                                    Palm Jumeirah, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Talise Ottoman Spa - 7,000 sqm spa with Turkish bath rituals</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Al Orjouan restaurant - Only Lebanese fine dining on Palm Jumeirah</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Private beach with Ottoman pavilions - Themed architecture extending to beach</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/jumeirah-zabeel-saray.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- St. Regis Saadiyat Island Resort -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/75678907.jpg" alt="St. Regis Saadiyat Island Resort" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">St. Regis Saadiyat Island Resort</h4>
+                                <div class="hotel-location">
+                                    Saadiyat Island, Abu Dhabi
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Golf cart transportation - Complimentary carts to navigate 200-hectare property</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Saadiyat Beach Golf Club access - Gary Player-designed championship course</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Sea plane landing platform - Direct helicopter/seaplane arrivals</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/st-regis-saadiyat-island-resort.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Emirates Palace Mandarin Oriental -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/85678908.jpg" alt="Emirates Palace Mandarin Oriental" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Emirates Palace Mandarin Oriental</h4>
+                                <div class="hotel-location">
+                                    Abu Dhabi, Abu Dhabi
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Gold cappuccino service - 24-karat gold flakes in coffee</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Private beach with 85 cabanas - Each with air conditioning and butler service</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Helicopter landing pad - VIP arrival directly at hotel</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/emirates-palace.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Park Hyatt Abu Dhabi -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/95678909.jpg" alt="Park Hyatt Abu Dhabi" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Park Hyatt Abu Dhabi</h4>
+                                <div class="hotel-location">
+                                    Saadiyat Island, Abu Dhabi
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Saadiyat Beach 9-hole golf course - Only beachfront golf in Abu Dhabi</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Atarmia Spa with private beach access - Spa treatments with ocean views</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>3 private beaches spanning 6 miles - Multiple beach experiences in one resort</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/park-hyatt-abu-dhabi.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Ajman Saray Luxury Collection -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/10567891.jpg" alt="Ajman Saray Luxury Collection" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Ajman Saray Luxury Collection</h4>
+                                <div class="hotel-location">
+                                    Ajman Beach, Ajman
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Traditional dhow boat trips - Complimentary sunset cruises for guests</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Camel rides on private beach - Only beachfront camel experience in UAE</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Al Sakher seafood restaurant over water - Built on stilts extending into Arabian Gulf</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/ajman-saray-luxury-collection.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <div id="downtown-hotels" class="hotel-category-content">
+                    <h3>Downtown Hotels</h3>
+                    <div class="hotels-grid">
+                        <!-- Address Downtown -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/15678901.jpg" alt="Address Downtown" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Address Downtown</h4>
+                                <div class="hotel-location">
+                                    Downtown Dubai, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Dubai Fountain choreographed views - Rooms positioned for optimal fountain viewing</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Neos restaurant on 63rd floor - Highest restaurant with Burj Khalifa views</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Direct skybridge to Dubai Mall - Climate-controlled walkway connection</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/address-downtown.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Armani Hotel Dubai -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/25678902.jpg" alt="Armani Hotel Dubai" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Armani Hotel Dubai</h4>
+                                <div class="hotel-location">
+                                    Burj Khalifa, Downtown Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Giorgio Armani personally designed interiors - Every detail curated by fashion legend</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Levels 1-8 & 38-39 of Burj Khalifa - Exclusive floors in world's tallest building</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Armani Spa with signature treatments - Custom skincare using Armani cosmetics</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/armani-hotel-dubai.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Palace Downtown -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/35678903.jpg" alt="Palace Downtown" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Palace Downtown</h4>
+                                <div class="hotel-location">
+                                    Downtown Dubai, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Arabian-style architecture with modern luxury - Traditional wind towers with contemporary amenities</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Thiptara Thai restaurant over water - Floating restaurant with fountain views</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Horse carriage arrivals - Traditional welcome befitting palace setting</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/palace-downtown.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Taj Dubai -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/46578910.jpg" alt="Taj Dubai" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Taj Dubai</h4>
+                                <div class="hotel-location">
+                                    Downtown Dubai, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Indian hospitality with Middle Eastern location - Namaste greeting and Indian butler service</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Bombay Brasserie rooftop - Authentic Indian dining with skyline views</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Jiva Spa with Ayurvedic treatments - Ancient wellness practices in modern setting</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/taj-dubai.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Address Sky View -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/56578911.jpg" alt="Address Sky View" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Address Sky View</h4>
+                                <div class="hotel-location">
+                                    Downtown Dubai, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Sky Bridge with glass slide - 150-meter transparent slide between towers</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>CE LA VIE restaurant and sky pool - Infinity pool 220 meters above ground</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Observatory deck access - Private viewing platform for guests</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/address-sky-view.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Kempinski The Boulevard -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/66578912.jpg" alt="Kempinski The Boulevard" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Kempinski The Boulevard</h4>
+                                <div class="hotel-location">
+                                    Downtown Dubai, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>European castle architecture - Bavarian-inspired design in Middle East</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Paulaner Brauhaus with imported beer - Authentic German brewery experience</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Kids castle play area - Medieval-themed children's facilities</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/kempinski-the-boulevard.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Conrad Abu Dhabi Etihad Towers -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/76578913.jpg" alt="Conrad Abu Dhabi Etihad Towers" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Conrad Abu Dhabi Etihad Towers</h4>
+                                <div class="hotel-location">
+                                    Corniche, Abu Dhabi
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Observation deck on 74th floor - 360-degree views of Abu Dhabi</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Ray's Grill restaurant - Only steakhouse with marina and city views</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Pool deck 200 meters above sea level - Highest rooftop pool in Abu Dhabi</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/conrad-abu-dhabi-etihad-towers.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Rosewood Al Maryah Island -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/86578914.jpg" alt="Rosewood Al Maryah Island" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Rosewood Al Maryah Island</h4>
+                                <div class="hotel-location">
+                                    Al Maryah Island, Abu Dhabi
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Sense Spa over Marina waters - Treatment rooms suspended above water</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>House of Wisdom cultural center access - Adjacent to world's most advanced library</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Majlis private dining rooms - Traditional Arabian meeting spaces</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/rosewood-al-maryah-island.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Shangri-La Qaryat Al Beri -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/96578915.jpg" alt="Shangri-La Qaryat Al Beri" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Shangri-La Qaryat Al Beri</h4>
+                                <div class="hotel-location">
+                                    Qaryat Al Beri, Abu Dhabi
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Abra boat transportation - Traditional water taxi to cultural district</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Souk Qaryat Al Beri access - Exclusive shopping and dining via water</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Sheikh Zayed Grand Mosque proximity - 5-minute walk to iconic landmark</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/shangri-la-qaryat-al-beri.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Radisson Blu Hotel Ajman -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/10657891.jpg" alt="Radisson Blu Hotel Ajman" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Radisson Blu Hotel Ajman</h4>
+                                <div class="hotel-location">
+                                    Downtown Ajman, Ajman
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Dual beach and city access - Only downtown hotel with private beach</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Filini Italian restaurant terrace - Beachfront fine dining with mountain views</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Traditional souk within walking distance - Cultural shopping 200 meters away</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/radisson-blu-ajman.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="business-hotels" class="hotel-category-content">
+                    <h3>Business Hotels</h3>
+                    <div class="hotels-grid">
+                        <!-- Four Seasons DIFC -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/11678920.jpg" alt="Four Seasons DIFC" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Four Seasons DIFC</h4>
+                                <div class="hotel-location">
+                                    DIFC, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Express Airport Transfers - 15-minute access to/from DXB Airport</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>24/7 Business Center - International phone lines and videoconferencing</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Executive Club Lounge - Continental breakfast and networking spaces</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/four-seasons-difc.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- JW Marriott Marquis Dubai -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/21678921.jpg" alt="JW Marriott Marquis Dubai" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">JW Marriott Marquis Dubai</h4>
+                                <div class="hotel-location">
+                                    Business Bay, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>World's tallest hotel - 355m with direct metro connectivity</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Executive floors with private check-in - Fast-track business services</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Multiple meeting rooms with city views - International video facilities</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/jw-marriott-marquis-dubai.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Hilton Dubai Creek -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/31678922.jpg" alt="Hilton Dubai Creek" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Hilton Dubai Creek</h4>
+                                <div class="hotel-location">
+                                    Deira, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Airport shuttle service - 20-minute guaranteed transfers</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Executive lounge with international breakfast - Western and Continental options</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Creek-side business center - 24/7 printing and conference facilities</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/hilton-dubai-creek.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Hyatt Regency Dubai -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/41678923.jpg" alt="Hyatt Regency Dubai" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Hyatt Regency Dubai</h4>
+                                <div class="hotel-location">
+                                    Deira, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Rotating rooftop restaurant - Al Dawaar with 360-degree business dining</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Gold Passport benefits - Express check-in for business travelers</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Dubai Creek proximity - Traditional business district location</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/hyatt-regency-dubai.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Grand Hyatt Dubai -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/51678924.jpg" alt="Grand Hyatt Dubai" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Grand Hyatt Dubai</h4>
+                                <div class="hotel-location">
+                                    Umm Hurair, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Healthcare City proximity - Medical business hub access</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Grand Club level - Private executive check-in and continental breakfast</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Multiple restaurants and meeting spaces - International business dining</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/grand-hyatt-dubai.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- InterContinental Dubai Marina -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/61678925.jpg" alt="InterContinental Dubai Marina" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">InterContinental Dubai Marina</h4>
+                                <div class="hotel-location">
+                                    Dubai Marina, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Marina business district location - Walking distance to corporate offices</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Club InterContinental - Executive lounge with European breakfast</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Express airport transfers - 25-minute direct connection to DXB</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/intercontinental-dubai-marina.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Le Meridien Dubai -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/71678926.jpg" alt="Le Meridien Dubai" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Le Meridien Dubai</h4>
+                                <div class="hotel-location">
+                                    Garhoud, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Airport adjacency - 5-minute transfer from Dubai International</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>French business hospitality - European-style executive services</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>24-hour business center - International communication facilities</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/le-meridien-dubai.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Fairmont Dubai -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/81678927.jpg" alt="Fairmont Dubai" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Fairmont Dubai</h4>
+                                <div class="hotel-location">
+                                    Trade Centre, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>World Trade Centre connection - Direct access to exhibition halls</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Fairmont Gold floor - Executive club with continental breakfast</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Emirates Towers metro link - Business district connectivity</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/fairmont-dubai.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Crowne Plaza Dubai -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/91678928.jpg" alt="Crowne Plaza Dubai" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Crowne Plaza Dubai</h4>
+                                <div class="hotel-location">
+                                    Sheikh Zayed Road, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Financial District location - Walking distance to major banks</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Priority Club rewards - Express check-in for frequent business travelers</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Meeting rooms with sheikh zayed road views - Corporate event facilities</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/crowne-plaza-dubai.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Millennium Airport Hotel Dubai -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/10167892.jpg" alt="Millennium Airport Hotel Dubai" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Millennium Airport Hotel Dubai</h4>
+                                <div class="hotel-location">
+                                    Dubai Airport, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Terminal 3 connection - 2-minute walk from arrivals</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>24-hour business services - Always-available international communication</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Express transit hotel - Perfect for layover business meetings</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/millennium-airport-hotel-dubai.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="family-hotels" class="hotel-category-content">
+                    <h3>Family Hotels</h3>
+                    <div class="hotels-grid">
+                        <!-- JA Beach Hotel -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/12678930.jpg" alt="JA Beach Hotel" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">JA Beach Hotel</h4>
+                                <div class="hotel-location">
+                                    Jebel Ali, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Interconnecting family rooms - Privacy for parents while keeping children close</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Cool Zone Kids Club - English-speaking staff with supervised activities</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Shallow kids pools with lifeguards - Western safety standards</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/ja-beach-hotel.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Westin Dubai Mina Seyahi -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/22678931.jpg" alt="Westin Dubai Mina Seyahi" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Westin Dubai Mina Seyahi</h4>
+                                <div class="hotel-location">
+                                    Marina Beach, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Westin Family Kids Club - Age-appropriate programs with English activities</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Family beach cabanas - Private spaces with child-safe beach access</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Temperature-controlled family pool - Comfort for Western families</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/westin-dubai-mina-seyahi.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Sheraton Jumeirah Beach Resort -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/32678932.jpg" alt="Sheraton Jumeirah Beach Resort" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Sheraton Jumeirah Beach Resort</h4>
+                                <div class="hotel-location">
+                                    Jumeirah Beach, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Adjoining family suites - Separate spaces connected for family convenience</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Kids Club with international staff - Activities in multiple languages</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Zero-entry kids pool - Safe shallow water with gradual depth</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/sheraton-jumeirah-beach-resort.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Hilton Dubai Jumeirah -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/42678933.jpg" alt="Hilton Dubai Jumeirah" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Hilton Dubai Jumeirah</h4>
+                                <div class="hotel-location">
+                                    Jumeirah Beach, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Family connecting rooms - Separate adult and children sleeping areas</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Kids Zone with English programs - Supervised activities with familiar language</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Children's splash pad - Water features designed for toddler safety</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/hilton-dubai-jumeirah.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Le Royal Meridien Beach Resort -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/52678934.jpg" alt="Le Royal Meridien Beach Resort" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Le Royal Meridien Beach Resort</h4>
+                                <div class="hotel-location">
+                                    Jumeirah Beach, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Penguin Club for children - English-speaking staff with international programs</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Family pool complex - Separate areas for adults and children with lifeguards</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Adjoining family rooms - Connected suites for large families</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/le-royal-meridien-beach-resort.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Jumeirah Beach Hotel -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/62678935.jpg" alt="Jumeirah Beach Hotel" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Jumeirah Beach Hotel</h4>
+                                <div class="hotel-location">
+                                    Jumeirah Beach, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Sinbad's Kids Club - Multilingual staff with age-appropriate activities</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Family rooms with bunk beds - Fun accommodation for children</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Wild Wadi Waterpark access - Free entry to adjacent water park</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/jumeirah-beach-hotel.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Rixos The Palm Dubai -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/72678936.jpg" alt="Rixos The Palm Dubai" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Rixos The Palm Dubai</h4>
+                                <div class="hotel-location">
+                                    Palm Jumeirah, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Rixy Kids Club - International program with English-speaking counselors</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Family suites with kitchenettes - Self-catering options for families</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Kids-only pool with slides - Safe water play area with supervision</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/rixos-the-palm-dubai.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Habtoor Grand Resort -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/82678937.jpg" alt="Habtoor Grand Resort" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Habtoor Grand Resort</h4>
+                                <div class="hotel-location">
+                                    Marina Beach, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Kids Club with international activities - Programs in English and European languages</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Interconnecting family suites - Flexible accommodation for large families</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Children's lagoon pool - Shallow water with tropical theming</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/habtoor-grand-resort.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Waldorf Astoria Dubai Palm Jumeirah -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/92678938.jpg" alt="Waldorf Astoria Dubai Palm Jumeirah" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Waldorf Astoria Dubai Palm Jumeirah</h4>
+                                <div class="hotel-location">
+                                    Palm Jumeirah, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Young Explorers Club - Premium kids program with international standards</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Family beach villas - Private accommodations with direct beach access</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Kids splash zone with water features - Safe aquatic play area</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/waldorf-astoria-dubai-palm-jumeirah.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- JA Lake View Hotel -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/10267893.jpg" alt="JA Lake View Hotel" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">JA Lake View Hotel</h4>
+                                <div class="hotel-location">
+                                    Jebel Ali, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Family apartments with kitchens - Self-catering facilities for extended stays</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Kids Club with outdoor playground - English-speaking staff and nature activities</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Multiple pools including kids area - Graduated depths for different ages</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/ja-lake-view-hotel.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="budget-hotels" class="hotel-category-content">
+                    <h3>Budget Hotels</h3>
+                    <div class="hotels-grid">
+                        <!-- Rove Downtown -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/13678940.jpg" alt="Rove Downtown" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Rove Downtown</h4>
+                                <div class="hotel-location">
+                                    Downtown Dubai, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Free high-speed Wi-Fi - Unlimited connectivity without roaming charges</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>International TV channels - BBC, CNN, and home country news access</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>24/7 English-speaking front desk - Round-the-clock assistance in native language</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/rove-downtown.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Citymax Hotel Bur Dubai -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/23678941.jpg" alt="Citymax Hotel Bur Dubai" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Citymax Hotel Bur Dubai</h4>
+                                <div class="hotel-location">
+                                    Bur Dubai, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>International electrical outlets - Universal plug types and voltage converters</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Complimentary Wi-Fi throughout - Free internet access in all areas</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Currency exchange services - On-site financial convenience</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/citymax-hotel-bur-dubai.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Hampton by Hilton Dubai Airport -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/33678942.jpg" alt="Hampton by Hilton Dubai Airport" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Hampton by Hilton Dubai Airport</h4>
+                                <div class="hotel-location">
+                                    Dubai Airport, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Free airport shuttle - 24/7 complimentary transfers to terminals</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>English TV channels and international news - Familiar media access</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>24-hour front desk with English support - Always-available assistance</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/hampton-by-hilton-dubai-airport.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Ibis Styles Dubai Jumeira -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/43678943.jpg" alt="Ibis Styles Dubai Jumeira" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Ibis Styles Dubai Jumeira</h4>
+                                <div class="hotel-location">
+                                    Jumeira, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Free Wi-Fi with high-speed internet - Unlimited connectivity for international travelers</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>International restaurant options - Familiar European and Western cuisines</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Reliable air conditioning - Essential comfort standard for Western visitors</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/ibis-styles-dubai-jumeira.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Holiday Inn Express Dubai Airport -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/53678944.jpg" alt="Holiday Inn Express Dubai Airport" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Holiday Inn Express Dubai Airport</h4>
+                                <div class="hotel-location">
+                                    Dubai Airport, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Complimentary breakfast with Western options - Familiar morning meal choices</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Free Wi-Fi and international electrical outlets - Connectivity without extra charges</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>24/7 reception with English support - Round-the-clock native language assistance</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/holiday-inn-express-dubai-airport.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Citymax Hotel Al Barsha -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/63678945.jpg" alt="Citymax Hotel Al Barsha" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Citymax Hotel Al Barsha</h4>
+                                <div class="hotel-location">
+                                    Al Barsha, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Mall of the Emirates proximity - Easy access to shopping and metro connection</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Taxi and Uber pickup points - Convenient transportation access</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>International TV channels - BBC, CNN, and Western news networks</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/citymax-hotel-al-barsha.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Premier Inn Dubai International Airport -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/73678946.jpg" alt="Premier Inn Dubai International Airport" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Premier Inn Dubai International Airport</h4>
+                                <div class="hotel-location">
+                                    Dubai Airport, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>British hospitality standards - Familiar service quality and English-speaking staff</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Free Wi-Fi and international plug sockets - Connectivity essentials included</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>24-hour reception and currency exchange - Convenient services for international travelers</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/premier-inn-dubai-international-airport.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Rove City Centre -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/83678947.jpg" alt="Rove City Centre" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Rove City Centre</h4>
+                                <div class="hotel-location">
+                                    Deira, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>City Centre Deira Mall connection - Direct shopping and dining access</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Free high-speed Wi-Fi throughout - Unlimited internet for international guests</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Metro connectivity and taxi pickup - Easy city transportation access</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/rove-city-centre.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Novotel Dubai Al Barsha -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/93678948.jpg" alt="Novotel Dubai Al Barsha" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Novotel Dubai Al Barsha</h4>
+                                <div class="hotel-location">
+                                    Al Barsha, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>French hospitality with international standards - European service quality</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Free Wi-Fi and international restaurant options - Connectivity and familiar dining</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>24/7 English-speaking reception - Always-available native language support</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/novotel-dubai-al-barsha.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Al Seef Heritage Hotel -->
+                        <div class="hotel-card">
+                            <img src="https://cf.bimg.ly/w-800/q-auto,f-auto/https://r-xx.bstatic.com/xdata/images/hotel/max1024x768/10367894.jpg" alt="Al Seef Heritage Hotel" class="hotel-image">
+                            <div class="hotel-content">
+                                <div class="hotel-rating">
+                                    <span class="stars">★★★</span>
+                                </div>
+                                <h4 class="hotel-name">Al Seef Heritage Hotel</h4>
+                                <div class="hotel-location">
+                                    Al Seef, Dubai
+                                </div>
+                                <div class="hotel-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Dubai Creek heritage location - Traditional charm with modern amenities</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Free Wi-Fi and international TV channels - Essential connectivity and entertainment</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">•</span>
+                                        <span>Metro access and taxi pickup points - Convenient city transportation</span>
+                                    </div>
+                                </div>
+                                <a href="https://www.booking.com/hotel/ae/al-seef-heritage-hotel.html?aid=YOUR_AFFILIATE_ID" target="_blank" class="hotel-book-btn">
+                                    Book on Booking.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dining Section -->
+    <section id="dining" class="section">
+        <div class="container">
+            <h2>Dining & Restaurants</h2>
+
+            <!-- Dining Tabs -->
+            <div class="dining-tabs">
+                <button class="tab-btn active" data-category="fine" onclick="showDining('fine', this)">Fine Dining</button>
+                <button class="tab-btn" data-category="international" onclick="showDining('international', this)">International</button>
+                <button class="tab-btn" data-category="local" onclick="showDining('local', this)">Local & Emirati</button>
+                <button class="tab-btn" data-category="rooftop" onclick="showDining('rooftop', this)">Scenic Views</button>
+            </div>
+
+            <!-- Dining Content -->
+            <div id="dining-content" class="dining-content">
+                <!-- Content loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About UAE Adventures</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Your Complete UAE Tourism Companion</h3>
+                    <p>UAE Adventures is your comprehensive guide to experiencing the best of the United Arab Emirates. We're dedicated to helping Western tourists navigate and enjoy the incredible diversity that the UAE offers - from world-class luxury experiences to authentic cultural immersion.</p>
+
+                    <h4>What We Offer</h4>
+                    <ul>
+                        <li><strong>Curated Experiences:</strong> Hand-picked activities, dining, and accommodations that cater to Western preferences while showcasing authentic UAE culture</li>
+                        <li><strong>Practical Information:</strong> Essential visa, transportation, and cultural guides to ensure smooth travel</li>
+                        <li><strong>Honest Reviews:</strong> Real insights from experienced travelers and local experts</li>
+                        <li><strong>Value-Focused Recommendations:</strong> Options across all budget ranges without compromising on quality or safety</li>
+                    </ul>
+
+                    <h4>Our Mission</h4>
+                    <p>To bridge the gap between Western travelers and the incredible experiences the UAE offers, providing comprehensive, reliable, and culturally sensitive travel guidance that enhances every visitor's journey.</p>
+
+                    <h4>Transparency</h4>
+                    <p>This guide is supported through affiliate partnerships with trusted booking platforms like Booking.com and Skyscanner. When you book through our links, we earn a small commission at no extra cost to you. This helps us maintain our free, comprehensive travel guides while ensuring you get the same great deals and service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Have questions about your UAE trip? Found outdated information? Want to share your experience? We'd love to hear from you!</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <h4>General Inquiries</h4>
+                            <p>Email: info@uaeadventures.guide</p>
+                            <p>Response time: 24-48 hours</p>
+                        </div>
+
+                        <div class="contact-method">
+                            <h4>Travel Planning Assistance</h4>
+                            <p>Email: planning@uaeadventures.guide</p>
+                            <p>For personalized itinerary recommendations</p>
+                        </div>
+
+                        <div class="contact-method">
+                            <h4>Content Updates</h4>
+                            <p>Email: updates@uaeadventures.guide</p>
+                            <p>Report outdated information or suggest new content</p>
+                        </div>
+
+                        <div class="contact-method">
+                            <h4>Partnership Opportunities</h4>
+                            <p>Email: partnerships@uaeadventures.guide</p>
+                            <p>For hotels, restaurants, and tour operators</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-note">
+                        <p><strong>Note:</strong> We're a digital travel guide and don't operate physical tours or make direct bookings. For reservations, please use our affiliate links to trusted booking platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section id="privacy" class="section">
+        <div class="container">
+            <h2>Privacy Policy</h2>
+            <div class="legal-content">
+                <p><strong>Last updated:</strong> January 2025</p>
+
+                <h3>Information We Collect</h3>
+                <h4>Automatically Collected Information</h4>
+                <ul>
+                    <li>Device information (browser type, operating system)</li>
+                    <li>Usage data (pages visited, time spent, click patterns)</li>
+                    <li>IP address and general location data</li>
+                    <li>Referral source</li>
+                </ul>
+
+                <h4>Information You Provide</h4>
+                <ul>
+                    <li>Email addresses (if you contact us)</li>
+                    <li>Feedback and inquiries you submit</li>
+                    <li>Any personal information in your communications</li>
+                </ul>
+
+                <h3>How We Use Your Information</h3>
+                <ul>
+                    <li>Improve our website content and user experience</li>
+                    <li>Respond to your inquiries and provide support</li>
+                    <li>Analyze website performance and user behavior</li>
+                    <li>Comply with legal obligations</li>
+                </ul>
+
+                <h3>Information Sharing</h3>
+                <p>We do not sell, trade, or rent your personal information to third parties. We may share aggregated, non-personally identifiable information for analytics purposes.</p>
+
+                <h3>Affiliate Links</h3>
+                <p>Our website contains affiliate links to booking platforms. When you click these links, the partner sites may collect information according to their own privacy policies.</p>
+
+                <h3>Cookies and Tracking</h3>
+                <p>We use cookies to enhance your browsing experience and analyze website traffic. You can disable cookies in your browser settings.</p>
+
+                <h3>Data Security</h3>
+                <p>We implement appropriate security measures to protect your information against unauthorized access, alteration, disclosure, or destruction.</p>
+
+                <h3>Contact Us</h3>
+                <p>For privacy-related questions, contact us at privacy@uaeadventures.guide</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms Section -->
+    <section id="terms" class="section">
+        <div class="container">
+            <h2>Terms of Service</h2>
+            <div class="legal-content">
+                <p><strong>Last updated:</strong> January 2025</p>
+
+                <h3>Acceptance of Terms</h3>
+                <p>By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement.</p>
+
+                <h3>Use License</h3>
+                <p>Permission is granted to temporarily access the materials on UAE Adventures for personal, non-commercial transitory viewing only.</p>
+
+                <h3>Disclaimer</h3>
+                <ul>
+                    <li>Information is provided for general guidance only</li>
+                    <li>Travel conditions, prices, and availability can change rapidly</li>
+                    <li>We are not responsible for decisions made based on our content</li>
+                    <li>Always verify current information with official sources</li>
+                </ul>
+
+                <h3>Affiliate Relationships</h3>
+                <p>This website participates in affiliate programs. We may earn commissions from qualifying purchases made through our links at no additional cost to you.</p>
+
+                <h3>Content Accuracy</h3>
+                <p>While we strive for accuracy, information may become outdated. Users should verify current details before making travel decisions.</p>
+
+                <h3>Limitation of Liability</h3>
+                <p>UAE Adventures shall not be liable for any damages arising from the use of this website or reliance on its content.</p>
+
+                <h3>External Links</h3>
+                <p>Our website contains links to external sites. We are not responsible for the content or practices of these third-party websites.</p>
+
+                <h3>Modifications</h3>
+                <p>We reserve the right to revise these terms at any time. Continued use of the website constitutes acceptance of any changes.</p>
+
+                <h3>Contact Information</h3>
+                <p>For questions about these terms, contact us at legal@uaeadventures.guide</p>
             </div>
         </div>
     </section>
@@ -475,10 +2244,10 @@
                     <p class="disclaimer">Affiliate partnerships help us provide free, comprehensive travel guides</p>
                 </div>
                 <div class="footer-links">
-                    <a href="about-uae.html">About</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="privacy.html">Privacy</a>
-                    <a href="terms.html">Terms</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#privacy">Privacy</a>
+                    <a href="#terms">Terms</a>
                 </div>
             </div>
         </div>

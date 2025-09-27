@@ -2619,44 +2619,64 @@ const hotelCategories = {
 
 // Dining Categories
 const diningCategories = {
-    rooftop: {
-        title: 'Rooftop Dining',
+    fine: {
+        title: 'Fine Dining & Celebrity Chef',
         venues: [
-            { name: 'Atmosphere - Burj Khalifa', type: 'Fine Dining', emirate: 'Dubai', description: 'World\'s highest restaurant with stunning views' },
-            { name: 'Ce La Vie - Four Seasons', type: 'International', emirate: 'Dubai', description: 'Stylish rooftop with city skyline views' },
-            { name: 'Zero Gravity', type: 'Beach Club', emirate: 'Dubai', description: 'Beachfront dining with panoramic views' }
-        ]
-    },
-    street: {
-        title: 'Street Food & Local Eats',
-        venues: [
-            { name: 'Al Dhiyafah Street', type: 'Lebanese', emirate: 'Dubai', description: 'Authentic Middle Eastern street food' },
-            { name: 'Gold Souq Food Court', type: 'Mixed', emirate: 'Dubai', description: 'Traditional flavors in historic setting' },
-            { name: 'Ravi Restaurant', type: 'Pakistani', emirate: 'Dubai', description: 'Famous budget-friendly local spot' }
+            { name: 'Dinner by Heston Blumenthal', type: 'British ⭐⭐', emirate: 'Dubai', description: 'Historic British cuisine dating back 700 years - Signature "Meat Fruit" dish with traditional Yorkshire pudding' },
+            { name: 'Row on 45', type: 'French-Japanese ⭐⭐', emirate: 'Dubai', description: '45th floor with panoramic Dubai views - 17-course tasting menu for only 22 guests by Jason Atherton' },
+            { name: 'FZN by Björn Frantzén', type: 'European-Japanese ⭐⭐', emirate: 'Dubai', description: 'Only 27 seats in two-story intimate space - Modern European with Japanese influences and skyline views' },
+            { name: 'STAY by Yannick Alléno', type: 'French ⭐⭐', emirate: 'Dubai', description: 'One&Only The Palm island location - "Less is more" French cuisine with surprise tasting menus' },
+            { name: 'Al Muntaha', type: 'European ⭐', emirate: 'Dubai', description: '27th floor Burj Al Arab location - Floor-to-ceiling windows with European cuisine and Mediterranean touches' },
+            { name: 'Jara by Martín Berasategui', type: 'Basque ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: '8-Michelin star chef\'s first Dubai restaurant - Traditional Basque family-style with clay-pit oven specialties' },
+            { name: 'Erth', type: 'Emirati ⭐', emirate: 'Abu Dhabi', description: 'First Michelin-starred Emirati restaurant - Modern Emirati cuisine in Qasr Al Hosn cultural district' },
+            { name: 'Hakkasan', type: 'Cantonese ⭐', emirate: 'Abu Dhabi', description: 'Emirates Palace location - Contemporary Cantonese with Peking Duck and caviar specialty' },
+            { name: 'COYA', type: 'Peruvian ⭐⭐⭐⭐⭐', emirate: 'Abu Dhabi', description: 'Vibrant Peruvian fusion at Four Seasons - Chilean Sea Bass with Pisco Sour cocktails and live Latin music' },
+            { name: 'Seascape Restaurant', type: 'International ⭐⭐⭐⭐', emirate: 'Ajman', description: 'Waterfront fine dining with Arabian Gulf views - International cuisine with fresh seafood focus away from Dubai crowds' }
         ]
     },
     international: {
         title: 'International Cuisine',
         venues: [
-            { name: 'Gordon Ramsay Hell\'s Kitchen', type: 'European', emirate: 'Dubai', description: 'Celebrity chef experience' },
-            { name: 'Nobu', type: 'Japanese', emirate: 'Dubai', description: 'World-renowned Japanese fine dining' },
-            { name: 'La Petite Maison', type: 'French', emirate: 'Dubai', description: 'Authentic French Mediterranean cuisine' }
+            { name: 'Orfali Bros Bistro', type: 'Syrian Fusion ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: '#1 MENA restaurant - Syrian brothers\' story-driven dining with Greek, Asian, and Middle Eastern fusion' },
+            { name: 'Zuma Dubai', type: 'Japanese ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: 'Contemporary Japanese robatayaki in DIFC - Miso black cod signature with trendy atmosphere and live DJ evenings' },
+            { name: '3Fils', type: 'Asian Fusion ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: 'Asian-fusion waterfront with Instagram appeal - Wagyu sliders and truffle dishes in casual fine dining setting' },
+            { name: 'BOCA', type: 'Contemporary ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: '#12 MENA ranking contemporary international - Four Seasons DIFC with modern European techniques' },
+            { name: 'Jun\'s', type: 'Asian-Western ⭐⭐⭐⭐', emirate: 'Dubai', description: 'Third-culture cuisine by Chef Kelvin Cheung - Asian-Western hybrid dishes with innovative presentations' },
+            { name: 'Long Teng Seafood', type: 'Chinese ⭐⭐⭐⭐', emirate: 'Dubai', description: 'Live seafood tanks for freshness - Best dim sum in Dubai with family-style sharing portions' },
+            { name: 'LPM Abu Dhabi', type: 'French-Mediterranean ⭐⭐⭐⭐⭐', emirate: 'Abu Dhabi', description: 'Al Maryah Island location - Provence-inspired menu with extensive French wine list and marina views' },
+            { name: 'BB Social Dining', type: 'Asian Fusion ⭐⭐⭐⭐⭐', emirate: 'Abu Dhabi', description: 'Creative Asian fusion from Dubai import - Dim sum and habibti bao specialties at Rosewood with "achingly cool" vibe' },
+            { name: 'Li Jiang', type: 'Pan-Asian ⭐⭐⭐⭐⭐', emirate: 'Abu Dhabi', description: 'Asian fusion with Sheikh Zayed Grand Mosque views - Hand-pulled noodles and pan-Asian menu variety' },
+            { name: 'Wardat Beijing Restaurant', type: 'Indo-Chinese ⭐⭐⭐⭐', emirate: 'Ajman', description: 'Nepali chef creating Indian-influenced Chinese - Generous portions at competitive prices with attentive service' }
         ]
     },
     local: {
-        title: 'Local Emirati Cuisine',
+        title: 'Authentic Middle Eastern & Emirati',
         venues: [
-            { name: 'Al Fanar Restaurant', type: 'Emirati', emirate: 'Dubai', description: 'Traditional Emirati dishes in heritage setting' },
-            { name: 'Seven Sands', type: 'Emirati', emirate: 'Abu Dhabi', description: 'Contemporary take on local flavors' },
-            { name: 'Logma', type: 'Emirati', emirate: 'Dubai', description: 'Modern Emirati comfort food' }
+            { name: 'Al Fanar Restaurant', type: 'Emirati ⭐⭐⭐⭐', emirate: 'Dubai', description: 'Traditional Emirati with vintage UAE decor - Machboos spiced rice and Harees with Arabic coffee service' },
+            { name: 'Bait Maryam', type: 'Palestinian-Levantine ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: '#15 MENA ranking - Homestyle cooking by female Palestinian chef with traditional family recipes' },
+            { name: 'Three by Eva', type: 'Palestinian-Levantine ⭐⭐⭐⭐', emirate: 'Dubai', description: 'Contemporary Palestinian-Levantine by female chef - Modern interpretation with storytelling menu explaining cultural significance' },
+            { name: 'Al Nafoorah', type: 'Lebanese ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: 'Lebanese fine dining at Jumeirah Al Qasr - Premium mezze selection with live Arabic music and traditional atmosphere' },
+            { name: 'Awtar', type: 'Lebanese ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: 'Lebanese specializing in hummus Beiruti - Traditional preparation methods with family-style sharing portions' },
+            { name: 'Arabian Tea House', type: 'Emirati ⭐⭐⭐⭐', emirate: 'Dubai', description: 'Old Dubai courtyard in historic Bastakiya district - Traditional Emirati teas and Arabic coffee cultural immersion' },
+            { name: 'Martabaan by Hemant Oberoi', type: 'Indian ⭐⭐⭐⭐⭐', emirate: 'Abu Dhabi', description: 'Emirates Palace location - Authentic Indian cuisine with exceptional seafood and varqui crab specialty' },
+            { name: 'Al Khayma Heritage', type: 'Emirati ⭐⭐⭐⭐', emirate: 'Abu Dhabi', description: 'Bedouin tent dining with traditional atmosphere - Emirati machboos and grilled meats with cultural shows' },
+            { name: 'Em Sherif Sea Café', type: 'Lebanese ⭐⭐⭐⭐⭐', emirate: 'Abu Dhabi', description: 'Corniche beachfront Lebanese - Comprehensive Arabic menu with mezze selection, indoor and outdoor terrace options' },
+            { name: 'Charsi Restaurant', type: 'Afghan ⭐⭐⭐⭐', emirate: 'Ajman', description: 'Authentic Shinwari Afghan cuisine - Live meat selection with Afghani Pulao and aromatic spices' }
         ]
     },
-    fine: {
-        title: 'Fine Dining',
+    rooftop: {
+        title: 'Rooftop & Scenic Waterfront Dining',
         venues: [
-            { name: 'Zuma', type: 'Japanese', emirate: 'Dubai', description: 'Contemporary Japanese robatayaki' },
-            { name: 'Ossiano', type: 'European', emirate: 'Dubai', description: 'Underwater dining experience' },
-            { name: 'CUT by Wolfgang Puck', type: 'Steakhouse', emirate: 'Dubai', description: 'Premium steaks and modern American cuisine' }
+            { name: 'Pierchic', type: 'Italian ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: 'Overwater Italian dining at Madinat Jumeirah - Direct water views from all tables with sustainable seafood' },
+            { name: 'Ibn Al Bahr', type: 'Seafood ⭐⭐⭐⭐', emirate: 'Dubai', description: 'Affordable beachside seafood on Palm Jumeirah - Direct beach access with fresh catch daily and palm tree setting' },
+            { name: 'Blu Sky Lounge', type: 'International ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: 'Dubai skyline panorama with rooftop infinity pool setting - Sunset timing perfect for Western dinner preferences' },
+            { name: 'Secret Garden by VII', type: 'Seafood ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: 'Enchanting garden atmosphere with twinkling lights - Seafood bar with Instagram-worthy presentation' },
+            { name: 'At.mosphere (Burj Khalifa)', type: 'International ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: 'World\'s highest restaurant on 122nd floor - 360-degree views with international fine dining and European techniques' },
+            { name: 'Shimmers', type: 'Greek ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: 'Beachfront Greek cuisine with Arabian Gulf views - Jumeirah Beach access with fresh seafood grilled with Greek herbs' },
+            { name: 'Azura Panoramic Lounge', type: 'International ⭐⭐⭐⭐⭐', emirate: 'Abu Dhabi', description: 'St. Regis Nation Towers 74th floor - Highest dining in Abu Dhabi with 360-degree revolving restaurant views' },
+            { name: 'SAL Saadiyat Island', type: 'Mediterranean ⭐⭐⭐⭐⭐', emirate: 'Abu Dhabi', description: 'Beachfront Mediterranean with white sand beach access - Saadiyat Island cultural district with sunset terrace' },
+            { name: 'Café Del Mar Abu Dhabi', type: 'Mediterranean ⭐⭐⭐⭐⭐', emirate: 'Abu Dhabi', description: 'Sunset dining with Mediterranean vibes - Beach club atmosphere with international DJs and Arabian Gulf views' },
+            { name: 'Al Sakher (Ajman Saray)', type: 'Seafood ⭐⭐⭐⭐⭐', emirate: 'Ajman', description: 'Overwater dining on stilts extending into Arabian Gulf - Traditional dhow boat transfers with fresh seafood and Emirati preparation' }
         ]
     }
 };
@@ -2901,7 +2921,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initInfoSlider();
 
     // Show default dining category
-    showDining('rooftop');
+    showDining('fine');
 
     // Event delegation for modal cards
     document.addEventListener('click', function(e) {
@@ -3439,3 +3459,61 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Progressive Disclosure Booking System Functions
+function showMainTab(tabName) {
+    // Remove active class from all main tabs
+    document.querySelectorAll('.main-tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    // Add active class to clicked tab
+    document.querySelector(`[data-tab="${tabName}"]`).classList.add('active');
+
+    // Hide all booking content
+    document.querySelectorAll('.booking-content').forEach(content => {
+        content.classList.remove('active');
+    });
+
+    // Show selected tab content
+    document.getElementById(`${tabName}-content`).classList.add('active');
+
+    // If hotels tab is selected, ensure beachfront tab is active by default
+    if (tabName === 'hotels') {
+        showHotelCategory('beachfront');
+    }
+}
+
+function showHotelCategory(categoryName) {
+    // Remove active class from all category tabs
+    document.querySelectorAll('.category-tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    // Add active class to clicked category tab
+    document.querySelector(`[data-category="${categoryName}"]`).classList.add('active');
+
+    // Hide all hotel category content
+    document.querySelectorAll('.hotel-category-content').forEach(content => {
+        content.classList.remove('active');
+    });
+
+    // Show selected category content
+    document.getElementById(`${categoryName}-hotels`).classList.add('active');
+}
+
+function searchFlights() {
+    const departure = document.getElementById('departure').value;
+    const destination = document.getElementById('destination').value;
+    const departureDate = document.getElementById('departure-date').value;
+    const returnDate = document.getElementById('return-date').value;
+
+    // Build Skyscanner affiliate URL (placeholder)
+    const affiliateId = 'your-affiliate-id'; // Replace with actual affiliate ID
+    const skyscannerUrl = `https://www.skyscanner.com/transport/flights/${departure}/${destination}/${departureDate}/${returnDate}/?associateid=${affiliateId}`;
+
+    // Open in new tab
+    window.open(skyscannerUrl, '_blank');
+
+    console.log('Flight search:', { departure, destination, departureDate, returnDate });
+}
