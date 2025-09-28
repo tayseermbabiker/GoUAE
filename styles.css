@@ -373,7 +373,18 @@ body {
     }
 }
 
-.info-card, .experience-card, .emirate-card, .cooling-card {
+.info-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    border: 1px solid var(--border-light);
+    flex-shrink: 0;
+    color: white;
+}
+
+.experience-card, .emirate-card, .cooling-card {
     background: var(--background);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-md);
@@ -422,42 +433,42 @@ body {
 
 /* Vibrant card color themes - individual gradients */
 .info-card[data-modal="visa"] {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
     color: white;
 }
 
 .info-card[data-modal="alcohol"] {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
     color: white;
 }
 
 .info-card[data-modal="security"] {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
     color: white;
 }
 
 .info-card[data-modal="weather"] {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
     color: white;
 }
 
 .info-card[data-modal="culture"] {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
     color: white;
 }
 
 .info-card[data-modal="currency"] {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
     color: white;
 }
 
 .info-card[data-modal="transport"] {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
     color: white;
 }
 
 .info-card[data-modal="health"] {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
     color: white;
 }
 
@@ -536,7 +547,7 @@ body {
 }
 
 .book-btn, .category-btn, .tab-btn {
-    background: var(--cta-primary);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
     color: white;
     border: none;
     padding: var(--space-sm) var(--space-md);
@@ -550,7 +561,7 @@ body {
 }
 
 .book-btn:hover, .category-btn:hover, .tab-btn:hover {
-    background: var(--cta-secondary);
+    background: linear-gradient(135deg, #556ce6 0%, #6b4c96 30%, #e085f5 70%, #f24966 100%);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
@@ -1189,8 +1200,10 @@ body {
     }
 
     .book-btn.purple {
-        background: transparent !important;
-        color: var(--cta-primary) !important;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text !important;
         border: none !important;
         margin: 0 !important;
         padding: 0 !important;
@@ -1689,8 +1702,8 @@ body {
     top: 8px;
     right: 8px;
     background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    padding: 2px 6px;
+    border-radius: 6px;
+    padding: 1px 4px;
     margin: 0;
     z-index: 2;
     text-align: center;
@@ -1700,7 +1713,7 @@ body {
 }
 
 .product-btn {
-    background: linear-gradient(135deg, rgb(102, 126, 234) 0%, rgb(118, 75, 162) 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -1839,25 +1852,55 @@ body {
 }
 
 .product-btn.primary {
-    background: var(--cta-primary);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
     color: white;
 }
 
 .product-btn.primary:hover {
-    background: var(--cta-secondary);
+    background: linear-gradient(135deg, #556ce6 0%, #6b4c96 30%, #e085f5 70%, #f24966 100%);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
 
 .product-btn.secondary {
-    background: var(--secondary);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
     color: white;
 }
 
 .product-btn.secondary:hover {
-    background: var(--secondary-dark);
+    background: linear-gradient(135deg, #556ce6 0%, #6b4c96 30%, #e085f5 70%, #f24966 100%);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
+}
+
+/* Beat the Heat Modal Button Styles */
+.btn.btn-primary, .btn.btn-secondary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+    margin: 8px 8px 8px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn.btn-primary:hover, .btn.btn-secondary:hover {
+    background: linear-gradient(135deg, #556ce6 0%, #6b4c96 30%, #e085f5 70%, #f24966 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(102, 126, 234, 0.4);
+    text-decoration: none;
+    color: white;
 }
 
 .product-btn.bundle-btn {
@@ -2031,7 +2074,7 @@ body {
     }
 
     .product-btn {
-        background: linear-gradient(135deg, rgb(102, 126, 234) 0%, rgb(118, 75, 162) 100%);
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
         color: white;
         border: none;
         font-size: 12px;
@@ -2130,13 +2173,16 @@ body {
 }
 
 .main-tab-btn.active {
-    color: var(--primary);
-    border-bottom-color: var(--primary);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
+    color: white;
+    border-bottom-color: transparent;
+    border-radius: var(--radius-sm);
 }
 
 .main-tab-btn:hover {
-    color: var(--primary);
-    background: var(--bg-secondary);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
+    color: white;
+    border-radius: var(--radius-sm);
 }
 
 .booking-content {
@@ -2217,7 +2263,7 @@ body {
 }
 
 .search-flights-btn {
-    background: #0071c2;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
     color: white;
     border: none;
     padding: 16px 24px;
@@ -2231,17 +2277,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 8px rgba(0,113,194,0.3);
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
 }
 
 .search-flights-btn:hover {
-    background: #005999;
-    box-shadow: 0 4px 12px rgba(0,113,194,0.4);
+    background: linear-gradient(135deg, #556ce6 0%, #6b4c96 30%, #e085f5 70%, #f24966 100%);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
 }
 
 .search-flights-btn:active {
     transform: translateY(1px);
-    box-shadow: 0 1px 4px rgba(0,113,194,0.3);
+    box-shadow: 0 1px 4px rgba(102, 126, 234, 0.3);
 }
 
 .flight-protip,
@@ -2292,13 +2338,13 @@ body {
 }
 
 .category-tab-btn.active {
-    background: var(--primary);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
     color: white;
-    border-color: var(--primary);
+    border-color: transparent;
 }
 
 .category-tab-btn:hover {
-    background: var(--primary);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
     color: white;
     border-color: var(--primary);
 }
@@ -2361,6 +2407,19 @@ body {
         line-height: 1.4;
         padding: 10px 22px;
     }
+
+    .location-badge {
+        font-size: 14px;
+        padding: 6px 12px;
+        max-width: 160px;
+        font-weight: 600;
+    }
+
+    .category-badge {
+        font-size: 7px;
+        padding: 2px 5px;
+    }
+
 
     .hotel-category-tabs {
         gap: var(--space-xs);
@@ -2458,7 +2517,7 @@ body {
 }
 
 .hotel-book-btn {
-    background: var(--primary);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
     color: white;
     border: none;
     padding: var(--space-md) var(--space-xl);
@@ -2471,11 +2530,15 @@ body {
     text-decoration: none;
     display: inline-block;
     text-align: center;
+    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
 }
 
 .hotel-book-btn:hover {
-    background: var(--secondary);
-    transform: translateY(-1px);
+    background: linear-gradient(135deg, #556ce6 0%, #6b4c96 30%, #e085f5 70%, #f24966 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(102, 126, 234, 0.4);
+    text-decoration: none;
+    color: white;
 }
 
 /* Mobile hotel cards */
@@ -2518,13 +2581,13 @@ body {
 }
 
 .tab-btn.active {
-    background: var(--primary);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
     color: white;
-    border-color: var(--primary);
+    border-color: transparent;
 }
 
 .tab-btn:hover {
-    background: var(--primary);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
     color: white;
     border-color: var(--primary);
 }
@@ -2834,20 +2897,29 @@ body {
 
 /* Beat the Heat Section */
 .beat-heat-section {
-    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #bae6fd 100%);
-    padding: var(--space-xl) 0;
+    background: linear-gradient(135deg, #deb887 0%, #ffb347 25%, #ff8c69 50%, #6495ed 75%, #4169e1 100%);
+    padding: var(--space-md) 0;
 }
 
 .beat-heat-header {
     text-align: center;
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-lg);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: var(--radius-md);
+    padding: var(--space-sm) var(--space-md);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .beat-heat-header h2 {
-    color: var(--primary);
+    background: linear-gradient(135deg, #ff8a00 0%, #ff6b35 30%, #ff4757 70%, #c44569 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: var(--space-sm);
     font-size: 2rem;
     font-weight: 600;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3)) drop-shadow(0 1px 2px rgba(255,255,255,0.2));
 }
 
 .heat-subtitle {
@@ -2930,16 +3002,37 @@ body {
     transform: scale(1.05);
 }
 
-.temp-badge {
+
+.location-badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    white-space: nowrap;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.category-badge {
     position: absolute;
     top: var(--space-sm);
-    right: var(--space-sm);
-    background: linear-gradient(135deg, #06b6d4, #0891b2);
+    left: var(--space-sm);
+    background: linear-gradient(135deg, #6f42c1, #8b5cf6);
     color: white;
-    padding: 4px 8px;
+    padding: 3px 8px;
     border-radius: var(--radius-sm);
+    font-size: 9px;
     font-weight: 600;
-    font-size: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
@@ -3281,6 +3374,11 @@ body {
 @media (max-width: 768px) {
     .beat-heat-header h2 {
         font-size: 1.8rem;
+        background: linear-gradient(135deg, #ff8a00 0%, #ff6b35 30%, #ff4757 70%, #c44569 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3)) drop-shadow(0 1px 2px rgba(255,255,255,0.2));
     }
 
     .heat-subtitle {

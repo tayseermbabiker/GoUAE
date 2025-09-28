@@ -1835,7 +1835,7 @@ const modalContent = {
         `
     },
     'skydiving': {
-        title: 'Skydiving & Extreme Watersports',
+        title: 'Skydiving',
         content: `
             <div class="experience-highlights">
                 <div class="highlight-card">
@@ -2902,14 +2902,128 @@ const diningCategories = {
                 <h4>Location Benefits</h4>
                 <p><strong>Temperature:</strong> 21°C with sea breeze circulation</p>
                 <p><strong>Views:</strong> Direct Marina and yacht views from dining areas</p>
-                <p><strong>Summer Special:</strong> 35% off dining packages with entertainment combos</p>
-            </div>
+                </div>
 
             <div class="modal-guide-hint">
                 <p><strong>Pro tip:</strong> Visit during sunset hours for the best Marina views and photo opportunities</p>
             </div>
         `
     }
+};
+
+// Add Beat the Heat modals
+modalContent['dubai-mall'] = {
+    title: 'Dubai Mall - Indoor Entertainment Hub',
+    content: `
+        <div class="experience-highlights">
+            <div class="highlight-card">
+                <h5>House of Hype</h5>
+                <p>Dubai's mega immersive wonderland with 18 themed worlds and 100+ interactive experiences</p>
+            </div>
+            <div class="highlight-card">
+                <h5>Content Creation Hub</h5>
+                <p>Social media-ready spaces with green screen studios, gaming zones, and Instagram-worthy backdrops</p>
+            </div>
+            <div class="highlight-card">
+                <h5>Ice Rink & Winter Sports</h5>
+                <p>Olympic-size ice skating rink with lessons and equipment rental available</p>
+            </div>
+        </div>
+
+        <div class="modal-booking-section">
+            <h5>Temperature: 22°C - Perfect Climate Control</h5>
+            <div class="booking-buttons">
+                <a href="https://dubai.platinumlist.net/event-tickets/house-of-hype-dubai-mall" class="btn btn-primary" target="_blank" rel="noopener">Book House of Hype</a>
+                <a href="https://dubai.platinumlist.net/event-tickets/dubai-ice-rink?ref=yjzkmgy&link=" class="btn btn-secondary" target="_blank" rel="noopener">Ice Rink Tickets</a>
+            </div>
+        </div>
+
+    `
+};
+
+modalContent['mall-emirates'] = {
+    title: 'Mall of the Emirates - Alpine Experience',
+    content: `
+        <div class="experience-highlights">
+            <div class="highlight-card">
+                <h5>Ski Dubai</h5>
+                <p>Real snow skiing and snowboarding in 18°C alpine conditions</p>
+            </div>
+            <div class="highlight-card">
+                <h5>Penguin Encounters</h5>
+                <p>Meet and interact with real penguins in sub-zero environments</p>
+            </div>
+            <div class="highlight-card">
+                <h5>Snow Activities</h5>
+                <p>Sledding, snowball fights, and snow angel making for all ages</p>
+            </div>
+        </div>
+
+        <div class="modal-booking-section">
+            <h5>Temperature: 18°C - Real Alpine Climate</h5>
+            <div class="booking-buttons">
+                <a href="https://dubai.platinumlist.net/event-tickets/ski-dubai" class="btn btn-primary" target="_blank" rel="noopener">Book Ski Dubai</a>
+                <a href="https://dubai.platinumlist.net/event-tickets/ski-dubai-snow-premium-with-penguin-encounter" class="btn btn-secondary" target="_blank" rel="noopener">Penguin Encounters</a>
+            </div>
+        </div>
+
+    `
+};
+
+modalContent['ibn-battuta'] = {
+    title: 'Ibn Battuta Mall - Cultural Journey',
+    content: `
+        <div class="experience-highlights">
+            <div class="highlight-card">
+                <h5>Six Themed Courts</h5>
+                <p>Experience architecture inspired by India, China, Persia, Egypt, Tunisia, and Andalusia</p>
+            </div>
+            <div class="highlight-card">
+                <h5>IMAX Cinema</h5>
+                <p>Premium movie experience with latest blockbusters in air-conditioned comfort</p>
+            </div>
+            <div class="highlight-card">
+                <h5>Cultural Shopping</h5>
+                <p>Unique boutiques and authentic cultural artifacts from around the world</p>
+            </div>
+        </div>
+
+        <div class="modal-booking-section">
+            <h5>Temperature: 20°C - Cultural Comfort | Free Entry</h5>
+        </div>
+
+        <div class="modal-guide-hint">
+            <p><strong>Pro tip:</strong> Each court represents a different region - plan 2-3 hours to explore all themed areas</p>
+        </div>
+    `
+};
+
+modalContent['marina-mall'] = {
+    title: 'Dubai Marina Mall - Waterfront Experience',
+    content: `
+        <div class="experience-highlights">
+            <div class="highlight-card">
+                <h5>Marina Views</h5>
+                <p>Stunning waterfront views of luxury yachts and modern architecture</p>
+            </div>
+            <div class="highlight-card">
+                <h5>Premium Dining</h5>
+                <p>International restaurants with Marina views and outdoor terraces</p>
+            </div>
+            <div class="highlight-card">
+                <h5>Evening Entertainment</h5>
+                <p>Live music and entertainment venues with sophisticated atmosphere</p>
+            </div>
+        </div>
+
+        <div class="modal-booking-section">
+            <h5>Temperature: 21°C - Marina Breeze | Free Entry</h5>
+        </div>
+
+        <div class="modal-guide-hint">
+            <p><strong>Pro tip:</strong> Visit during sunset hours for the best Marina views and photo opportunities</p>
+        </div>
+    `
 };
 
 // Debug: Check modalContent construction
@@ -3372,10 +3486,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Escape cards - open modal for mall details
         if (e.target.closest('.escape-card')) {
+            console.log('Escape card clicked!');
             const card = e.target.closest('.escape-card');
             const modalType = card.dataset.modal;
+            console.log('Modal type:', modalType);
             if (modalType) {
+                console.log('Calling openModal with:', modalType);
                 openModal(modalType);
+            } else {
+                console.log('No modal type found on card');
             }
         }
 
