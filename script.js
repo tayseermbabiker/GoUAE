@@ -1843,12 +1843,12 @@ const modalContent = {
                     <p>Freefall from 13,000 feet with certified instructors, experiencing unmatched views of Dubai's coastline and landmarks</p>
                 </div>
                 <div class="highlight-card">
-                    <h5>Water Sports Package</h5>
-                    <p>Jet skiing, parasailing, wakeboarding, and flyboarding - all the adrenaline-pumping water activities you crave</p>
+                    <h5>Professional Equipment</h5>
+                    <p>State-of-the-art parachutes, altitude meters, and safety gear maintained to international standards</p>
                 </div>
                 <div class="highlight-card">
-                    <h5>Professional Safety</h5>
-                    <p>Internationally certified instructors, top-quality equipment, and comprehensive safety briefings for all activities</p>
+                    <h5>Expert Instruction</h5>
+                    <p>Internationally certified skydiving instructors with thousands of jumps experience and perfect safety records</p>
                 </div>
             </div>
 
@@ -1856,9 +1856,9 @@ const modalContent = {
                 <h4>Adventure Packages</h4>
                 <div class="included-grid">
                     <div class="included-card standard">
-                        <h5>Single Activity</h5>
+                        <h5>Basic Jump</h5>
                         <ul>
-                            <li>Choice of skydiving OR water sports</li>
+                            <li>Tandem skydiving experience</li>
                             <li>Professional safety equipment</li>
                             <li>Basic photo package included</li>
                             <li>Safety briefing and training</li>
@@ -1866,20 +1866,20 @@ const modalContent = {
                         </ul>
                     </div>
                     <div class="included-card premium">
-                        <h5>Combo Adventure</h5>
+                        <h5>Premium Jump</h5>
                         <ul>
-                            <li>Everything from Single Activity</li>
-                            <li>Skydiving + water sports combo</li>
+                            <li>Everything from Basic Jump</li>
+                            <li>Extended freefall time</li>
                             <li>HD video footage included</li>
                             <li>Priority scheduling</li>
-                            <li>Lunch at beachfront restaurant</li>
+                            <li>Certificate of completion</li>
                             <li>Professional photography</li>
                         </ul>
                     </div>
                     <div class="included-card vip">
-                        <h5>Ultimate Adrenaline</h5>
+                        <h5>Ultimate Sky Experience</h5>
                         <ul>
-                            <li>Everything from Combo</li>
+                            <li>Everything from Premium Jump</li>
                             <li>Private instructor sessions</li>
                             <li>Helicopter scenic flight</li>
                             <li>Premium equipment upgrade</li>
@@ -1916,6 +1916,87 @@ const modalContent = {
 
             <div class="modal-guide-hint">
                 <p><strong>Pro tip:</strong> Book through our Partner links to enjoy discounts of up to 25% — at no extra cost to you, it also helps us keep this guide running</p>
+            </div>
+        `
+    },
+    'extreme-water': {
+        title: 'Extreme Water Sports',
+        content: `
+            <div class="experience-highlights">
+                <div class="highlight-card">
+                    <h5>Flyboard Experience</h5>
+                    <p>Soar up to 15 meters above water with water-powered jet propulsion technology at Palm Jumeirah</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Jetpack Adventure</h5>
+                    <p>Experience personal water jetpack flight with full 360-degree maneuverability and professional instruction</p>
+                </div>
+                <div class="highlight-card">
+                    <h5>Jetovator Experience</h5>
+                    <p>Ride the unique water-powered hover bike that combines motorcycle control with jet propulsion</p>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Activity Packages</h4>
+                <div class="included-grid">
+                    <div class="included-card standard">
+                        <h5>Single Activity</h5>
+                        <ul>
+                            <li>Choice of Flyboard, Jetpack, or Jetovator</li>
+                            <li>Professional safety equipment & wetsuit</li>
+                            <li>30-minute water session</li>
+                            <li>Safety briefing and training</li>
+                            <li>Basic photo package</li>
+                        </ul>
+                    </div>
+                    <div class="included-card premium">
+                        <h5>Combo Experience</h5>
+                        <ul>
+                            <li>Try 2 different water sports</li>
+                            <li>Extended 45-minute sessions</li>
+                            <li>HD video footage included</li>
+                            <li>Premium equipment upgrade</li>
+                            <li>Professional photography</li>
+                            <li>Light refreshments included</li>
+                        </ul>
+                    </div>
+                    <div class="included-card vip">
+                        <h5>Ultimate Water Thrills</h5>
+                        <ul>
+                            <li>All 3 activities included</li>
+                            <li>Private instructor sessions</li>
+                            <li>60-minute extended experience</li>
+                            <li>Jet ski bonus session</li>
+                            <li>VIP lounge access</li>
+                            <li>Professional drone footage</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>Activity Information</h4>
+                <div class="logistics-info">
+                    <div class="logistics-card">
+                        <h5>Location</h5>
+                        <p><strong>The Palm Jumeirah</strong><br>
+                        Atlantis Aquaventure Beach<br>
+                        Free shuttle from Dubai Marina</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Requirements</h5>
+                        <p><strong>Age:</strong> 16+ years<br>
+                        <strong>Swimming:</strong> Basic swimming ability required<br>
+                        <strong>Weight:</strong> 45-120kg</p>
+                    </div>
+                    <div class="logistics-card">
+                        <h5>Best Times</h5>
+                        <p><strong>Season:</strong> Year-round availability<br>
+                        <strong>Hours:</strong> 9 AM - 6 PM daily<br>
+                        <strong>Conditions:</strong> Calm water preferred</p>
+                    </div>
+                </div>
             </div>
         `
     },
@@ -3082,6 +3163,7 @@ window.bookExperience = function(platform, experienceId) {
             'desert-safari': 'https://dubai.platinumlist.net/attraction/desertsafaris?ref=yjzkmgy&link=',
             'aquarium': 'https://dubai.platinumlist.net/event-tickets/dubai-aquarium-underwater-zoo-penguin-cove-nursery-experience?ref=yjzkmgy&link=',
             'skydiving': 'https://dubai.platinumlist.net/attraction/skydive-dubai?ref=yjzkmgy&link=',
+            'extreme-water': 'https://dubai.platinumlist.net/attraction/water-sports/jet-ski?ref=yjzkmgy&link=',
             'yacht': 'https://dubai.platinumlist.net/attraction/attractions-yacht-brunches?ref=yjzkmgy&link=',
             'louvre-abu-dhabi': 'https://abu-dhabi.platinumlist.net/event-tickets/louvre-abu-dhabi-museum-light-and-peace-museum',
             'yas-island': 'https://abu-dhabi.platinumlist.net/event-tickets/yas-island-theme-parks-ferrari-world-abu-dhabi-yas-waterworld-warner-bros-world'

@@ -126,7 +126,7 @@ body {
 .logo h1 {
     font-size: 24px;
     font-weight: 700;
-    background: linear-gradient(135deg, var(--purple-start) 0%, var(--purple-mid) 30%, var(--purple-bright) 70%, var(--purple-coral) 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -369,7 +369,7 @@ body {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 
@@ -1200,10 +1200,8 @@ body {
     }
 
     .book-btn.purple {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%) !important;
-        -webkit-background-clip: text !important;
-        -webkit-text-fill-color: transparent !important;
-        background-clip: text !important;
+        background: transparent !important;
+        color: #667eea !important;
         border: none !important;
         margin: 0 !important;
         padding: 0 !important;
