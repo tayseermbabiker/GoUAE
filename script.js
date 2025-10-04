@@ -2765,7 +2765,7 @@ const diningCategories = {
         venues: [
             { name: 'Pierchic', type: 'Italian ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: 'Overwater Italian dining at Madinat Jumeirah - Direct water views from all tables with sustainable seafood' },
             { name: 'Ibn Al Bahr', type: 'Seafood ⭐⭐⭐⭐', emirate: 'Dubai', description: 'Affordable beachside seafood on Palm Jumeirah - Direct beach access with fresh catch daily and palm tree setting' },
-            { name: 'Blu Sky Lounge', type: 'International ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: 'Dubai skyline panorama with rooftop infinity pool setting - Sunset timing perfect for Western dinner preferences' },
+            { name: 'Blu Sky Lounge', type: 'International ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: 'Dubai skyline panorama with rooftop infinity pool setting - Sunset timing perfect for international dinner preferences' },
             { name: 'Secret Garden by VII', type: 'Seafood ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: 'Enchanting garden atmosphere with twinkling lights - Seafood bar with Instagram-worthy presentation' },
             { name: 'At.mosphere (Burj Khalifa)', type: 'International ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: 'Worlds highest restaurant on 122nd floor - 360-degree views with international fine dining and European techniques' },
             { name: 'Shimmers', type: 'Greek ⭐⭐⭐⭐⭐', emirate: 'Dubai', description: 'Beachfront Greek cuisine with Arabian Gulf views - Jumeirah Beach access with fresh seafood grilled with Greek herbs' },
@@ -2914,7 +2914,7 @@ const diningCategories = {
                         </ul>
                     </div>
                     <div class="included-card premium">
-                        <h5>Western Courts</h5>
+                        <h5>International Courts</h5>
                         <ul>
                             <li>Egypt Court - Pharaonic themes</li>
                             <li>Tunisia Court - Islamic architecture</li>
@@ -3241,7 +3241,7 @@ window.showHeatCategory = function(category, targetElement) {
     const heatCategories = {
         shopping: {
             title: 'Luxury Shopping Malls with Attractions',
-            stat: '38% of Western tourist summer activities',
+            stat: '38% of international tourist summer activities',
             attractions: [
                 {
                     name: 'Dubai Mall',
@@ -3268,7 +3268,7 @@ window.showHeatCategory = function(category, targetElement) {
         },
         culture: {
             title: 'Cultural Indoor Experiences',
-            stat: '29% of Western tourists seeking authentic experiences',
+            stat: '29% of international tourists seeking authentic experiences',
             attractions: [
                 {
                     name: 'Louvre Abu Dhabi',
@@ -3295,7 +3295,7 @@ window.showHeatCategory = function(category, targetElement) {
         },
         sports: {
             title: 'Indoor Sports & Adventure Activities',
-            stat: '26% of Western visitors seeking active entertainment',
+            stat: '26% of international visitors seeking active entertainment',
             attractions: [
                 {
                     name: 'Ski Dubai',
