@@ -3199,7 +3199,7 @@ window.searchFlights = function() {
     const checkoutStr = checkout.toISOString().split('T')[0];
 
     // Skyscanner affiliate URL - replace with actual affiliate ID
-    const skyscannerUrl = `https://www.skyscanner.com/flights-to/uae/${checkinStr}/${checkoutStr}?adultsv2=1&childrenv2=&ref=gouae`;
+    const skyscannerUrl = `https://www.skyscanner.com/flights-to/uae/${checkinStr}/${checkoutStr}?adultsv2=1&childrenv2=&ref=halauae`;
     window.open(skyscannerUrl, '_blank');
 }
 
@@ -3214,7 +3214,7 @@ window.searchHotels = function(category) {
     const checkoutStr = checkout.toISOString().split('T')[0];
 
     // Booking.com affiliate URL for Dubai - replace with actual affiliate ID
-    const bookingUrl = `https://www.booking.com/searchresults.html?dest_id=-782831&dest_type=city&checkin=${checkinStr}&checkout=${checkoutStr}&group_adults=2&no_rooms=1&offset=0&aid=gouae2024`;
+    const bookingUrl = `https://www.booking.com/searchresults.html?dest_id=-782831&dest_type=city&checkin=${checkinStr}&checkout=${checkoutStr}&group_adults=2&no_rooms=1&offset=0&aid=halauae2024`;
     window.open(bookingUrl, '_blank');
 
     // Track hotel category selection
