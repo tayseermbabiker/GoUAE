@@ -3513,9 +3513,9 @@ img[loading="lazy"].loaded {
    =================================== */
 .hero-section {
     background: var(--neutral-50);
-    padding: 6rem 0 4rem;
+    padding: 1rem 0 3rem;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 70px;
 }
 
 .hero-content {
@@ -3524,14 +3524,12 @@ img[loading="lazy"].loaded {
 }
 
 .hero-section h1 {
-    font-size: 2.5rem;
+    font-size: 32px;
     font-weight: 700;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--text-primary);
     line-height: 1.2;
+    white-space: nowrap;
 }
 
 .hero-subheading {
@@ -3585,12 +3583,12 @@ img[loading="lazy"].loaded {
 /* Mobile responsive */
 @media (max-width: 768px) {
     .hero-section {
-        padding: 4rem 0 3rem;
+        padding: 1.5rem 0 2rem;
         margin-top: 70px;
     }
 
     .hero-section h1 {
-        font-size: 1.8rem;
+        font-size: 20px;
     }
 
     .hero-subheading {
@@ -3784,12 +3782,12 @@ img[loading="lazy"].loaded {
    =================================== */
 .quiz-section {
     background: var(--bg-primary);
-    padding: 3rem 0;
+    padding: var(--space-2xl) 0;
     text-align: center;
 }
 
 .quiz-section h2 {
-    font-size: 1.8rem;
+    font-size: 32px;
     margin-bottom: 0.75rem;
     color: var(--text-primary);
 }
@@ -3847,11 +3845,11 @@ img[loading="lazy"].loaded {
 /* Mobile responsive */
 @media (max-width: 768px) {
     .quiz-section {
-        padding: 2.5rem 0;
+        padding: var(--space-2xl) 0;
     }
 
     .quiz-section h2 {
-        font-size: 1.4rem;
+        font-size: 24px;
     }
 
     .quiz-subtitle {
