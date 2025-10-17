@@ -51,121 +51,153 @@
         </div>
     </header>
 
-
-    <!-- Essential Travel Info Cards -->
-    <section id="essentials" class="section">
+    <!-- Hero Section -->
+    <section class="hero-section">
         <div class="container">
-            <h2>Before You Arrive</h2>
-            <div class="info-slider-wrapper">
-                <div class="info-slider-container">
-                    <div class="info-slider-track">
-                <div class="info-card" data-modal="visa">
-                    <h3>Visa Requirements</h3>
-                </div>
-                <div class="info-card" data-modal="alcohol">
-                    <h3>Alcohol Laws</h3>
-                </div>
-                <div class="info-card" data-modal="security">
-                    <h3>Safety & Security</h3>
-                </div>
-                <div class="info-card" data-modal="weather">
-                    <h3>Best Times to Visit</h3>
-                </div>
-                <div class="info-card" data-modal="culture">
-                    <h3>Cultural Guidelines</h3>
-                </div>
-                <div class="info-card" data-modal="currency">
-                    <h3>Currency & Payments</h3>
-                </div>
-                <div class="info-card" data-modal="transport">
-                    <h3>Transportation</h3>
-                </div>
-
-                        <!-- Duplicate cards for infinite loop -->
-                        <div class="info-card" data-modal="visa">
-                            <h3>Visa Requirements</h3>
-                        </div>
-                        <div class="info-card" data-modal="alcohol">
-                            <h3>Alcohol Laws</h3>
-                        </div>
-                        <div class="info-card" data-modal="security">
-                            <h3>Safety & Security</h3>
-                        </div>
-                        <div class="info-card" data-modal="weather">
-                            <h3>Best Times to Visit</h3>
-                        </div>
-                        <div class="info-card" data-modal="culture">
-                            <h3>Cultural Guidelines</h3>
-                        </div>
-                        <div class="info-card" data-modal="currency">
-                            <h3>Currency & Payments</h3>
-                        </div>
-                        <div class="info-card" data-modal="transport">
-                            <h3>Transportation</h3>
-                        </div>
-                    </div>
+            <div class="hero-content">
+                <h1>Your Local's Guide to UAE</h1>
+                <p class="hero-subheading">Skip the tourist traps. Discover authentic experiences across all 7 emirates with insider tips from someone who actually lives here.</p>
+                <div class="hero-cta-buttons">
+                    <a href="#quiz" class="btn btn-primary">Plan My Trip (2 min quiz)</a>
+                    <a href="#experiences" class="btn btn-secondary">Browse Experiences</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Digital Travel Products -->
-    <section id="digital-products" class="section digital-products-section">
+    <!-- Trust Bar -->
+    <section class="trust-bar">
         <div class="container">
-            <h2 class="digital-cta-title">Download Our Digital Guides</h2>
+            <div class="trust-stats">
+                <div class="trust-stat">
+                    <span class="trust-number">7</span>
+                    <span class="trust-label">Emirates Covered</span>
+                </div>
+                <span class="trust-separator">•</span>
+                <div class="trust-stat">
+                    <span class="trust-number">100+</span>
+                    <span class="trust-label">Curated Experiences</span>
+                </div>
+                <span class="trust-separator">•</span>
+                <div class="trust-stat">
+                    <span class="trust-number">Free</span>
+                    <span class="trust-label">No Hidden Costs</span>
+                </div>
+                <span class="trust-separator">•</span>
+                <div class="trust-stat">
+                    <span class="trust-number">All Budgets</span>
+                    <span class="trust-label">Every Price Range</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <div class="products-grid">
-                <!-- UAE Packing List -->
-                <div class="product-card" data-product="packing-list">
-                    <div class="product-image-container">
-                        <img src="https://images.unsplash.com/photo-1639598003276-8a70fcaaad6c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bHVnZ2FnZXxlbnwwfHwwfHx8Mg%3D%3D" alt="UAE Packing List" class="product-image" loading="lazy">
-                        <div class="product-pricing">
-                            <span class="price-current">$5.99</span>
-                        </div>
-                        <div class="product-name-overlay">
-                            <h3>Packing Guide</h3>
-                        </div>
-                    </div>
-                    <div class="product-content">
-                        <button class="product-btn primary" onclick="purchaseProduct('packing-list')">
-                            Download
-                        </button>
-                    </div>
+    <!-- Interactive Trip Planner Quiz -->
+    <section id="quiz" class="quiz-section">
+        <div class="container">
+            <h2>What Kind of UAE Experience Are You After?</h2>
+            <p class="quiz-subtitle">Get personalized recommendations in 30 seconds</p>
+
+            <div class="quiz-options">
+                <button class="quiz-option" data-type="free" onclick="handleQuizSelection('free')">
+                    <span class="quiz-emoji">💰</span>
+                    <span class="quiz-label">Free</span>
+                </button>
+
+                <button class="quiz-option" data-type="desert" onclick="handleQuizSelection('desert')">
+                    <span class="quiz-emoji">🏜️</span>
+                    <span class="quiz-label">Desert</span>
+                </button>
+
+                <button class="quiz-option" data-type="extreme" onclick="handleQuizSelection('extreme')">
+                    <span class="quiz-emoji">🪂</span>
+                    <span class="quiz-label">Extreme</span>
+                </button>
+
+                <button class="quiz-option" data-type="water" onclick="handleQuizSelection('water')">
+                    <span class="quiz-emoji">🌊</span>
+                    <span class="quiz-label">Water & Marine</span>
+                </button>
+
+                <button class="quiz-option" data-type="family" onclick="handleQuizSelection('family')">
+                    <span class="quiz-emoji">👨‍👩‍👧‍👦</span>
+                    <span class="quiz-label">Family</span>
+                </button>
+
+                <button class="quiz-option" data-type="cultural" onclick="handleQuizSelection('cultural')">
+                    <span class="quiz-emoji">🕌</span>
+                    <span class="quiz-label">Cultural</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Essential Travel Info Cards -->
+    <section id="essentials" class="section">
+        <div class="container">
+            <h2>Before You Arrive</h2>
+            <p class="section-subtitle">Get UAE-ready: visa, transport, and cultural tips made simple</p>
+            <div class="info-slider-wrapper">
+                <div class="info-slider-container">
+                    <div class="info-slider-track">
+                <div class="info-card" data-modal="visa">
+                    <span class="tap-hint">ℹ️</span>
+                    <h3>Visa Requirements</h3>
+                </div>
+                <div class="info-card" data-modal="alcohol">
+                    <span class="tap-hint">ℹ️</span>
+                    <h3>Alcohol Laws</h3>
+                </div>
+                <div class="info-card" data-modal="security">
+                    <span class="tap-hint">ℹ️</span>
+                    <h3>Safety & Security</h3>
+                </div>
+                <div class="info-card" data-modal="weather">
+                    <span class="tap-hint">ℹ️</span>
+                    <h3>Best Times to Visit</h3>
+                </div>
+                <div class="info-card" data-modal="culture">
+                    <span class="tap-hint">ℹ️</span>
+                    <h3>Cultural Guidelines</h3>
+                </div>
+                <div class="info-card" data-modal="currency">
+                    <span class="tap-hint">ℹ️</span>
+                    <h3>Currency & Payments</h3>
+                </div>
+                <div class="info-card" data-modal="transport">
+                    <span class="tap-hint">ℹ️</span>
+                    <h3>Transportation</h3>
                 </div>
 
-                <!-- UAE Instamoments -->
-                <div class="product-card" data-product="instamoments">
-                    <div class="product-image-container">
-                        <img src="https://images.unsplash.com/photo-1660924198520-85447f410eff?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aW5zdGFncmFtfGVufDB8fDB8fHwy" alt="UAE Instamoments" class="product-image" loading="lazy">
-                        <div class="product-pricing">
-                            <span class="price-current">$5.99</span>
+                        <!-- Duplicate cards for infinite loop -->
+                        <div class="info-card" data-modal="visa">
+                            <span class="tap-hint">ℹ️</span>
+                            <h3>Visa Requirements</h3>
                         </div>
-                        <div class="product-name-overlay">
-                            <h3>Instamoment</h3>
+                        <div class="info-card" data-modal="alcohol">
+                            <span class="tap-hint">ℹ️</span>
+                            <h3>Alcohol Laws</h3>
                         </div>
-                    </div>
-                    <div class="product-content">
-                        <button class="product-btn primary" onclick="purchaseProduct('instamoments')">
-                            Download
-                        </button>
-                    </div>
-                </div>
-
-                <!-- UAE Survival -->
-                <div class="product-card" data-product="survival">
-                    <div class="product-image-container">
-                        <img src="https://images.unsplash.com/photo-1630255452925-41c35e9313bf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YXJhYmljfGVufDB8fDB8fHwy" alt="UAE Survival" class="product-image" loading="lazy">
-                        <div class="product-pricing">
-                            <span class="price-current">$5.99</span>
+                        <div class="info-card" data-modal="security">
+                            <span class="tap-hint">ℹ️</span>
+                            <h3>Safety & Security</h3>
                         </div>
-                        <div class="product-name-overlay">
-                            <h3>Arabic & Apps</h3>
+                        <div class="info-card" data-modal="weather">
+                            <span class="tap-hint">ℹ️</span>
+                            <h3>Best Times to Visit</h3>
                         </div>
-                    </div>
-                    <div class="product-content">
-                        <button class="product-btn primary" onclick="purchaseProduct('survival')">
-                            Download
-                        </button>
+                        <div class="info-card" data-modal="culture">
+                            <span class="tap-hint">ℹ️</span>
+                            <h3>Cultural Guidelines</h3>
+                        </div>
+                        <div class="info-card" data-modal="currency">
+                            <span class="tap-hint">ℹ️</span>
+                            <h3>Currency & Payments</h3>
+                        </div>
+                        <div class="info-card" data-modal="transport">
+                            <span class="tap-hint">ℹ️</span>
+                            <h3>Transportation</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -176,13 +208,24 @@
     <section id="experiences" class="section">
         <div class="container">
             <h2>Attractions & Experiences</h2>
+            <p class="section-subtitle">What Kind of UAE Experience Are You After?</p>
+
+            <!-- Experience Filter Tabs -->
+            <div class="experience-filter-tabs">
+                <button class="category-tab-btn" data-filter="free" onclick="filterExperiences('free')">Free</button>
+                <button class="category-tab-btn" data-filter="desert" onclick="filterExperiences('desert')">Desert</button>
+                <button class="category-tab-btn" data-filter="extreme" onclick="filterExperiences('extreme')">Extreme</button>
+                <button class="category-tab-btn" data-filter="water" onclick="filterExperiences('water')">Water & Marine</button>
+                <button class="category-tab-btn" data-filter="family" onclick="filterExperiences('family')">Family</button>
+                <button class="category-tab-btn" data-filter="cultural" onclick="filterExperiences('cultural')">Cultural</button>
+            </div>
 
             <div class="experience-scroll">
-                <div class="experience-card" data-experience="burj-khalifa">
+                <div class="experience-card" data-experience="burj-khalifa" data-category="extreme cultural">
                     <div class="card-image-container">
                         <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=85" alt="Burj Khalifa and Dubai skyline at sunset" class="experience-image" loading="lazy">
                         <div class="image-overlay-title">
-                            <h4>Burj Khalifa</h4>
+                            <h4>Burj Khalifa <span class="card-info-icon">ℹ️</span></h4>
                         </div>
                     </div>
                     <div class="card-details">
@@ -190,11 +233,11 @@
                         <button class="book-btn purple" onclick="bookExperience('platinumlist', 'burj-khalifa')">Book</button>
                     </div>
                 </div>
-                <div class="experience-card" data-experience="theme-parks">
+                <div class="experience-card" data-experience="theme-parks" data-category="family extreme">
                     <div class="card-image-container">
                         <img src="https://images.unsplash.com/photo-1542577731-55541be363d4?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRoZW1lJTIwcGFya3xlbnwwfHwwfHx8Mg%3D%3D" alt="Theme park with exciting rides and family attractions" class="experience-image" loading="lazy">
                         <div class="image-overlay-title">
-                            <h4>Theme Parks</h4>
+                            <h4>Theme Parks <span class="card-info-icon">ℹ️</span></h4>
                         </div>
                     </div>
                     <div class="card-details">
@@ -202,11 +245,11 @@
                         <button class="book-btn purple" onclick="bookExperience('platinumlist', 'theme-parks')">Book</button>
                     </div>
                 </div>
-                <div class="experience-card" data-experience="desert-safari">
+                <div class="experience-card" data-experience="desert-safari" data-category="desert family cultural">
                     <div class="card-image-container">
                         <img src="https://images.unsplash.com/photo-1624062999726-083e5268525d?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGVzZXJ0JTIwc2FmYXJpfGVufDB8fDB8fHwy" alt="Desert safari with camels in UAE golden dunes" class="experience-image" loading="lazy">
                         <div class="image-overlay-title">
-                            <h4>Desert Safari</h4>
+                            <h4>Desert Safari <span class="card-info-icon">ℹ️</span></h4>
                         </div>
                     </div>
                     <div class="card-details">
@@ -214,11 +257,11 @@
                         <button class="book-btn purple" onclick="bookExperience('platinumlist', 'desert-safari')">Book</button>
                     </div>
                 </div>
-                <div class="experience-card" data-experience="sheikh-zayed-mosque">
+                <div class="experience-card" data-experience="sheikh-zayed-mosque" data-category="cultural free">
                     <div class="card-image-container">
                         <img src="https://images.unsplash.com/photo-1512632578888-169bbbc64f33?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=95" alt="Sheikh Zayed Grand Mosque in Abu Dhabi" class="experience-image" loading="lazy">
                         <div class="image-overlay-title">
-                            <h4>Grand Mosque</h4>
+                            <h4>Grand Mosque <span class="card-info-icon">ℹ️</span></h4>
                         </div>
                     </div>
                     <div class="card-details">
@@ -226,11 +269,11 @@
                         <button class="book-btn green">Free</button>
                     </div>
                 </div>
-                <div class="experience-card" data-experience="louvre-abu-dhabi">
+                <div class="experience-card" data-experience="louvre-abu-dhabi" data-category="cultural family">
                     <div class="card-image-container">
                         <img src="https://images.unsplash.com/photo-1683490486254-502c4c7d8282?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bG91dnJlJTIwYWJ1JTIwZGhhYml8ZW58MHx8MHx8fDI%3D" alt="Louvre Abu Dhabi museum with stunning architecture and cultural exhibitions" class="experience-image" loading="lazy">
                         <div class="image-overlay-title">
-                            <h4>Louvre Abu Dhabi</h4>
+                            <h4>Louvre Abu Dhabi <span class="card-info-icon">ℹ️</span></h4>
                         </div>
                     </div>
                     <div class="card-details">
@@ -238,11 +281,11 @@
                         <button class="book-btn purple" onclick="bookExperience('platinumlist', 'louvre-abu-dhabi')">Book</button>
                     </div>
                 </div>
-                <div class="experience-card" data-experience="yas-island">
+                <div class="experience-card" data-experience="yas-island" data-category="family extreme water">
                     <div class="card-image-container">
                         <img src="https://images.unsplash.com/photo-1505731110654-99d7f7f8e39c?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8Mnx8dGhlbWUlMjBwYXJrfGVufDB8fDB8fHwy" alt="Yas Island theme park with exciting attractions and family adventures" class="experience-image" loading="lazy">
                         <div class="image-overlay-title">
-                            <h4>Yas Island</h4>
+                            <h4>Yas Island <span class="card-info-icon">ℹ️</span></h4>
                         </div>
                     </div>
                     <div class="card-details">
@@ -250,11 +293,11 @@
                         <button class="book-btn purple" onclick="bookExperience('platinumlist', 'yas-island')">Book</button>
                     </div>
                 </div>
-                <div class="experience-card" data-experience="aquarium">
+                <div class="experience-card" data-experience="aquarium" data-category="family water">
                     <div class="card-image-container">
                         <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=95" alt="Dubai Aquarium with sharks and underwater tunnel" class="experience-image" loading="lazy">
                         <div class="image-overlay-title">
-                            <h4>Dubai Aquarium</h4>
+                            <h4>Dubai Aquarium <span class="card-info-icon">ℹ️</span></h4>
                         </div>
                     </div>
                     <div class="card-details">
@@ -262,11 +305,11 @@
                         <button class="book-btn purple" onclick="bookExperience('platinumlist', 'aquarium')">Book</button>
                     </div>
                 </div>
-                <div class="experience-card" data-experience="yacht">
+                <div class="experience-card" data-experience="yacht" data-category="water">
                     <div class="card-image-container">
                         <img src="https://images.unsplash.com/photo-1540946485063-a40da27545f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=95" alt="Luxury yacht experience in Dubai marina" class="experience-image" loading="lazy">
                         <div class="image-overlay-title">
-                            <h4>Luxury Yacht</h4>
+                            <h4>Luxury Yacht <span class="card-info-icon">ℹ️</span></h4>
                         </div>
                     </div>
                     <div class="card-details">
@@ -274,11 +317,11 @@
                         <button class="book-btn purple" onclick="bookExperience('platinumlist', 'yacht')">Book</button>
                     </div>
                 </div>
-                <div class="experience-card" data-experience="skydiving">
+                <div class="experience-card" data-experience="skydiving" data-category="extreme">
                     <div class="card-image-container">
                         <img src="https://cdn.platinumlist.net/upload/event-media-item/27164_tandem_skydive_palm_drop_dubai-small1737018007.jpg.webp" alt="Skydiving adventure with spectacular aerial views" class="experience-image" loading="lazy">
                         <div class="image-overlay-title">
-                            <h4>Skydiving</h4>
+                            <h4>Skydiving <span class="card-info-icon">ℹ️</span></h4>
                         </div>
                     </div>
                     <div class="card-details">
@@ -286,11 +329,11 @@
                         <button class="book-btn purple" onclick="bookExperience('platinumlist', 'skydiving')">Book</button>
                     </div>
                 </div>
-                <div class="experience-card" data-experience="extreme-water">
+                <div class="experience-card" data-experience="extreme-water" data-category="extreme water">
                     <div class="card-image-container">
                         <img src="https://cdn.platinumlist.net/upload/event-media-item/26333_banana_ride_donut_ride_wake_board_ride_i-big1755473168.jpg.webp" alt="Extreme water sports flyboard jetpack jetovator experience" class="experience-image" loading="lazy">
                         <div class="image-overlay-title">
-                            <h4>Extreme Water</h4>
+                            <h4>Extreme Water <span class="card-info-icon">ℹ️</span></h4>
                         </div>
                     </div>
                     <div class="card-details">
@@ -298,16 +341,95 @@
                         <button class="book-btn purple" onclick="bookExperience('platinumlist', 'extreme-water')">Book</button>
                     </div>
                 </div>
-                <div class="experience-card" data-experience="souk">
+                <div class="experience-card" data-experience="souk" data-category="cultural free">
                     <div class="card-image-container">
                         <img src="https://images.unsplash.com/photo-1616760678404-8b62322959c8?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8MTR8fHNvdWt8ZW58MHx8MHx8fDI%3D" alt="Traditional souk with gold and spices" class="experience-image" loading="lazy">
                         <div class="image-overlay-title">
-                            <h4>Traditional Souk</h4>
+                            <h4>Traditional Souk <span class="card-info-icon">ℹ️</span></h4>
                         </div>
                     </div>
                     <div class="card-details">
                         <span class="duration">3 hours</span>
                         <button class="book-btn green">Free</button>
+                    </div>
+                </div>
+
+                <!-- Budget-Friendly Experiences -->
+                <div class="experience-card" data-experience="jumeirah-beach" data-category="free family">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1584370423701-92e8f6982f80?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8anVtZWlyYWglMjBiZWFjaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600" alt="Jumeirah Public Beach with Burj Al Arab view" class="experience-image" loading="lazy">
+                        <div class="image-overlay-title">
+                            <h4>Jumeirah Public Beach <span class="card-info-icon">ℹ️</span></h4>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <span class="duration">Half day</span>
+                        <button class="book-btn green">Free Access</button>
+                    </div>
+                </div>
+
+                <div class="experience-card" data-experience="abra-ride" data-category="free cultural">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1565677918068-189995008715?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGR1YmFpJTIwYWJyYXxlbnwwfHwwfHx8Mg%3D%3D&auto=format&fit=crop&q=60&w=600" alt="Traditional abra water taxi on Dubai Creek" class="experience-image" loading="lazy">
+                        <div class="image-overlay-title">
+                            <h4>Dubai Creek Abra Ride <span class="card-info-icon">ℹ️</span></h4>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <span class="duration">10 mins</span>
+                        <button class="book-btn green">1 AED Only</button>
+                    </div>
+                </div>
+
+                <div class="experience-card" data-experience="alseef-walk" data-category="free cultural">
+                    <div class="card-image-container">
+                        <img src="https://www.visitdubai.com/en/articles/-/media/GatherContent/article/o/old-meets-new-at-al-seef-district/media/v2/old-meets-new-at-dubais-al-seef-meet-al-seef.jpg?h=2000&w=3000" alt="Al Seef waterfront heritage district" class="experience-image" loading="lazy">
+                        <div class="image-overlay-title">
+                            <h4>Al Seef Heritage <span class="card-info-icon">ℹ️</span></h4>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <span class="duration">2 hours</span>
+                        <button class="book-btn green">Free Walking Tour</button>
+                    </div>
+                </div>
+
+                <div class="experience-card" data-experience="public-parks" data-category="free family">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1734966073567-d545caa4a190?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHB1YmxpYyUyMHBhcmt8ZW58MHx8MHx8fDI%3D&auto=format&fit=crop&q=60&w=600" alt="Public parks and gardens in Dubai" class="experience-image" loading="lazy">
+                        <div class="image-overlay-title">
+                            <h4>Public Parks <span class="card-info-icon">ℹ️</span></h4>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <span class="duration">Half day</span>
+                        <button class="book-btn green">Under 10 AED</button>
+                    </div>
+                </div>
+
+                <div class="experience-card" data-experience="marina-walk" data-category="free">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1580164541787-ea5633f2118e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGR1YmFpJTIwbWFyaW5hfGVufDB8fDB8fHwy&auto=format&fit=crop&q=60&w=600" alt="Dubai Marina waterfront promenade" class="experience-image" loading="lazy">
+                        <div class="image-overlay-title">
+                            <h4>Dubai Marina Walk <span class="card-info-icon">ℹ️</span></h4>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <span class="duration">2 hours</span>
+                        <button class="book-btn green">Free Access</button>
+                    </div>
+                </div>
+
+                <div class="experience-card" data-experience="alserkal-avenue" data-category="free cultural">
+                    <div class="card-image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Dubai_Alserkal_Avenue_2024-11-17.jpg/1200px-Dubai_Alserkal_Avenue_2024-11-17.jpg" alt="Alserkal Avenue art galleries district" class="experience-image" loading="lazy">
+                        <div class="image-overlay-title">
+                            <h4>Alserkal Avenue <span class="card-info-icon">ℹ️</span></h4>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <span class="duration">3 hours</span>
+                        <button class="book-btn green">Free Entry</button>
                     </div>
                 </div>
             </div>
@@ -435,6 +557,69 @@
         </div>
     </section>
 
+    <!-- Digital Travel Products -->
+    <section id="digital-products" class="section digital-products-section">
+        <div class="container">
+            <h2 class="digital-cta-title">Download Our Digital Guides</h2>
+
+            <div class="products-grid">
+                <!-- UAE Packing List -->
+                <div class="product-card" data-product="packing-list">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1639598003276-8a70fcaaad6c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bHVnZ2FnZXxlbnwwfHwwfHx8Mg%3D%3D" alt="UAE Packing List" class="product-image" loading="lazy">
+                        <div class="product-pricing">
+                            <span class="price-current">$5.99</span>
+                        </div>
+                        <div class="product-name-overlay">
+                            <h3>Packing Guide</h3>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <button class="product-btn primary" onclick="purchaseProduct('packing-list')">
+                            Download
+                        </button>
+                    </div>
+                </div>
+
+                <!-- UAE Instamoments -->
+                <div class="product-card" data-product="instamoments">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1660924198520-85447f410eff?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aW5zdGFncmFtfGVufDB8fDB8fHwy" alt="UAE Instamoments" class="product-image" loading="lazy">
+                        <div class="product-pricing">
+                            <span class="price-current">$5.99</span>
+                        </div>
+                        <div class="product-name-overlay">
+                            <h3>Instamoment</h3>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <button class="product-btn primary" onclick="purchaseProduct('instamoments')">
+                            Download
+                        </button>
+                    </div>
+                </div>
+
+                <!-- UAE Survival -->
+                <div class="product-card" data-product="survival">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1630255452925-41c35e9313bf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YXJhYmljfGVufDB8fDB8fHwy" alt="UAE Survival" class="product-image" loading="lazy">
+                        <div class="product-pricing">
+                            <span class="price-current">$5.99</span>
+                        </div>
+                        <div class="product-name-overlay">
+                            <h3>Arabic & Apps</h3>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <button class="product-btn primary" onclick="purchaseProduct('survival')">
+                            Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Beat the Heat Section -->
     <section class="section beat-heat-section">
         <div class="container">
@@ -498,18 +683,18 @@
     </section>
 
     <!-- Booking Section -->
-    <section id="booking" class="section" style="display: none;">
+    <section id="booking" class="section">
         <div class="container">
-            <h2 class="booking-title">Stay Where It Matters, Fly When It Fits.</h2>
+            <h2 class="booking-title">Where to Stay in UAE</h2>
 
             <!-- Primary Booking Tabs -->
-            <div class="booking-main-tabs">
+            <div class="booking-main-tabs" style="display: none;">
                 <button class="main-tab-btn active" data-tab="flights" onclick="showMainTab('flights')">Flights</button>
                 <button class="main-tab-btn" data-tab="hotels" onclick="showMainTab('hotels')">Hotels</button>
             </div>
 
             <!-- Flights Content -->
-            <div id="flights-content" class="booking-content active">
+            <div id="flights-content" class="booking-content" style="display: none;">
                 <div class="search-fields">
                     <div class="search-field">
                         <label>From</label>
@@ -537,7 +722,7 @@
             </div>
 
             <!-- Hotels Content -->
-            <div id="hotels-content" class="booking-content">
+            <div id="hotels-content" class="booking-content active">
                 <p class="hotel-protip">powered by Booking.com, same trusted prices, no extra cost, and booking through our links helps keep this guide free.</p>
 
                 <!-- Secondary Hotel Category Tabs -->

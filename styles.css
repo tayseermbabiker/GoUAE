@@ -382,6 +382,38 @@ body {
     border: 1px solid var(--border-light);
     flex-shrink: 0;
     color: white;
+    position: relative;
+}
+
+.tap-hint {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 18px;
+    animation: pulse-hint 2s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 10;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+/* Mobile adjustments for tap hint */
+@media (max-width: 768px) {
+    .tap-hint {
+        font-size: 16px;
+        top: 6px;
+        right: 6px;
+    }
+}
+
+@keyframes pulse-hint {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
 }
 
 .experience-card, .emirate-card, .cooling-card {
@@ -392,6 +424,14 @@ body {
     cursor: pointer;
     border: 1px solid var(--border-light);
     flex-shrink: 0;
+}
+
+/* Info icon next to card title */
+.card-info-icon {
+    font-size: 13px;
+    opacity: 0.7;
+    margin-left: 6px;
+    filter: grayscale(30%);
 }
 
 .info-card {
@@ -2143,6 +2183,17 @@ body {
 }
 
 /* Progressive Disclosure Booking Section */
+
+/* Hide affiliate elements until affiliate code is ready */
+.hotel-book-btn {
+    display: none !important;
+}
+
+.hotel-protip,
+.flight-protip {
+    display: none !important;
+}
+
 .booking-title {
     font-size: 24px;
     line-height: 1.2;
@@ -3455,4 +3506,435 @@ img[loading="lazy"] {
 
 img[loading="lazy"].loaded {
     opacity: 1;
+}
+
+/* ===================================
+   HERO SECTION
+   =================================== */
+.hero-section {
+    background: var(--neutral-50);
+    padding: 6rem 0 4rem;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #f5576c 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+}
+
+.hero-subheading {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: var(--text-secondary);
+}
+
+.hero-cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    min-width: 200px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--purple-start) 0%, var(--purple-mid) 100%);
+    color: var(--text-white);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--purple-start);
+    border: 2px solid var(--purple-start);
+}
+
+.btn-secondary:hover {
+    background: var(--purple-start);
+    color: var(--text-white);
+    transform: translateY(-2px);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 4rem 0 3rem;
+        margin-top: 70px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-subheading {
+        font-size: 1rem;
+    }
+
+    .hero-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* ===================================
+   TRUST BAR
+   =================================== */
+.trust-bar {
+    background: #f8f9fa;
+    padding: 2rem 0;
+}
+
+.trust-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.trust-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.trust-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--purple-start);
+    line-height: 1;
+    margin-bottom: 0.25rem;
+}
+
+.trust-label {
+    font-size: 1rem;
+    color: #666;
+}
+
+.trust-separator {
+    font-size: 1.5rem;
+    color: #ccc;
+    line-height: 1;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .trust-stats {
+        gap: 2rem;
+    }
+
+    .trust-separator {
+        display: none;
+    }
+
+    .trust-number {
+        font-size: 1.5rem;
+    }
+
+    .trust-label {
+        font-size: 0.9rem;
+    }
+}
+
+/* ===================================
+   WHY THIS GUIDE SECTION
+   =================================== */
+.why-guide-section {
+    padding: 4rem 0;
+    background: var(--bg-primary);
+}
+
+.why-guide-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: var(--text-primary);
+}
+
+/* Value Cards Grid */
+.value-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.value-card {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.value-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.value-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.value-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Why UAE Box */
+.why-uae-box {
+    background: linear-gradient(135deg, var(--purple-start) 0%, var(--purple-mid) 100%);
+    color: var(--text-white);
+    padding: 2.5rem;
+    border-radius: var(--radius-md);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.why-uae-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--text-white);
+}
+
+.why-uae-quote {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.why-uae-box p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.why-uae-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .why-guide-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .value-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .why-uae-box {
+        padding: 2rem;
+    }
+
+    .why-uae-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .why-uae-quote {
+        font-size: 1.1rem;
+    }
+}
+
+/* ===================================
+   INTERACTIVE QUIZ SECTION
+   =================================== */
+.quiz-section {
+    background: var(--bg-primary);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.quiz-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.quiz-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: var(--text-secondary);
+}
+
+.quiz-options {
+    display: flex;
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.quiz-option {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-light);
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.quiz-option:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: var(--text-white);
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.quiz-emoji {
+    font-size: 1.2rem;
+    line-height: 1;
+    display: none; /* Hide emojis as per user request */
+}
+
+.quiz-label {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .quiz-section {
+        padding: 2.5rem 0;
+    }
+
+    .quiz-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .quiz-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .quiz-options {
+        gap: 0.75rem;
+    }
+
+    .quiz-option {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* ===================================
+   EXPERIENCE FILTER TABS
+   =================================== */
+.section-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.experience-filter-tabs {
+    display: flex;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-xl);
+    overflow-x: auto;
+    padding-bottom: var(--space-xs);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Mobile responsive for filter tabs */
+@media (max-width: 768px) {
+    .section-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .experience-filter-tabs {
+        gap: 0.5rem;
+        margin-bottom: var(--space-lg);
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-x: visible;
+    }
+
+    .experience-filter-tabs .category-tab-btn {
+        font-size: 11px;
+        padding: var(--space-xs) var(--space-sm);
+    }
+}
+
+/* ===================================
+   BEFORE YOU ARRIVE - GRID LAYOUT
+   =================================== */
+.info-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .info-cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .info-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-cards-grid {
+        grid-template-columns: 1fr;
+    }
 }

@@ -3107,6 +3107,151 @@ modalContent['marina-mall'] = {
     `
 };
 
+// Budget-Friendly Experiences
+modalContent['jumeirah-beach'] = {
+    title: 'Jumeirah Public Beach - Free Beach Paradise',
+    content: `
+        <div class="experience-highlights">
+            <div class="highlight-card">
+                <h5>Iconic Views</h5>
+                <p>Stunning Burj Al Arab backdrop - perfect for postcard-worthy photos at sunset</p>
+            </div>
+            <div class="highlight-card">
+                <h5>Active Recreation</h5>
+                <p>16km cycling track, 1.8km running track, and walking paths along the shore</p>
+            </div>
+            <div class="highlight-card">
+                <h5>Full Facilities</h5>
+                <p>24/7 lifeguards, showers, changing rooms, Blue Flag certified beach</p>
+            </div>
+        </div>
+
+        <div class="modal-booking-section">
+            <h5>Open 24/7 | FREE Access | Free WiFi & Pop-up Library</h5>
+        </div>
+    `
+};
+
+modalContent['abra-ride'] = {
+    title: 'Dubai Creek Abra Ride - Traditional Water Taxi',
+    content: `
+        <div class="experience-highlights">
+            <div class="highlight-card">
+                <h5>Authentic Experience</h5>
+                <p>Traditional motorized wooden boats crossing historic Dubai Creek since the 1900s</p>
+            </div>
+            <div class="highlight-card">
+                <h5>Budget-Friendly</h5>
+                <p>Only AED 1 per person - Dubai's most affordable transportation and cultural experience</p>
+            </div>
+            <div class="highlight-card">
+                <h5>Heritage Route</h5>
+                <p>Cross between Deira and Bur Dubai, connecting souks and historical districts</p>
+            </div>
+        </div>
+
+        <div class="modal-booking-section">
+            <h5>Route 1: 5am-Midnight | Route 2: 24 Hours | AED 1 Per Person</h5>
+        </div>
+    `
+};
+
+modalContent['alseef-walk'] = {
+    title: 'Al Seef Heritage - Traditional Souk & Waterfront',
+    content: `
+        <div class="experience-highlights">
+            <div class="highlight-card">
+                <h5>Traditional Souk Al Seef</h5>
+                <p>Heritage souk with traditional handicrafts, handcrafted jewelry, textiles, spices, and perfumes from local artisans</p>
+            </div>
+            <div class="highlight-card">
+                <h5>Historic Architecture</h5>
+                <p>1.8km waterfront with traditional mud houses, bamboo roofs, and narrow sikkas (alleyways) along Dubai Creek</p>
+            </div>
+            <div class="highlight-card">
+                <h5>Pearl Diving Heritage</h5>
+                <p>Learn about Dubai's pearl diving past, explore floating markets, get henna tattoos, and experience 1950s-style atmosphere</p>
+            </div>
+        </div>
+
+        <div class="modal-booking-section">
+            <h5>Open Daily | FREE Entry | Free Parking | Best visited in evenings</h5>
+        </div>
+    `
+};
+
+modalContent['public-parks'] = {
+    title: 'Public Parks & Gardens - Green Oasis',
+    content: `
+        <div class="experience-highlights">
+            <div class="highlight-card">
+                <h5>Affordable Entry</h5>
+                <p>Zabeel Park (AED 5), Safa Park (AED 3) - Free for kids under 2 and people of determination</p>
+            </div>
+            <div class="highlight-card">
+                <h5>Family Activities</h5>
+                <p>Playgrounds, jogging tracks, picnic areas, and beautiful landscaped gardens</p>
+            </div>
+            <div class="highlight-card">
+                <h5>Smart Features</h5>
+                <p>Online booking available, phone/card payment accepted, free WiFi zones</p>
+            </div>
+        </div>
+
+        <div class="modal-booking-section">
+            <h5>8am-10pm (Mon-Thu) | 8am-11pm (Fri-Sun) | From AED 3</h5>
+        </div>
+    `
+};
+
+modalContent['marina-walk'] = {
+    title: 'Dubai Marina Walk - 7km Waterfront Promenade',
+    content: `
+        <div class="experience-highlights">
+            <div class="highlight-card">
+                <h5>Scenic Walkway</h5>
+                <p>7km waterfront promenade with spectacular palm trees, lush greenery, and modern skyline views</p>
+            </div>
+            <div class="highlight-card">
+                <h5>Family Friendly</h5>
+                <p>Children's play areas with climbing frames and swings, street performers, and art installations</p>
+            </div>
+            <div class="highlight-card">
+                <h5>Luxury Views</h5>
+                <p>Watch yachts glide by, enjoy the illuminated fountain, perfect for evening strolls</p>
+            </div>
+        </div>
+
+        <div class="modal-booking-section">
+            <h5>Open 24/7 | FREE Access | Cafes & Restaurants Available</h5>
+        </div>
+    `
+};
+
+modalContent['alserkal-avenue'] = {
+    title: 'Alserkal Avenue - Dubai\'s Art District',
+    content: `
+        <div class="experience-highlights">
+            <div class="highlight-card">
+                <h5>Contemporary Art Hub</h5>
+                <p>Over 15 art galleries in Al Quoz featuring emerging and established artists from Middle East, Africa, and beyond</p>
+            </div>
+            <div class="highlight-card">
+                <h5>Free Events</h5>
+                <p>Alserkal Art Week (April 13-20, 2025) - free exhibitions, artist workshops, guided tours, and panel talks</p>
+            </div>
+            <div class="highlight-card">
+                <h5>Creative Experience</h5>
+                <p>Public art installations, creative workshops, and cultural events throughout the year</p>
+            </div>
+        </div>
+
+        <div class="modal-booking-section">
+            <h5>Sat-Thu: 10am-7pm | FREE Gallery Entry | Art Week FREE Admission</h5>
+        </div>
+    `
+};
+
 // Debug: Check modalContent construction
 console.log('modalContent construction complete');
 console.log('Total keys:', Object.keys(modalContent).length);
@@ -4161,3 +4306,52 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// ===================================
+// QUIZ HANDLER FUNCTION
+// ===================================
+function handleQuizSelection(type) {
+    // Scroll to experiences section first
+    const experiencesSection = document.getElementById('experiences');
+    if (experiencesSection) {
+        experiencesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // After scroll, activate the corresponding filter
+    setTimeout(() => {
+        const filterButton = document.querySelector(`[data-filter="${type}"]`);
+        if (filterButton) {
+            filterButton.click();
+        }
+    }, 800);
+}
+
+// ===================================
+// EXPERIENCE FILTER FUNCTION
+// ===================================
+function filterExperiences(category) {
+    // Update active tab
+    const tabs = document.querySelectorAll('.experience-filter-tabs .category-tab-btn');
+    tabs.forEach(tab => tab.classList.remove('active'));
+    event.target.classList.add('active');
+
+    // Get all experience cards
+    const cards = document.querySelectorAll('.experience-card');
+
+    // Show/hide cards based on category
+    cards.forEach(card => {
+        const categories = card.getAttribute('data-category');
+
+        if (category === 'all' || (categories && categories.includes(category))) {
+            card.style.display = '';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+
+    // Scroll into view smoothly
+    const experiencesSection = document.getElementById('experiences');
+    if (experiencesSection) {
+        experiencesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
