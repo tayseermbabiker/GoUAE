@@ -3513,7 +3513,7 @@ img[loading="lazy"].loaded {
    =================================== */
 .hero-section {
     background: var(--neutral-50);
-    padding: 1rem 0 3rem;
+    padding: 36px 0 3rem;
     text-align: center;
     margin-top: 70px;
 }
@@ -3524,7 +3524,7 @@ img[loading="lazy"].loaded {
 }
 
 .hero-section h1 {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--text-primary);
@@ -3583,8 +3583,8 @@ img[loading="lazy"].loaded {
 /* Mobile responsive */
 @media (max-width: 768px) {
     .hero-section {
-        padding: 1.5rem 0 2rem;
-        margin-top: 70px;
+        padding: 20px 0 2rem;
+        margin-top: 60px;
     }
 
     .hero-section h1 {
@@ -3596,13 +3596,14 @@ img[loading="lazy"].loaded {
     }
 
     .hero-cta-buttons {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        gap: 0.75rem;
     }
 
     .btn {
-        width: 100%;
-        max-width: 300px;
+        padding: 0.75rem 1.25rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -3611,14 +3612,14 @@ img[loading="lazy"].loaded {
    =================================== */
 .trust-bar {
     background: #f8f9fa;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .trust-stats {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2.5rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
 }
 
@@ -3630,28 +3631,33 @@ img[loading="lazy"].loaded {
 }
 
 .trust-number {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--purple-start);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
     line-height: 1;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.15rem;
 }
 
 .trust-label {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #666;
+    font-weight: 400;
 }
 
 .trust-separator {
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     color: #ccc;
     line-height: 1;
 }
 
 /* Mobile responsive */
 @media (max-width: 768px) {
+    .trust-bar {
+        padding: 0.75rem 0;
+    }
+
     .trust-stats {
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .trust-separator {
@@ -3659,11 +3665,11 @@ img[loading="lazy"].loaded {
     }
 
     .trust-number {
-        font-size: 1.5rem;
+        font-size: 0.85rem;
     }
 
     .trust-label {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 }
 
