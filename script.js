@@ -3697,6 +3697,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const card = e.target.closest('.experience-card') || e.target.closest('.emirate-card');
             const experienceId = card.dataset.experience;
 
+            // If clicking a link (a tag), let it navigate normally - don't intercept
+            if (e.target.tagName === 'A' || e.target.closest('a')) {
+                return; // Allow the link to work
+            }
+
             // If clicking the book button, handle booking (experience cards only)
             if (e.target.classList.contains('book-btn') && e.target.textContent.includes('Book')) {
                 if (experienceId) {
