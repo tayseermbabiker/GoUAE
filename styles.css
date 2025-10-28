@@ -641,6 +641,13 @@ a.emirate-card:hover {
     gap: var(--space-md) !important;
 }
 
+/* Experiences Grid - Emirates Pages */
+.experiences-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+}
+
 /* Summer Section - Rich Purple with Nature Accents */
 .summer-section {
     background: linear-gradient(135deg, var(--purple-start) 0%, var(--nature-primary) 40%, var(--accent-sunset) 70%, var(--purple-bright) 100%);
@@ -4351,6 +4358,7 @@ img[loading="lazy"].loaded {
 
 @media (max-width: 480px) {
     .related-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
     }
 }
