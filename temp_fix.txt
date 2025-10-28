@@ -1,0 +1,29 @@
+# Abu Dhabi
+s|<div class="emirate-card">|<a href="abu-dhabi-travel-guide.html" class="emirate-card">|
+s|<a href="abu-dhabi-travel-guide.html" class="book-btn purple">Explore</a>|<span class="book-btn purple">Explore</span>|
+461s|</div>|</a>|
+
+# Sharjah  
+s|<div class="emirate-card">|<a href="sharjah-travel-guide.html" class="emirate-card">|
+s|<a href="sharjah-travel-guide.html" class="book-btn purple">Explore</a>|<span class="book-btn purple">Explore</span>|
+477s|</div>|</a>|
+
+# Ajman
+s|<div class="emirate-card">|<a href="ajman-travel-guide.html" class="emirate-card">|
+s|<a href="ajman-travel-guide.html" class="book-btn purple">Explore</a>|<span class="book-btn purple">Explore</span>|
+493s|</div>|</a>|
+
+# RAK
+s|<div class="emirate-card">|<a href="ras-al-khaimah-travel-guide.html" class="emirate-card">|
+s|<a href="ras-al-khaimah-travel-guide.html" class="book-btn purple">Explore</a>|<span class="book-btn purple">Explore</span>|
+509s|</div>|</a>|
+
+# Fujairah
+s|<div class="emirate-card">|<a href="fujairah-travel-guide.html" class="emirate-card">|
+s|<a href="fujairah-travel-guide.html" class="book-btn purple">Explore</a>|<span class="book-btn purple">Explore</span>|
+525s|</div>|</a>|
+
+# UAQ
+s|<div class="emirate-card">|<a href="umm-al-quwain-travel-guide.html" class="emirate-card">|
+s|<a href="umm-al-quwain-travel-guide.html" class="book-btn purple">Explore</a>|<span class="book-btn purple">Explore</span>|
+541s|</div>|</a>|

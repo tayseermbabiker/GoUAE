@@ -154,55 +154,57 @@ body {
         position: relative;
     }
 
-    .nav-list {
+    .nav-list,
+    .nav-links {
         display: none;
         position: absolute;
         top: 100%;
         right: 0;
         left: auto;
-        width: 200px;
-        background: var(--background);
+        width: 220px;
+        background: white;
         flex-direction: column;
-        padding: var(--space-lg);
-        box-shadow: var(--shadow-md);
+        padding: 15px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
         border-radius: 0 0 12px 12px;
         z-index: 1000;
         list-style: none;
         gap: 0;
+        margin: 0;
         opacity: 0;
         visibility: hidden;
         transform: translateY(-10px);
-        transition: all 0.3s ease;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .nav-list.active {
+    .nav-list.active,
+    .nav-links.active {
         display: flex;
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
     }
 
-    .nav-list li {
-        margin-bottom: var(--space-md);
+    .nav-list li,
+    .nav-links li {
+        margin: 0;
+        padding: 0;
     }
 
-    .nav-list li:last-child {
-        margin-bottom: 0;
-    }
-
-    .nav-list a {
-        font-size: 16px;
-        padding: var(--space-sm) 0;
-        border-bottom: 1px solid var(--neutral-200);
+    .nav-list a,
+    .nav-links a {
+        font-size: 15px;
+        padding: 12px 15px;
         display: block;
         transition: all 0.2s ease;
+        border-radius: 8px;
+        color: var(--text-primary);
     }
 
-    .nav-list a:hover {
+    .nav-list a:hover,
+    .nav-links a:hover {
         color: var(--primary);
-        background: var(--neutral-100);
-        padding-left: var(--space-sm);
-        border-radius: 8px;
+        background: rgba(102, 126, 234, 0.08);
     }
 
     .menu-toggle.active span:nth-child(1) {
@@ -3977,49 +3979,61 @@ img[loading="lazy"].loaded {
 .guide-hero {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    padding: 60px 20px;
+    padding: 50px 20px 40px;
     text-align: center;
     margin-top: 60px;
+    min-height: auto;
 }
 
 .hero-icon {
-    font-size: 64px;
-    margin-bottom: 20px;
+    font-size: 48px;
+    margin-bottom: 15px;
 }
 
 .guide-hero h1 {
-    font-size: 42px;
+    font-size: 36px;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     color: white;
+    line-height: 1.2;
 }
 
 .hero-subtitle {
-    font-size: 18px;
+    font-size: 17px;
     opacity: 0.95;
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
+    line-height: 1.4;
 }
 
 /* TL;DR Box */
 .tldr-section {
-    padding: 40px 20px 20px;
+    padding: 30px 20px 15px;
 }
 
 .tldr-box {
     background: #f7f9fc;
     border-left: 4px solid #667eea;
-    padding: 30px;
+    padding: 25px;
     margin: 0 auto;
     border-radius: 8px;
     max-width: 900px;
 }
 
+.tldr-box h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #667eea;
+    font-size: 22px;
+    font-weight: 600;
+}
+
 .tldr-box h3 {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: #667eea;
-    font-size: 24px;
+    font-size: 22px;
+    font-weight: 600;
 }
 
 .tldr-box ul {
@@ -4053,7 +4067,7 @@ img[loading="lazy"].loaded {
 
 /* Guide Content Section */
 .guide-content {
-    padding: 40px 20px;
+    padding: 30px 20px;
 }
 
 .guide-content .container {
@@ -4061,14 +4075,15 @@ img[loading="lazy"].loaded {
 }
 
 .content-section {
-    margin: 60px 0;
+    margin: 40px 0;
 }
 
 .content-section h2 {
     color: #2d3748;
-    margin-bottom: 20px;
-    font-size: 28px;
+    margin-bottom: 18px;
+    font-size: 26px;
     font-weight: 700;
+    line-height: 1.3;
 }
 
 .content-section h3 {
@@ -4262,36 +4277,49 @@ img[loading="lazy"].loaded {
 /* Mobile Responsive for Guide Pages */
 @media (max-width: 768px) {
     .guide-hero {
-        padding: 40px 20px;
+        padding: 30px 20px 25px;
         margin-top: 50px;
     }
 
     .hero-icon {
-        font-size: 48px;
+        font-size: 36px;
+        margin-bottom: 10px;
     }
 
     .guide-hero h1 {
-        font-size: 28px;
+        font-size: 24px;
+        margin-bottom: 8px;
     }
 
     .hero-subtitle {
-        font-size: 16px;
+        font-size: 15px;
+    }
+
+    .guide-content {
+        padding: 20px 15px;
     }
 
     .tldr-box {
-        padding: 20px;
+        padding: 18px;
     }
 
+    .tldr-box h2,
     .tldr-box h3 {
-        font-size: 20px;
+        font-size: 19px;
+        margin-bottom: 12px;
+    }
+
+    .content-section {
+        margin: 30px 0;
     }
 
     .content-section h2 {
-        font-size: 24px;
+        font-size: 22px;
+        margin-bottom: 15px;
     }
 
     .content-section h3 {
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .faq-section h2 {
