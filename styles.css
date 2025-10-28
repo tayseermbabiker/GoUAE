@@ -400,6 +400,17 @@ a.info-card h3 {
     color: white;
 }
 
+/* Emirate card links */
+a.emirate-card {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+a.emirate-card:hover {
+    text-decoration: none;
+}
+
 .tap-hint {
     position: absolute;
     top: 8px;
