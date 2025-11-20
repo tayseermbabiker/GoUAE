@@ -1234,10 +1234,6 @@ const modalContent = {
                     <p>Visit the iconic 828-meter skyscraper with breathtaking 360° views from levels 124, 125, and exclusive level 148</p>
                 </div>
                 <div class="highlight-card">
-                    <h5>Skip-the-Line Access</h5>
-                    <p>Bypass the crowds with priority entry tickets and high-speed elevators that reach level 124 in just 35 seconds</p>
-                </div>
-                <div class="highlight-card">
                     <h5>Dubai Mall Experience</h5>
                     <p>Explore the world's largest shopping mall with 1,200 stores, Dubai Aquarium, and countless dining options</p>
                 </div>
@@ -1245,40 +1241,12 @@ const modalContent = {
 
             <div class="modal-section">
                 <h4>What's Included</h4>
-                <div class="included-grid">
-                    <div class="included-card standard">
-                        <h5>Standard Experience</h5>
-                        <ul>
-                            <li>Burj Khalifa Level 124 & 125 access</li>
-                            <li>Dubai Mall exploration time</li>
-                            <li>High-speed elevator ride</li>
-                            <li>Observation deck access</li>
-                            <li>Free Dubai Mall parking</li>
-                        </ul>
-                    </div>
-                    <div class="included-card premium">
-                        <h5>Premium Experience</h5>
-                        <ul>
-                            <li>Everything from Standard</li>
-                            <li>Burj Khalifa Level 148 access</li>
-                            <li>Exclusive Sky Lounge access</li>
-                            <li>Complimentary refreshments</li>
-                            <li>Priority boarding</li>
-                            <li>Souvenir photo package</li>
-                        </ul>
-                    </div>
-                    <div class="included-card vip">
-                        <h5>VIP Experience</h5>
-                        <ul>
-                            <li>Everything from Premium</li>
-                            <li>Private tour guide</li>
-                            <li>Sunset or sunrise timing</li>
-                            <li>Champagne & canapes</li>
-                            <li>Professional photography</li>
-                            <li>Behind-scenes access</li>
-                        </ul>
-                    </div>
-                </div>
+                <ul class="simple-included-list">
+                    <li>Access to observation decks (levels available vary by ticket type)</li>
+                    <li>High-speed elevator ride</li>
+                    <li>Dubai Mall exploration time</li>
+                    <li>Free parking at Dubai Mall (4+ hours)</li>
+                </ul>
             </div>
 
             <div class="modal-section">
@@ -1495,41 +1463,14 @@ const modalContent = {
             </div>
 
             <div class="modal-section">
-                <h4>Park Packages</h4>
-                <div class="included-grid">
-                    <div class="included-card standard">
-                        <h5>Single Park Access</h5>
-                        <ul>
-                            <li>Choice of ONE park (full day)</li>
-                            <li>All rides & attractions included</li>
-                            <li>Free parking at Yas Island</li>
-                            <li>Free shuttle between parks</li>
-                            <li>Basic locker access</li>
-                        </ul>
-                    </div>
-                    <div class="included-card premium">
-                        <h5>Multi-Park Pass</h5>
-                        <ul>
-                            <li>Everything from Single Park</li>
-                            <li>Access to 2 parks in one day</li>
-                            <li>Fast track entry to all rides</li>
-                            <li>Premium locker & towel service</li>
-                            <li>Meal vouchers at each park</li>
-                            <li>Character meet & greet priority</li>
-                        </ul>
-                    </div>
-                    <div class="included-card vip">
-                        <h5>Ultimate Yas Experience</h5>
-                        <ul>
-                            <li>Everything from Multi-Park</li>
-                            <li>All 3 major parks access</li>
-                            <li>VIP express lanes</li>
-                            <li>Private cabanas & premium dining</li>
-                            <li>Personal park guide</li>
-                            <li>Professional photography package</li>
-                        </ul>
-                    </div>
-                </div>
+                <h4>What's Included</h4>
+                <ul class="simple-included-list">
+                    <li>Access to parks (single or multi-park options available)</li>
+                    <li>All rides and attractions</li>
+                    <li>Free parking at Yas Island</li>
+                    <li>Free shuttle between parks</li>
+                    <li>Locker facilities available</li>
+                </ul>
             </div>
 
             <div class="modal-section">
@@ -1590,42 +1531,13 @@ const modalContent = {
             </div>
 
             <div class="modal-section">
-                <h4>Park Packages</h4>
-                <div class="included-grid">
-                    <div class="included-card standard">
-                        <h5>Single Park</h5>
-                        <ul>
-                            <li>Choice of IMG Worlds OR Motiongate</li>
-                            <li>All rides & attractions access</li>
-                            <li>Fast-track entry included</li>
-                            <li>Free parking at venue</li>
-                            <li>Basic photo opportunities</li>
-                            <li>Transportation from Dubai Mall</li>
-                        </ul>
-                    </div>
-                    <div class="included-card premium">
-                        <h5>Multi-Park Pass</h5>
-                        <ul>
-                            <li>Everything from Single Park</li>
-                            <li>2 parks in one day OR 2 days</li>
-                            <li>Meal voucher at each park</li>
-                            <li>Character meet & greet priority</li>
-                            <li>Souvenir photo package</li>
-                            <li>VIP entrance lanes</li>
-                        </ul>
-                    </div>
-                    <div class="included-card vip">
-                        <h5>Ultimate Family</h5>
-                        <ul>
-                            <li>Everything from Multi-Park</li>
-                            <li>All 3 major parks access</li>
-                            <li>Private character experiences</li>
-                            <li>Premium dining reservations</li>
-                            <li>Professional family photoshoot</li>
-                            <li>Exclusive VIP lounge access</li>
-                        </ul>
-                    </div>
-                </div>
+                <h4>What's Included</h4>
+                <ul class="simple-included-list">
+                    <li>Access to theme parks (single or multi-park options available)</li>
+                    <li>All rides and attractions</li>
+                    <li>Free parking at venue</li>
+                    <li>Transportation options from Dubai</li>
+                </ul>
             </div>
 
             <div class="modal-section">
@@ -1686,38 +1598,13 @@ const modalContent = {
             </div>
 
             <div class="modal-section">
-                <h4>Experience Options</h4>
-                <div class="included-grid">
-                    <div class="included-card standard">
-                        <h5>Aquarium Tunnel</h5>
-                        <ul>
-                            <li>48-meter underwater tunnel</li>
-                            <li>Viewing panel access</li>
-                            <li>Shark and ray encounters</li>
-                            <li>Basic photography allowed</li>
-                        </ul>
-                    </div>
-                    <div class="included-card premium">
-                        <h5>Aquarium + VR Park</h5>
-                        <ul>
-                            <li>Everything from Tunnel</li>
-                            <li>Full VR Park access</li>
-                            <li>All VR games included</li>
-                            <li>Behind-the-scenes tour</li>
-                            <li>Professional photos</li>
-                        </ul>
-                    </div>
-                    <div class="included-card vip">
-                        <h5>Ultimate Experience</h5>
-                        <ul>
-                            <li>Everything from Premium</li>
-                            <li>Underwater Zoo access</li>
-                            <li>Glass bottom boat ride</li>
-                            <li>Private marine biologist tour</li>
-                            <li>Cage snorkeling with sharks</li>
-                        </ul>
-                    </div>
-                </div>
+                <h4>What's Included</h4>
+                <ul class="simple-included-list">
+                    <li>Access to attractions (tunnel, VR park, or combo options available)</li>
+                    <li>48-meter underwater tunnel viewing</li>
+                    <li>Shark and ray encounters</li>
+                    <li>Photography allowed</li>
+                </ul>
             </div>
 
             <div class="modal-section">
@@ -1768,41 +1655,13 @@ const modalContent = {
             </div>
 
             <div class="modal-section">
-                <h4>Charter Options</h4>
-                <div class="included-grid">
-                    <div class="included-card standard">
-                        <h5>Marina Cruise</h5>
-                        <ul>
-                            <li>2-hour Dubai Marina cruise</li>
-                            <li>Welcome drinks and snacks</li>
-                            <li>Professional crew service</li>
-                            <li>Swimming and snorkeling gear</li>
-                            <li>Bluetooth music system</li>
-                        </ul>
-                    </div>
-                    <div class="included-card premium">
-                        <h5>Sunset Experience</h5>
-                        <ul>
-                            <li>Everything from Marina Cruise</li>
-                            <li>4-hour premium charter</li>
-                            <li>Gourmet catering service</li>
-                            <li>Jet ski and water sports</li>
-                            <li>Sunset photography session</li>
-                            <li>Premium bar service</li>
-                        </ul>
-                    </div>
-                    <div class="included-card vip">
-                        <h5>Luxury Day Charter</h5>
-                        <ul>
-                            <li>Everything from Sunset</li>
-                            <li>Full day 8-hour charter</li>
-                            <li>Private chef and butler service</li>
-                            <li>Multiple water sports included</li>
-                            <li>Professional photography crew</li>
-                            <li>Helicopter transfer option</li>
-                        </ul>
-                    </div>
-                </div>
+                <h4>What's Included</h4>
+                <ul class="simple-included-list">
+                    <li>Professional crew and yacht charter (duration options available)</li>
+                    <li>Welcome drinks and refreshments</li>
+                    <li>Swimming and snorkeling equipment</li>
+                    <li>Music system and entertainment</li>
+                </ul>
             </div>
 
             <div class="modal-section">
@@ -1853,41 +1712,14 @@ const modalContent = {
             </div>
 
             <div class="modal-section">
-                <h4>Adventure Packages</h4>
-                <div class="included-grid">
-                    <div class="included-card standard">
-                        <h5>Basic Jump</h5>
-                        <ul>
-                            <li>Tandem skydiving experience</li>
-                            <li>Professional safety equipment</li>
-                            <li>Basic photo package included</li>
-                            <li>Safety briefing and training</li>
-                            <li>Transportation to/from hotel</li>
-                        </ul>
-                    </div>
-                    <div class="included-card premium">
-                        <h5>Premium Jump</h5>
-                        <ul>
-                            <li>Everything from Basic Jump</li>
-                            <li>Extended freefall time</li>
-                            <li>HD video footage included</li>
-                            <li>Priority scheduling</li>
-                            <li>Certificate of completion</li>
-                            <li>Professional photography</li>
-                        </ul>
-                    </div>
-                    <div class="included-card vip">
-                        <h5>Ultimate Sky Experience</h5>
-                        <ul>
-                            <li>Everything from Premium Jump</li>
-                            <li>Private instructor sessions</li>
-                            <li>Helicopter scenic flight</li>
-                            <li>Premium equipment upgrade</li>
-                            <li>VIP lounge access</li>
-                            <li>Professional video crew</li>
-                        </ul>
-                    </div>
-                </div>
+                <h4>What's Included</h4>
+                <ul class="simple-included-list">
+                    <li>Tandem skydiving with certified instructor</li>
+                    <li>Professional safety equipment</li>
+                    <li>Safety briefing and training</li>
+                    <li>Transportation to/from hotel</li>
+                    <li>Photo package (options available)</li>
+                </ul>
             </div>
 
             <div class="modal-section">
@@ -1938,41 +1770,13 @@ const modalContent = {
             </div>
 
             <div class="modal-section">
-                <h4>Activity Packages</h4>
-                <div class="included-grid">
-                    <div class="included-card standard">
-                        <h5>Single Activity</h5>
-                        <ul>
-                            <li>Choice of Flyboard, Jetpack, or Jetovator</li>
-                            <li>Professional safety equipment & wetsuit</li>
-                            <li>30-minute water session</li>
-                            <li>Safety briefing and training</li>
-                            <li>Basic photo package</li>
-                        </ul>
-                    </div>
-                    <div class="included-card premium">
-                        <h5>Combo Experience</h5>
-                        <ul>
-                            <li>Try 2 different water sports</li>
-                            <li>Extended 45-minute sessions</li>
-                            <li>HD video footage included</li>
-                            <li>Premium equipment upgrade</li>
-                            <li>Professional photography</li>
-                            <li>Light refreshments included</li>
-                        </ul>
-                    </div>
-                    <div class="included-card vip">
-                        <h5>Ultimate Water Thrills</h5>
-                        <ul>
-                            <li>All 3 activities included</li>
-                            <li>Private instructor sessions</li>
-                            <li>60-minute extended experience</li>
-                            <li>Jet ski bonus session</li>
-                            <li>VIP lounge access</li>
-                            <li>Professional drone footage</li>
-                        </ul>
-                    </div>
-                </div>
+                <h4>What's Included</h4>
+                <ul class="simple-included-list">
+                    <li>Choice of water sports activities (single or combo options available)</li>
+                    <li>Professional safety equipment and wetsuit</li>
+                    <li>Safety briefing and training</li>
+                    <li>Photo package</li>
+                </ul>
             </div>
 
             <div class="modal-section">
@@ -2127,38 +1931,13 @@ const modalContent = {
 
             <div class="modal-section">
                 <h4>Must-Visit Attractions</h4>
-                <div class="included-grid">
-                    <div class="included-card standard">
-                        <h5>Modern Dubai</h5>
-                        <ul>
-                            <li>Burj Khalifa observation decks</li>
-                            <li>Dubai Mall & Dubai Fountain</li>
-                            <li>Palm Jumeirah & Atlantis</li>
-                            <li>Dubai Marina & JBR Walk</li>
-                            <li>DIFC & Business Bay</li>
-                        </ul>
-                    </div>
-                    <div class="included-card premium">
-                        <h5>Traditional Dubai</h5>
-                        <ul>
-                            <li>Dubai Creek & Abra rides</li>
-                            <li>Gold Souk & Spice Souk</li>
-                            <li>Al Fahidi Historical District</li>
-                            <li>Dubai Museum</li>
-                            <li>Traditional markets & heritage</li>
-                        </ul>
-                    </div>
-                    <div class="included-card vip">
-                        <h5>Entertainment & Leisure</h5>
-                        <ul>
-                            <li>IMG Worlds & Global Village</li>
-                            <li>Dubai Aquarium & Underwater Zoo</li>
-                            <li>Ski Dubai & indoor attractions</li>
-                            <li>Beach clubs & water parks</li>
-                            <li>Desert safari experiences</li>
-                        </ul>
-                    </div>
-                </div>
+                <ul class="simple-included-list">
+                    <li>Burj Khalifa observation decks & Dubai Fountain</li>
+                    <li>Dubai Mall, Gold Souk & Spice Souk</li>
+                    <li>Palm Jumeirah, Atlantis & Dubai Marina</li>
+                    <li>Al Fahidi Historical District & Dubai Museum</li>
+                    <li>Theme parks, water parks & desert safaris</li>
+                </ul>
             </div>
 
             <div class="modal-section">
@@ -2210,38 +1989,13 @@ const modalContent = {
 
             <div class="modal-section">
                 <h4>Top Attractions</h4>
-                <div class="included-grid">
-                    <div class="included-card standard">
-                        <h5>Cultural Sites</h5>
-                        <ul>
-                            <li>Sheikh Zayed Grand Mosque</li>
-                            <li>Louvre Abu Dhabi museum</li>
-                            <li>Qasr Al Watan palace</li>
-                            <li>Heritage Village</li>
-                            <li>Cultural Foundation</li>
-                        </ul>
-                    </div>
-                    <div class="included-card premium">
-                        <h5>Modern Attractions</h5>
-                        <ul>
-                            <li>Emirates Palace hotel</li>
-                            <li>Corniche waterfront</li>
-                            <li>Marina Mall & shopping</li>
-                            <li>Saadiyat Island beaches</li>
-                            <li>Masdar City tours</li>
-                        </ul>
-                    </div>
-                    <div class="included-card vip">
-                        <h5>Yas Island</h5>
-                        <ul>
-                            <li>Ferrari World Abu Dhabi</li>
-                            <li>Yas Waterworld</li>
-                            <li>Warner Bros World</li>
-                            <li>Yas Marina Circuit</li>
-                            <li>Yas Mall shopping</li>
-                        </ul>
-                    </div>
-                </div>
+                <ul class="simple-included-list">
+                    <li>Sheikh Zayed Grand Mosque & Qasr Al Watan palace</li>
+                    <li>Louvre Abu Dhabi & Cultural Foundation</li>
+                    <li>Emirates Palace & Corniche waterfront</li>
+                    <li>Yas Island theme parks (Ferrari World, Warner Bros, Waterworld)</li>
+                    <li>Saadiyat Island beaches & Marina Mall</li>
+                </ul>
             </div>
 
             <div class="modal-section">
@@ -2293,38 +2047,13 @@ const modalContent = {
 
             <div class="modal-section">
                 <h4>Cultural Attractions</h4>
-                <div class="included-grid">
-                    <div class="included-card standard">
-                        <h5>Heritage District</h5>
-                        <ul>
-                            <li>Heart of Sharjah restoration</li>
-                            <li>Traditional wind-tower houses</li>
-                            <li>Al Eslah School Museum</li>
-                            <li>Calligraphy Museum</li>
-                            <li>Heritage walking tours</li>
-                        </ul>
-                    </div>
-                    <div class="included-card premium">
-                        <h5>Museums & Arts</h5>
-                        <ul>
-                            <li>Sharjah Art Museum</li>
-                            <li>Islamic Civilization Museum</li>
-                            <li>Science Museum</li>
-                            <li>Natural History Museum</li>
-                            <li>Contemporary art galleries</li>
-                        </ul>
-                    </div>
-                    <div class="included-card vip">
-                        <h5>Markets & Shopping</h5>
-                        <ul>
-                            <li>Central Souk (Blue Souk)</li>
-                            <li>Traditional craft markets</li>
-                            <li>Fish & vegetable markets</li>
-                            <li>Rolla Square Park</li>
-                            <li>Local textile shopping</li>
-                        </ul>
-                    </div>
-                </div>
+                <ul class="simple-included-list">
+                    <li>Heart of Sharjah heritage restoration & wind-tower houses</li>
+                    <li>Museums (Art, Islamic Civilization, Science, Natural History)</li>
+                    <li>Central Souk (Blue Souk) & traditional craft markets</li>
+                    <li>Al Eslah School & Calligraphy Museum</li>
+                    <li>Contemporary art galleries & heritage walking tours</li>
+                </ul>
             </div>
 
             <div class="modal-section">
@@ -2376,38 +2105,13 @@ const modalContent = {
 
             <div class="modal-section">
                 <h4>Ajman Highlights</h4>
-                <div class="included-grid">
-                    <div class="included-card standard">
-                        <h5>Beach & Water</h5>
-                        <ul>
-                            <li>Ajman Beach & corniche</li>
-                            <li>Water sports & activities</li>
-                            <li>Beach resort day passes</li>
-                            <li>Fishing trips & boat tours</li>
-                            <li>Sunset beach walks</li>
-                        </ul>
-                    </div>
-                    <div class="included-card premium">
-                        <h5>Culture & Heritage</h5>
-                        <ul>
-                            <li>Ajman Museum in old fort</li>
-                            <li>Traditional dhow building</li>
-                            <li>Local souks & markets</li>
-                            <li>Pearl diving history</li>
-                            <li>Emirati cultural experiences</li>
-                        </ul>
-                    </div>
-                    <div class="included-card vip">
-                        <h5>Family Activities</h5>
-                        <ul>
-                            <li>Beach parks & playgrounds</li>
-                            <li>Mangrove nature walks</li>
-                            <li>Local restaurant experiences</li>
-                            <li>Shopping at City Centre</li>
-                            <li>Photography spots</li>
-                        </ul>
-                    </div>
-                </div>
+                <ul class="simple-included-list">
+                    <li>Ajman Beach, corniche & water sports</li>
+                    <li>Ajman Museum & traditional dhow building</li>
+                    <li>Local souks, markets & cultural experiences</li>
+                    <li>Mangrove nature walks & beach parks</li>
+                    <li>Fishing trips & sunset beach walks</li>
+                </ul>
             </div>
 
             <div class="modal-section">
@@ -2459,38 +2163,13 @@ const modalContent = {
 
             <div class="modal-section">
                 <h4>Adventure Attractions</h4>
-                <div class="included-grid">
-                    <div class="included-card standard">
-                        <h5>Jebel Jais</h5>
-                        <ul>
-                            <li>World's longest zipline (2.8km)</li>
-                            <li>Jebel Jais Flight zipline</li>
-                            <li>Mountain hiking trails</li>
-                            <li>Via Ferrata climbing</li>
-                            <li>Scenic viewing decks</li>
-                        </ul>
-                    </div>
-                    <div class="included-card premium">
-                        <h5>Desert & Nature</h5>
-                        <ul>
-                            <li>Desert safari experiences</li>
-                            <li>Fossil Rock formations</li>
-                            <li>Mangrove kayaking</li>
-                            <li>Flamingo watching</li>
-                            <li>Hot springs visits</li>
-                        </ul>
-                    </div>
-                    <div class="included-card vip">
-                        <h5>Beaches & Resorts</h5>
-                        <ul>
-                            <li>Al Marjan Island resorts</li>
-                            <li>Beach clubs & water sports</li>
-                            <li>Luxury spa experiences</li>
-                            <li>Sunset beach dining</li>
-                            <li>Island hopping tours</li>
-                        </ul>
-                    </div>
-                </div>
+                <ul class="simple-included-list">
+                    <li>Jebel Jais zipline (world's longest) & mountain hiking</li>
+                    <li>Via Ferrata climbing & scenic viewing decks</li>
+                    <li>Desert safari, Fossil Rock & mangrove kayaking</li>
+                    <li>Al Marjan Island resorts & beach clubs</li>
+                    <li>Hot springs, flamingo watching & water sports</li>
+                </ul>
             </div>
 
             <div class="modal-section">
@@ -2542,38 +2221,13 @@ const modalContent = {
 
             <div class="modal-section">
                 <h4>Fujairah Highlights</h4>
-                <div class="included-grid">
-                    <div class="included-card standard">
-                        <h5>Historical Sites</h5>
-                        <ul>
-                            <li>Fujairah Fort (oldest in UAE)</li>
-                            <li>Al Bidyah Mosque (oldest mosque)</li>
-                            <li>Fujairah Heritage Village</li>
-                            <li>Archaeological sites</li>
-                            <li>Traditional mountain villages</li>
-                        </ul>
-                    </div>
-                    <div class="included-card premium">
-                        <h5>Natural Attractions</h5>
-                        <ul>
-                            <li>Snoopy Island diving</li>
-                            <li>Al Aqah Beach</li>
-                            <li>Wadi Wurayah National Park</li>
-                            <li>Hot springs at Ain Al Madhab</li>
-                            <li>Masafi Friday Market</li>
-                        </ul>
-                    </div>
-                    <div class="included-card vip">
-                        <h5>Adventure Activities</h5>
-                        <ul>
-                            <li>Scuba diving & snorkeling</li>
-                            <li>Mountain hiking & wadis</li>
-                            <li>Beach resort experiences</li>
-                            <li>Cultural village tours</li>
-                            <li>Photography expeditions</li>
-                        </ul>
-                    </div>
-                </div>
+                <ul class="simple-included-list">
+                    <li>Fujairah Fort & Al Bidyah Mosque (oldest in UAE)</li>
+                    <li>Snoopy Island diving & Al Aqah Beach</li>
+                    <li>Wadi Wurayah National Park & hot springs</li>
+                    <li>Heritage Village & traditional mountain villages</li>
+                    <li>Scuba diving, snorkeling & beach resorts</li>
+                </ul>
             </div>
 
             <div class="modal-section">
@@ -2625,38 +2279,13 @@ const modalContent = {
 
             <div class="modal-section">
                 <h4>UAQ Experiences</h4>
-                <div class="included-grid">
-                    <div class="included-card standard">
-                        <h5>Water Activities</h5>
-                        <ul>
-                            <li>Mangrove island tours</li>
-                            <li>Water skiing & jet skiing</li>
-                            <li>Traditional fishing trips</li>
-                            <li>Kayaking in lagoons</li>
-                            <li>Sunset boat cruises</li>
-                        </ul>
-                    </div>
-                    <div class="included-card premium">
-                        <h5>Cultural Sites</h5>
-                        <ul>
-                            <li>UAQ National Museum</li>
-                            <li>Old town exploration</li>
-                            <li>Traditional souks</li>
-                            <li>Falaj Al Mualla historical site</li>
-                            <li>Local fishing harbors</li>
-                        </ul>
-                    </div>
-                    <div class="included-card vip">
-                        <h5>Nature & Wildlife</h5>
-                        <ul>
-                            <li>Al Sinniyah Island</li>
-                            <li>Bird watching spots</li>
-                            <li>Mangrove conservation areas</li>
-                            <li>Dreamland Aqua Park</li>
-                            <li>Desert camping experiences</li>
-                        </ul>
-                    </div>
-                </div>
+                <ul class="simple-included-list">
+                    <li>Mangrove island tours & kayaking in lagoons</li>
+                    <li>Water skiing, jet skiing & traditional fishing trips</li>
+                    <li>UAQ National Museum & old town exploration</li>
+                    <li>Al Sinniyah Island & bird watching</li>
+                    <li>Dreamland Aqua Park & desert camping</li>
+                </ul>
             </div>
 
             <div class="modal-section">
@@ -2795,26 +2424,12 @@ const diningCategories = {
 
             <div class="modal-section">
                 <h4>Summer Benefits</h4>
-                <div class="included-grid">
-                    <div class="included-card standard">
-                        <h5>Climate Control</h5>
-                        <ul>
-                            <li>Constant 22°C temperature</li>
-                            <li>Premium air conditioning</li>
-                            <li>Covered walkways</li>
-                            <li>Metro-connected access</li>
-                        </ul>
-                    </div>
-                    <div class="included-card premium">
-                        <h5>Family Facilities</h5>
-                        <ul>
-                            <li>Stroller-friendly pathways</li>
-                            <li>Baby changing facilities</li>
-                            <li>Family prayer rooms</li>
-                            <li>Kids play areas</li>
-                        </ul>
-                    </div>
-                </div>
+                <ul class="simple-included-list">
+                    <li>Constant 22°C climate control & premium air conditioning</li>
+                    <li>Metro-connected access & covered walkways</li>
+                    <li>Stroller-friendly pathways & baby changing facilities</li>
+                    <li>Family prayer rooms & kids play areas</li>
+                </ul>
             </div>
 
             <div class="modal-section">
@@ -2849,26 +2464,12 @@ const diningCategories = {
 
             <div class="modal-section">
                 <h4>Alpine Experiences</h4>
-                <div class="included-grid">
-                    <div class="included-card standard">
-                        <h5>Snow Park</h5>
-                        <ul>
-                            <li>2-hour snow play session</li>
-                            <li>Winter clothing included</li>
-                            <li>Chairlift access</li>
-                            <li>Snow activities</li>
-                        </ul>
-                    </div>
-                    <div class="included-card premium">
-                        <h5>Ski Lessons</h5>
-                        <ul>
-                            <li>Professional ski instruction</li>
-                            <li>Equipment rental included</li>
-                            <li>Beginner to advanced slopes</li>
-                            <li>Group or private lessons</li>
-                        </ul>
-                    </div>
-                </div>
+                <ul class="simple-included-list">
+                    <li>Snow play sessions & winter clothing included</li>
+                    <li>Professional ski instruction & equipment rental</li>
+                    <li>Chairlift access & snow activities</li>
+                    <li>Beginner to advanced slopes (group or private lessons available)</li>
+                </ul>
             </div>
 
             <div class="modal-section">
@@ -2903,26 +2504,12 @@ const diningCategories = {
 
             <div class="modal-section">
                 <h4>Cultural Themes</h4>
-                <div class="included-grid">
-                    <div class="included-card standard">
-                        <h5>Eastern Courts</h5>
-                        <ul>
-                            <li>India Court - Traditional architecture</li>
-                            <li>China Court - Imperial palace design</li>
-                            <li>Persia Court - Ancient Persian motifs</li>
-                            <li>Cultural exhibitions</li>
-                        </ul>
-                    </div>
-                    <div class="included-card premium">
-                        <h5>International Courts</h5>
-                        <ul>
-                            <li>Egypt Court - Pharaonic themes</li>
-                            <li>Tunisia Court - Islamic architecture</li>
-                            <li>Andalusia Court - Spanish Moorish style</li>
-                            <li>Photo opportunities</li>
-                        </ul>
-                    </div>
-                </div>
+                <ul class="simple-included-list">
+                    <li>India Court (traditional architecture) & China Court (imperial palace)</li>
+                    <li>Persia Court (ancient Persian motifs) & cultural exhibitions</li>
+                    <li>Egypt Court (Pharaonic themes) & Tunisia Court (Islamic architecture)</li>
+                    <li>Andalusia Court (Spanish Moorish) & photo opportunities</li>
+                </ul>
             </div>
 
             <div class="modal-section">
@@ -2957,26 +2544,12 @@ const diningCategories = {
 
             <div class="modal-section">
                 <h4>Marina Experience</h4>
-                <div class="included-grid">
-                    <div class="included-card standard">
-                        <h5>Shopping & Dining</h5>
-                        <ul>
-                            <li>Marina-view restaurants</li>
-                            <li>International fashion brands</li>
-                            <li>Covered outdoor terraces</li>
-                            <li>Yacht watching areas</li>
-                        </ul>
-                    </div>
-                    <div class="included-card premium">
-                        <h5>Entertainment Zone</h5>
-                        <ul>
-                            <li>Bowling alley with Marina views</li>
-                            <li>Arcade and gaming center</li>
-                            <li>Kids activity areas</li>
-                            <li>Event spaces</li>
-                        </ul>
-                    </div>
-                </div>
+                <ul class="simple-included-list">
+                    <li>Marina-view restaurants & covered outdoor terraces</li>
+                    <li>International fashion brands & yacht watching areas</li>
+                    <li>Bowling alley with Marina views & arcade gaming center</li>
+                    <li>Kids activity areas & event spaces</li>
+                </ul>
             </div>
 
             <div class="modal-section">

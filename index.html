@@ -19,7 +19,7 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Mulish:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <!-- Preload critical images -->
     <link rel="preload" as="image" href="https://images.unsplash.com/photo-1639598003276-8a70fcaaad6c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bHVnZ2FnZXxlbnwwfHwwfHx8Mg%3D%3D">
@@ -136,7 +136,7 @@
     <section id="essentials" class="section">
         <div class="container">
             <h2>Before You Arrive</h2>
-            <p class="section-subtitle">Get UAE-ready: visa, transport, and cultural tips made simple</p>
+            <p class="section-description">First time in the UAE? No stress! Get the insider scoop on everything you need—from visa requirements and currency exchange to local customs and getting around. We'll help you navigate like a pro so you can skip the rookie mistakes and dive straight into the adventure.</p>
             <div class="info-slider-wrapper">
                 <div class="info-slider-container">
                     <div class="info-slider-track">
@@ -194,7 +194,7 @@
     <section id="experiences" class="section">
         <div class="container">
             <h2>Attractions & Experiences</h2>
-            <p class="section-subtitle">What Kind of UAE Experience Are You After?</p>
+            <p class="section-description">From soaring above the clouds at Burj Khalifa to diving with sharks, racing through golden dunes to exploring ancient souks—the UAE is packed with unforgettable moments. Whether you're seeking heart-pounding thrills, family fun, or cultural immersion, we've handpicked the best experiences that'll make your trip truly epic.</p>
 
             <!-- Experience Filter Tabs -->
             <div class="experience-filter-tabs">
@@ -215,6 +215,7 @@
                         </div>
                     </div>
                     <div class="card-details">
+                        <p class="card-description">Stand atop the world's tallest building and witness breathtaking 360° views from the 124th floor. Watch the city transform as the sun sets over the desert.</p>
                         <span class="duration">4-6 hours</span>
                         <button class="book-btn purple" onclick="bookExperience('platinumlist', 'burj-khalifa')">Book</button>
                     </div>
@@ -227,6 +228,7 @@
                         </div>
                     </div>
                     <div class="card-details">
+                        <p class="card-description">From Ferrari World's record-breaking coasters to Warner Bros' DC Universe—UAE's theme parks deliver world-class thrills and family fun you won't forget.</p>
                         <span class="duration">Full day</span>
                         <button class="book-btn purple" onclick="bookExperience('platinumlist', 'theme-parks')">Book</button>
                     </div>
@@ -239,6 +241,7 @@
                         </div>
                     </div>
                     <div class="card-details">
+                        <p class="card-description">Dune bash across golden sands, ride camels at sunset, and feast under the stars with traditional belly dancing. This is the quintessential UAE adventure.</p>
                         <span class="duration">6 hours</span>
                         <button class="book-btn purple" onclick="bookExperience('platinumlist', 'desert-safari')">Book</button>
                     </div>
@@ -251,6 +254,7 @@
                         </div>
                     </div>
                     <div class="card-details">
+                        <p class="card-description">Marvel at one of the world's most beautiful mosques with its gleaming white marble, intricate floral designs, and the world's largest hand-knotted carpet.</p>
                         <span class="duration">2-3 hours</span>
                         <button class="book-btn green">Free</button>
                     </div>
@@ -263,6 +267,7 @@
                         </div>
                     </div>
                     <div class="card-details">
+                        <p class="card-description">Explore masterpieces from around the world under a stunning dome that creates a mesmerizing "rain of light." Art, culture, and architectural brilliance in one place.</p>
                         <span class="duration">4-5 hours</span>
                         <button class="book-btn purple" onclick="bookExperience('platinumlist', 'louvre-abu-dhabi')">Book</button>
                     </div>
@@ -275,6 +280,7 @@
                         </div>
                     </div>
                     <div class="card-details">
+                        <p class="card-description">Abu Dhabi's entertainment island packs Ferrari World, Yas Waterworld, Warner Bros, and SeaWorld all in one spot. Pure adrenaline and endless fun!</p>
                         <span class="duration">Full day</span>
                         <button class="book-btn purple" onclick="bookExperience('platinumlist', 'yas-island')">Book</button>
                     </div>
@@ -287,6 +293,7 @@
                         </div>
                     </div>
                     <div class="card-details">
+                        <p class="card-description">Walk through a 48-meter underwater tunnel surrounded by sharks, rays, and thousands of marine creatures. Go cage diving if you're feeling brave!</p>
                         <span class="duration">Full day</span>
                         <button class="book-btn purple" onclick="bookExperience('platinumlist', 'aquarium')">Book</button>
                     </div>
@@ -299,6 +306,7 @@
                         </div>
                     </div>
                     <div class="card-details">
+                        <p class="card-description">Cruise past Dubai Marina's glittering skyline and iconic Palm Jumeirah on a private yacht. Sunset views, swimming stops, and living your best life.</p>
                         <span class="duration">4 hours</span>
                         <button class="book-btn purple" onclick="bookExperience('platinumlist', 'yacht')">Book</button>
                     </div>
@@ -311,6 +319,7 @@
                         </div>
                     </div>
                     <div class="card-details">
+                        <p class="card-description">Free-fall over the iconic Palm Jumeirah from 13,000 feet. This tandem skydive offers the ultimate rush with unbeatable aerial views of Dubai's coastline.</p>
                         <span class="duration">6 hours</span>
                         <button class="book-btn purple" onclick="bookExperience('platinumlist', 'skydiving')">Book</button>
                     </div>
@@ -323,18 +332,20 @@
                         </div>
                     </div>
                     <div class="card-details">
+                        <p class="card-description">Fly like Iron Man with flyboarding, jet-pack rides, and wakeboarding. These extreme water sports will get your heart pounding on the Arabian Gulf.</p>
                         <span class="duration">2 hours</span>
                         <button class="book-btn purple" onclick="bookExperience('platinumlist', 'extreme-water')">Book</button>
                     </div>
                 </div>
                 <div class="experience-card" data-experience="souk" data-category="cultural free">
                     <div class="card-image-container">
-                        <img src="https://images.unsplash.com/photo-1616760678404-8b62322959c8?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8MTR8fHNvdWt8ZW58MHx8MHx8fDI%3D" alt="Traditional souk with gold and spices" class="experience-image" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1616760678404-8b62322959c8?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNvdWt8ZW58MHx8MHx8fDI%3D" alt="Traditional souk with gold and spices" class="experience-image" loading="lazy">
                         <div class="image-overlay-title">
                             <h4>Traditional Souk <span class="card-info-icon">ℹ️</span></h4>
                         </div>
                     </div>
                     <div class="card-details">
+                        <p class="card-description">Wander through bustling Gold, Spice, and Textile souks where the air is thick with frankincense and bargaining is an art form. Authentic UAE shopping!</p>
                         <span class="duration">3 hours</span>
                         <button class="book-btn green">Free</button>
                     </div>
@@ -349,6 +360,7 @@
                         </div>
                     </div>
                     <div class="card-details">
+                        <p class="card-description">Soft white sand, turquoise waters, and the iconic Burj Al Arab as your backdrop. Perfect for swimming, sunbathing, or Instagram-worthy sunset shots—totally free!</p>
                         <span class="duration">Half day</span>
                         <button class="book-btn green">Free Access</button>
                     </div>
@@ -362,6 +374,7 @@
                         </div>
                     </div>
                     <div class="card-details">
+                        <p class="card-description">Cross Dubai Creek on a traditional wooden water taxi for just 1 AED. It's the cheapest and most authentic way to experience old Dubai's charm and bustling waterfront.</p>
                         <span class="duration">10 mins</span>
                         <button class="book-btn green">1 AED Only</button>
                     </div>
@@ -375,6 +388,7 @@
                         </div>
                     </div>
                     <div class="card-details">
+                        <p class="card-description">Stroll through beautifully restored heritage buildings blending old and new Dubai. Enjoy waterfront cafes, art galleries, and traditional architecture along Dubai Creek—all for free.</p>
                         <span class="duration">2 hours</span>
                         <button class="book-btn green">Free Walking Tour</button>
                     </div>
@@ -388,6 +402,7 @@
                         </div>
                     </div>
                     <div class="card-details">
+                        <p class="card-description">Escape the city buzz at lush green parks like Zabeel Park or Al Barsha Pond. Perfect for picnics, jogging, or letting kids run wild—entry is under 10 AED or free!</p>
                         <span class="duration">Half day</span>
                         <button class="book-btn green">Under 10 AED</button>
                     </div>
@@ -401,6 +416,7 @@
                         </div>
                     </div>
                     <div class="card-details">
+                        <p class="card-description">Walk along the stunning 7km promenade lined with skyscrapers, luxury yachts, and waterfront restaurants. People-watch, grab coffee, or just soak in the views—free and fabulous.</p>
                         <span class="duration">2 hours</span>
                         <button class="book-btn green">Free Access</button>
                     </div>
@@ -414,6 +430,7 @@
                         </div>
                     </div>
                     <div class="card-details">
+                        <p class="card-description">Discover Dubai's creative side at this contemporary art hub. Wander through cutting-edge galleries, indie boutiques, and hip cafes in converted warehouses—entry's free!</p>
                         <span class="duration">3 hours</span>
                         <button class="book-btn green">Free Entry</button>
                     </div>
@@ -426,6 +443,7 @@
     <section id="emirates" class="section">
         <div class="container">
             <h2>All Seven Emirates</h2>
+            <p class="section-description">Most visitors only scratch the surface with Dubai and Abu Dhabi, but the UAE's seven emirates each offer something unique. Discover hidden beaches in Fujairah, adventure sports in Ras Al Khaimah's mountains, authentic souks in Sharjah, and peaceful escapes in Umm Al Quwain. Ready to go beyond the usual tourist trail?</p>
             <div class="emirates-grid">
                 <a href="dubai-travel-guide.html" class="emirate-card">
                     <div class="card-image-container">
@@ -477,7 +495,7 @@
                 </a>
                 <a href="ajman-travel-guide.html" class="emirate-card">
                     <div class="card-image-container">
-                        <img src="https://images.unsplash.com/photo-1593334305856-1c6281efaa18?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8MXx8QWptYW58ZW58MHx8MHx8fDI%3D" alt="Ajman beach resorts and corniche" class="experience-image" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1593334305856-1c6281efaa18?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8QWptYW58ZW58MHx8MHx8fDI%3D" alt="Ajman beach resorts and corniche" class="experience-image" loading="lazy">
                         <div class="card-badge">Hidden Gem</div>
                         <div class="weather-widget" data-city="Ajman">
                             <span class="temp">--°</span>
@@ -493,7 +511,7 @@
                 </a>
                 <a href="ras-al-khaimah-travel-guide.html" class="emirate-card">
                     <div class="card-image-container">
-                        <img src="https://images.unsplash.com/photo-1542878447-e2b6df2526fa?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHhzZWFyY2h8Mnx8amViZWwlMjBqYWlzfGVufDB8fDB8fHww" alt="Ras Al Khaimah mountains and adventure activities" class="experience-image" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1542878447-e2b6df2526fa?w=800&auto=format&fit=crop&q=85&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8amViZWwlMjBqYWlzfGVufDB8fDB8fHww" alt="Ras Al Khaimah mountains and adventure activities" class="experience-image" loading="lazy">
                         <div class="card-badge">Adventure Capital</div>
                         <div class="weather-widget" data-city="Ras Al Khaimah">
                             <span class="temp">--°</span>
@@ -672,6 +690,7 @@
     <section id="booking" class="section">
         <div class="container">
             <h2 class="booking-title">Where to Stay in UAE</h2>
+            <p class="section-description">From ultra-luxe resorts with private beaches to cozy boutique hotels and budget-friendly stays—finding the perfect base for your UAE adventure is easy. Whether you want to wake up to Burj Khalifa views, beachfront bliss, or cultural neighborhoods, we've curated the best accommodations across all seven emirates.</p>
 
             <!-- Primary Booking Tabs -->
             <div class="booking-main-tabs" style="display: none;">
@@ -2303,6 +2322,7 @@
     <section id="dining" class="section">
         <div class="container">
             <h2>Dining & Restaurants</h2>
+            <p class="section-description">The UAE's food scene is a delicious melting pot—from sizzling street shawarma and aromatic Arabic coffee to Michelin-starred fine dining with skyline views. Craving authentic Emirati flavors, international cuisine, or Instagram-worthy brunches? We've got you covered with insider picks for every budget and vibe.</p>
 
             <!-- Dining Tabs -->
             <div class="dining-tabs">
