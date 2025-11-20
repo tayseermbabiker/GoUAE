@@ -515,7 +515,7 @@ h1, h2, h3, h4, h5, h6 {
 .info-slider-track {
     display: flex;
     gap: var(--space-md);
-    animation: slideLeft 15s linear infinite;
+    animation: slideLeft 25s linear infinite;
     will-change: transform;
 }
 
@@ -1359,12 +1359,12 @@ a.emirate-card:hover {
     }
 
     .info-slider-track {
-        animation-duration: 15s;
+        animation-duration: 25s;
     }
 
     .info-card {
-        width: 160px; /* Adjusted for mobile sliding */
-        min-height: 120px; /* Shorter height for mobile */
+        width: 170px !important;
+        min-height: 75px !important;
     }
 
     .card-icon {
@@ -1372,9 +1372,10 @@ a.emirate-card:hover {
     }
 
     .info-card h3 {
-        font-size: 16px;
+        font-size: 13px !important;
         margin: 0;
         padding: 0;
+        text-align: center !important;
     }
 
     .info-card p {
@@ -1587,25 +1588,6 @@ a.emirate-card:hover {
         }
     }
 
-    .image-overlay-title {
-        position: absolute !important;
-        top: 50% !important;
-        left: 50% !important;
-        transform: translate(-50%, -50%) !important;
-        background: rgba(0, 0, 0, 0.5) !important;
-        padding: 6px 12px !important;
-        border-radius: 20px !important;
-        white-space: nowrap !important;
-    }
-
-    .image-overlay-title h4, .image-overlay-title h3 {
-        color: white !important;
-        font-size: 14px !important;
-        font-weight: 600 !important;
-        margin: 0 !important;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
-        white-space: nowrap !important;
-    }
 
     .hotel-categories {
         flex-direction: column;
@@ -5286,6 +5268,7 @@ img[loading="lazy"].loaded {
     margin: 0 !important;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
     letter-spacing: -0.01em !important;
+    text-align: left !important;
 }
 
 @media (min-width: 1024px) {
